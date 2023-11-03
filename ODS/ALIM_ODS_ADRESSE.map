@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map xmlns:map="http://www.indy.com/v2/map" id="_DmTakHo1Ee6i1bEIfNaCgQ" internalVersion="8" tech="resource.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
+  <datastore id="_FQgSkHo1Ee6i1bEIfNaCgQ" alias="ODS_ADRESSE" dataset="_FQxYUHo1Ee6i1bEIfNaCgQ" ref="resource.md#_bZ6EkHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ODS_ADRESSE?" subExpression="[A]">
+    <field id="_FQnnUHo1Ee6i1bEIfNaCgQ" enable="true" insert="true" name="TYPE_LIGNE" ref="resource.md#_bdT94HozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_LIGNE?" update="true">
+      <expression id="_LhxcUHo1Ee6i1bEIfNaCgQ" setDescriptorRef="_Lhw1QHo1Ee6i1bEIfNaCgQ">
+        <expression>F_CLIENT_ADRESSE.TYPE_LIGNE</expression>
+      </expression>
+    </field>
+    <field id="_FQoOZHo1Ee6i1bEIfNaCgQ" enable="true" insert="true" name="LIGNE_2" ref="resource.md#_bdY2YHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_2?" update="true">
+      <expression id="_LhxcUXo1Ee6i1bEIfNaCgQ" setDescriptorRef="_Lhw1QHo1Ee6i1bEIfNaCgQ">
+        <expression>F_CLIENT_ADRESSE.LIGNE_2</expression>
+      </expression>
+    </field>
+    <field id="_FQoOZXo1Ee6i1bEIfNaCgQ" enable="true" insert="true" name="LIGNE_3" ref="resource.md#_bdaEgHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_3?" update="true">
+      <expression id="_LhxcUno1Ee6i1bEIfNaCgQ" setDescriptorRef="_Lhw1QHo1Ee6i1bEIfNaCgQ">
+        <expression>F_CLIENT_ADRESSE.LIGNE_3</expression>
+      </expression>
+    </field>
+    <field id="_FQo1c3o1Ee6i1bEIfNaCgQ" enable="true" insert="true" name="CODE_POSTAL" ref="resource.md#_bdbSpnozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CODE_POSTAL?" update="true">
+      <expression id="_LhyDYHo1Ee6i1bEIfNaCgQ" setDescriptorRef="_Lhw1QHo1Ee6i1bEIfNaCgQ">
+        <expression>F_CLIENT_ADRESSE.CODE_POSTAL</expression>
+      </expression>
+    </field>
+    <field id="_FQo1cXo1Ee6i1bEIfNaCgQ" enable="true" insert="true" name="LIGNE_5" ref="resource.md#_bdarlnozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_5?" update="true">
+      <expression id="_LhyDYXo1Ee6i1bEIfNaCgQ" setDescriptorRef="_Lhw1QHo1Ee6i1bEIfNaCgQ">
+        <expression>F_CLIENT_ADRESSE.LIGNE_5</expression>
+      </expression>
+    </field>
+    <field id="_FQo1dXo1Ee6i1bEIfNaCgQ" enable="true" insert="true" name="QUALITE" ref="resource.md#_bdb5sHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=QUALITE?" update="true">
+      <expression id="_LhyDYno1Ee6i1bEIfNaCgQ" setDescriptorRef="_Lhw1QHo1Ee6i1bEIfNaCgQ">
+        <expression>F_CLIENT_ADRESSE.QUALITE</expression>
+      </expression>
+    </field>
+    <field id="_FQoOYHo1Ee6i1bEIfNaCgQ" enable="true" insert="true" name="ACTION" ref="resource.md#_bdVMAHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ACTION?" update="true">
+      <expression id="_LhyDY3o1Ee6i1bEIfNaCgQ" setDescriptorRef="_Lhw1QHo1Ee6i1bEIfNaCgQ">
+        <expression>F_CLIENT_ADRESSE.ACTION</expression>
+      </expression>
+    </field>
+    <field id="_FQoOY3o1Ee6i1bEIfNaCgQ" enable="true" insert="true" name="LIGNE_1" ref="resource.md#_bdYPUHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_1?" update="true">
+      <expression id="_LhyDZHo1Ee6i1bEIfNaCgQ" setDescriptorRef="_Lhw1QHo1Ee6i1bEIfNaCgQ">
+        <expression>F_CLIENT_ADRESSE.LIGNE_1</expression>
+      </expression>
+    </field>
+    <field id="_FQoOYXo1Ee6i1bEIfNaCgQ" enable="true" insert="true" name="CLE_CLIENT" ref="resource.md#_bdVzEHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CLIENT?" update="true">
+      <expression id="_LhyqcHo1Ee6i1bEIfNaCgQ" setDescriptorRef="_Lhw1QHo1Ee6i1bEIfNaCgQ">
+        <expression>F_CLIENT_ADRESSE.CLE_CLIENT</expression>
+      </expression>
+    </field>
+    <field id="_FQo1cHo1Ee6i1bEIfNaCgQ" enable="true" insert="true" name="LIGNE_4" ref="resource.md#_bdarkHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_4?" update="true">
+      <expression id="_LhyqcXo1Ee6i1bEIfNaCgQ" setDescriptorRef="_Lhw1QHo1Ee6i1bEIfNaCgQ">
+        <expression>F_CLIENT_ADRESSE.LIGNE_4</expression>
+      </expression>
+    </field>
+    <field id="_FQoOYno1Ee6i1bEIfNaCgQ" enable="true" insert="true" name="STATUS" ref="resource.md#_bdXBMHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS?" update="true">
+      <expression id="_Lhyqcno1Ee6i1bEIfNaCgQ" setDescriptorRef="_Lhw1QHo1Ee6i1bEIfNaCgQ">
+        <expression>F_CLIENT_ADRESSE.STATUS</expression>
+      </expression>
+    </field>
+    <field id="_FQo1cno1Ee6i1bEIfNaCgQ" enable="true" insert="true" name="VILLE" ref="resource.md#_bdbSoHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=VILLE?" update="true">
+      <expression id="_Lhyqc3o1Ee6i1bEIfNaCgQ" setDescriptorRef="_Lhw1QHo1Ee6i1bEIfNaCgQ">
+        <expression>F_CLIENT_ADRESSE.VILLE</expression>
+      </expression>
+    </field>
+    <field id="_FQo1dHo1Ee6i1bEIfNaCgQ" enable="true" insert="true" name="PAYS" ref="resource.md#_bdbSrHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=PAYS?" update="true">
+      <expression id="_LhzRgHo1Ee6i1bEIfNaCgQ" setDescriptorRef="_Lhw1QHo1Ee6i1bEIfNaCgQ">
+        <expression>F_CLIENT_ADRESSE.PAYS</expression>
+      </expression>
+    </field>
+    <setDescriptor id="_Lhw1QHo1Ee6i1bEIfNaCgQ" label="A"/>
+  </datastore>
+  <datastore id="_GbuvkHo1Ee6i1bEIfNaCgQ" alias="ADRESSE" dataset="_GbwkwHo1Ee6i1bEIfNaCgQ" ref="resource.md#_AsBF4XSyEe6Cj7jyPVDy-A?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=ADRESSE?">
+    <field id="_GbvWrHo1Ee6i1bEIfNaCgQ" fullAlias="QUALITE" name="QUALITE" parent="_Gbuvkno1Ee6i1bEIfNaCgQ" ref="resource.md#_kugvYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=QUALITE?"/>
+    <field id="_GbvWpXo1Ee6i1bEIfNaCgQ" fullAlias="LIGNE_2" name="LIGNE_2" parent="_Gbuvkno1Ee6i1bEIfNaCgQ" ref="resource.md#_j_-OYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=LIGNE_2?"/>
+    <field id="_GbvWp3o1Ee6i1bEIfNaCgQ" fullAlias="LIGNE_4" name="LIGNE_4" parent="_Gbuvkno1Ee6i1bEIfNaCgQ" ref="resource.md#_kOUMYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=LIGNE_4?"/>
+    <field id="_GbvWqno1Ee6i1bEIfNaCgQ" fullAlias="CODE_POSTAL" name="CODE_POSTAL" parent="_Gbuvkno1Ee6i1bEIfNaCgQ" ref="resource.md#_kiE14HomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=CODE_POSTAL?"/>
+    <field id="_GbvWpno1Ee6i1bEIfNaCgQ" fullAlias="LIGNE_3" name="LIGNE_3" parent="_Gbuvkno1Ee6i1bEIfNaCgQ" ref="resource.md#_kGwy4HomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=LIGNE_3?"/>
+    <field id="_GbvWo3o1Ee6i1bEIfNaCgQ" fullAlias="STATUS" name="STATUS" parent="_Gbuvkno1Ee6i1bEIfNaCgQ" ref="resource.md#_jyi2YHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=STATUS?"/>
+    <field id="_GbvWoXo1Ee6i1bEIfNaCgQ" fullAlias="ACTION" name="ACTION" parent="_Gbuvkno1Ee6i1bEIfNaCgQ" ref="resource.md#_jkz8YHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=ACTION?"/>
+    <field id="_GbvWq3o1Ee6i1bEIfNaCgQ" fullAlias="PAYS" name="PAYS" parent="_Gbuvkno1Ee6i1bEIfNaCgQ" ref="resource.md#_koyh4HomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=PAYS?"/>
+    <field id="_GbvWono1Ee6i1bEIfNaCgQ" fullAlias="CLE_CLIENT" name="CLE_CLIENT" parent="_Gbuvkno1Ee6i1bEIfNaCgQ" ref="resource.md#_jscOYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=CLE_CLIENT?"/>
+    <field id="_GbvWqHo1Ee6i1bEIfNaCgQ" fullAlias="LIGNE_5" name="LIGNE_5" parent="_Gbuvkno1Ee6i1bEIfNaCgQ" ref="resource.md#_kV3l4HomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=LIGNE_5?"/>
+    <field id="_Gbuvkno1Ee6i1bEIfNaCgQ" expand="true" name="ADRESSE" ref="resource.md#_AsBF4XSyEe6Cj7jyPVDy-A?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=ADRESSE?" updateKey="true"/>
+    <field id="_GbvWqXo1Ee6i1bEIfNaCgQ" fullAlias="VILLE" name="VILLE" parent="_Gbuvkno1Ee6i1bEIfNaCgQ" ref="resource.md#_kcDGYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=VILLE?"/>
+    <field id="_GbvWpHo1Ee6i1bEIfNaCgQ" fullAlias="LIGNE_1" name="LIGNE_1" parent="_Gbuvkno1Ee6i1bEIfNaCgQ" ref="resource.md#_j49AYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=LIGNE_1?"/>
+    <field id="_GbvWoHo1Ee6i1bEIfNaCgQ" fullAlias="TYPE_LIGNE" name="TYPE_LIGNE" parent="_Gbuvkno1Ee6i1bEIfNaCgQ" ref="resource.md#_jgigYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=TYPE_LIGNE?"/>
+  </datastore>
+  <datastore id="_JqQhEHo1Ee6i1bEIfNaCgQ" alias="F_CLIENT_ADRESSE" dataset="_JqSWQHo1Ee6i1bEIfNaCgQ" ref="resource.md#_fqb9EXocEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=F_CLIENT_ADRESSE?" subExpression="[A]">
+    <field id="_JqRIK3o1Ee6i1bEIfNaCgQ" enable="true" fullAlias="PAYS" insert="true" name="PAYS" parent="_JqQhEno1Ee6i1bEIfNaCgQ" ref="resource.md#_4H3KCXomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=PAYS?" update="true">
+      <expression id="_KbMOwHo1Ee6i1bEIfNaCgQ" setDescriptorRef="_KbJygHo1Ee6i1bEIfNaCgQ">
+        <expression>ADRESSE.PAYS</expression>
+      </expression>
+    </field>
+    <field id="_JqRIIHo1Ee6i1bEIfNaCgQ" enable="true" fullAlias="TYPE_LIGNE" insert="true" name="TYPE_LIGNE" parent="_JqQhEno1Ee6i1bEIfNaCgQ" ref="resource.md#_4H3J3HomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=TYPE_LIGNE?" update="true">
+      <expression id="_KbM10Ho1Ee6i1bEIfNaCgQ" setDescriptorRef="_KbJygHo1Ee6i1bEIfNaCgQ">
+        <expression>ADRESSE.TYPE_LIGNE</expression>
+      </expression>
+    </field>
+    <field id="_JqRII3o1Ee6i1bEIfNaCgQ" enable="true" fullAlias="STATUS" insert="true" name="STATUS" parent="_JqQhEno1Ee6i1bEIfNaCgQ" ref="resource.md#_4H3J6XomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=STATUS?" update="true">
+      <expression id="_KbM10Xo1Ee6i1bEIfNaCgQ" setDescriptorRef="_KbJygHo1Ee6i1bEIfNaCgQ">
+        <expression>ADRESSE.STATUS</expression>
+      </expression>
+    </field>
+    <field id="_JqRIIno1Ee6i1bEIfNaCgQ" enable="true" fullAlias="CLE_CLIENT" insert="true" name="CLE_CLIENT" parent="_JqQhEno1Ee6i1bEIfNaCgQ" ref="resource.md#_4H3J5XomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=CLE_CLIENT?" update="true">
+      <expression id="_KbM10no1Ee6i1bEIfNaCgQ" setDescriptorRef="_KbJygHo1Ee6i1bEIfNaCgQ">
+        <expression>ADRESSE.CLE_CLIENT</expression>
+      </expression>
+    </field>
+    <field id="_JqRIJno1Ee6i1bEIfNaCgQ" enable="true" fullAlias="LIGNE_3" insert="true" name="LIGNE_3" parent="_JqQhEno1Ee6i1bEIfNaCgQ" ref="resource.md#_4H3J9XomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=LIGNE_3?" update="true">
+      <expression id="_KbNc4Ho1Ee6i1bEIfNaCgQ" setDescriptorRef="_KbJygHo1Ee6i1bEIfNaCgQ">
+        <expression>ADRESSE.LIGNE_3</expression>
+      </expression>
+    </field>
+    <field id="_JqRIIXo1Ee6i1bEIfNaCgQ" enable="true" fullAlias="ACTION" insert="true" name="ACTION" parent="_JqQhEno1Ee6i1bEIfNaCgQ" ref="resource.md#_4H3J4XomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=ACTION?" update="true">
+      <expression id="_KbNc4Xo1Ee6i1bEIfNaCgQ" setDescriptorRef="_KbJygHo1Ee6i1bEIfNaCgQ">
+        <expression>ADRESSE.ACTION</expression>
+      </expression>
+    </field>
+    <field id="_JqRILHo1Ee6i1bEIfNaCgQ" enable="true" fullAlias="QUALITE" insert="true" name="QUALITE" parent="_JqQhEno1Ee6i1bEIfNaCgQ" ref="resource.md#_4H3KDXomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=QUALITE?" update="true">
+      <expression id="_KbNc4no1Ee6i1bEIfNaCgQ" setDescriptorRef="_KbJygHo1Ee6i1bEIfNaCgQ">
+        <expression>ADRESSE.QUALITE</expression>
+      </expression>
+    </field>
+    <field id="_JqRIKHo1Ee6i1bEIfNaCgQ" enable="true" fullAlias="LIGNE_5" insert="true" name="LIGNE_5" parent="_JqQhEno1Ee6i1bEIfNaCgQ" ref="resource.md#_4H3J_XomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=LIGNE_5?" update="true">
+      <expression id="_KbOD8Ho1Ee6i1bEIfNaCgQ" setDescriptorRef="_KbJygHo1Ee6i1bEIfNaCgQ">
+        <expression>ADRESSE.LIGNE_5</expression>
+      </expression>
+    </field>
+    <field id="_JqRIJXo1Ee6i1bEIfNaCgQ" enable="true" fullAlias="LIGNE_2" insert="true" name="LIGNE_2" parent="_JqQhEno1Ee6i1bEIfNaCgQ" ref="resource.md#_4H3J8XomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=LIGNE_2?" update="true">
+      <expression id="_KbOD8Xo1Ee6i1bEIfNaCgQ" setDescriptorRef="_KbJygHo1Ee6i1bEIfNaCgQ">
+        <expression>ADRESSE.LIGNE_2</expression>
+      </expression>
+    </field>
+    <field id="_JqRIKno1Ee6i1bEIfNaCgQ" enable="true" fullAlias="CODE_POSTAL" insert="true" name="CODE_POSTAL" parent="_JqQhEno1Ee6i1bEIfNaCgQ" ref="resource.md#_4H3KBXomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=CODE_POSTAL?" update="true">
+      <expression id="_KbOD8no1Ee6i1bEIfNaCgQ" setDescriptorRef="_KbJygHo1Ee6i1bEIfNaCgQ">
+        <expression>ADRESSE.CODE_POSTAL</expression>
+      </expression>
+    </field>
+    <field id="_JqRIKXo1Ee6i1bEIfNaCgQ" enable="true" fullAlias="VILLE" insert="true" name="VILLE" parent="_JqQhEno1Ee6i1bEIfNaCgQ" ref="resource.md#_4H3KAXomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=VILLE?" update="true">
+      <expression id="_KbOD83o1Ee6i1bEIfNaCgQ" setDescriptorRef="_KbJygHo1Ee6i1bEIfNaCgQ">
+        <expression>ADRESSE.VILLE</expression>
+      </expression>
+    </field>
+    <field id="_JqRIJ3o1Ee6i1bEIfNaCgQ" enable="true" fullAlias="LIGNE_4" insert="true" name="LIGNE_4" parent="_JqQhEno1Ee6i1bEIfNaCgQ" ref="resource.md#_4H3J-XomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=LIGNE_4?" update="true">
+      <expression id="_KbOrAHo1Ee6i1bEIfNaCgQ" setDescriptorRef="_KbJygHo1Ee6i1bEIfNaCgQ">
+        <expression>ADRESSE.LIGNE_4</expression>
+      </expression>
+    </field>
+    <field id="_JqQhEno1Ee6i1bEIfNaCgQ" expand="true" name="F_CLIENT_ADRESSE" ref="resource.md#_fqb9EXocEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=F_CLIENT_ADRESSE?" updateKey="true">
+      <expression id="_KbOrAXo1Ee6i1bEIfNaCgQ" setDescriptorRef="_KbJygHo1Ee6i1bEIfNaCgQ">
+        <expression></expression>
+      </expression>
+    </field>
+    <field id="_JqRIJHo1Ee6i1bEIfNaCgQ" enable="true" fullAlias="LIGNE_1" insert="true" name="LIGNE_1" parent="_JqQhEno1Ee6i1bEIfNaCgQ" ref="resource.md#_4H3J7XomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=LIGNE_1?" update="true">
+      <expression id="_KbOrAno1Ee6i1bEIfNaCgQ" setDescriptorRef="_KbJygHo1Ee6i1bEIfNaCgQ">
+        <expression>ADRESSE.LIGNE_1</expression>
+      </expression>
+    </field>
+    <setDescriptor id="_KbJygHo1Ee6i1bEIfNaCgQ" label="A"/>
+  </datastore>
+  <template id="_KbVYsHo1Ee6i1bEIfNaCgQ" name="I_F_CLIENT_ADRESSE" process="resource.proc#_4WVbt4c7Ed6NdYXLsd44UQ?fileId=_4WVbt4c7Ed6NdYXLsd44UQ$type=proc$name=INTEGRATION%20File?" targetId="_JqQhEHo1Ee6i1bEIfNaCgQ"/>
+  <template id="_Lh1twHo1Ee6i1bEIfNaCgQ" name="I_ODS_ADRESSE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_FQgSkHo1Ee6i1bEIfNaCgQ">
+    <parameter id="_M91xsHo1Ee6i1bEIfNaCgQ" name="doUpdate" value="false"/>
+    <parameter id="_NPEroHo1Ee6i1bEIfNaCgQ" name="truncateTargetTable" value="true"/>
+  </template>
+  <template id="_LiZHYHo1Ee6i1bEIfNaCgQ" name="L1_ODS_ADRESSE" process="resource.proc#_a-mEoaIhEd68f8w2ej5O-w?fileId=_a-mEoaIhEd68f8w2ej5O-w$type=proc$name=LOAD%20File%20to%20Rdbms?" sourceId="_JqQhEHo1Ee6i1bEIfNaCgQ" targetId="_FQgSkHo1Ee6i1bEIfNaCgQ"/>
+  <dataSet id="_FQxYUHo1Ee6i1bEIfNaCgQ">
+    <container>_FQgSkHo1Ee6i1bEIfNaCgQ</container>
+  </dataSet>
+  <dataSet id="_GbwkwHo1Ee6i1bEIfNaCgQ">
+    <container>_GbuvkHo1Ee6i1bEIfNaCgQ</container>
+  </dataSet>
+  <dataSet id="_JqSWQHo1Ee6i1bEIfNaCgQ">
+    <container>_JqQhEHo1Ee6i1bEIfNaCgQ</container>
+  </dataSet>
+  <hint>
+    <usedField>#_GbvWrHo1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_GbvWpXo1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_GbvWp3o1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_GbvWqno1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_GbvWpno1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_GbvWo3o1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_GbvWoXo1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_GbvWq3o1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_GbvWono1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_GbvWqHo1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_GbvWqXo1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_GbvWpHo1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_GbvWoHo1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_JqRIK3o1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_JqRIIHo1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_JqRII3o1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_JqRIIno1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_JqRIJno1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_JqRIIXo1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_JqRILHo1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_JqRIKHo1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_JqRIJXo1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_JqRIKno1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_JqRIKXo1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_JqRIJ3o1Ee6i1bEIfNaCgQ</usedField>
+    <usedField>#_JqRIJHo1Ee6i1bEIfNaCgQ</usedField>
+  </hint>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="_Dss9gHo1Ee6i1bEIfNaCgQ" type="Map" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_GbzoEHo1Ee6i1bEIfNaCgQ" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_GbzoEno1Ee6i1bEIfNaCgQ" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_GbzoE3o1Ee6i1bEIfNaCgQ" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_GbzoFHo1Ee6i1bEIfNaCgQ" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_GbzoFXo1Ee6i1bEIfNaCgQ" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_GbzoFno1Ee6i1bEIfNaCgQ" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_GbzoF3o1Ee6i1bEIfNaCgQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_GbzoGHo1Ee6i1bEIfNaCgQ"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_GbzoGXo1Ee6i1bEIfNaCgQ" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_GbzoGno1Ee6i1bEIfNaCgQ"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_GbzoG3o1Ee6i1bEIfNaCgQ" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_GbzoHHo1Ee6i1bEIfNaCgQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_GbzoHXo1Ee6i1bEIfNaCgQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_GbzoHno1Ee6i1bEIfNaCgQ" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_GbuvkHo1Ee6i1bEIfNaCgQ?fileId=_DmTakHo1Ee6i1bEIfNaCgQ$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_GbzoEXo1Ee6i1bEIfNaCgQ" x="32" y="32"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_FRJLwHo1Ee6i1bEIfNaCgQ" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_FRKZ4Ho1Ee6i1bEIfNaCgQ" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_FRKZ4Xo1Ee6i1bEIfNaCgQ" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_FRKZ4no1Ee6i1bEIfNaCgQ" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_FRKZ43o1Ee6i1bEIfNaCgQ" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_FRLoAHo1Ee6i1bEIfNaCgQ" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_FRLoAXo1Ee6i1bEIfNaCgQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_FRLoAno1Ee6i1bEIfNaCgQ"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_FRLoA3o1Ee6i1bEIfNaCgQ" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_FRMPEHo1Ee6i1bEIfNaCgQ"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_FRMPEXo1Ee6i1bEIfNaCgQ" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_FRMPEno1Ee6i1bEIfNaCgQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_FRMPE3o1Ee6i1bEIfNaCgQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_FSEY0Ho1Ee6i1bEIfNaCgQ" type="7007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_FSEY0Xo1Ee6i1bEIfNaCgQ" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_FSEY0no1Ee6i1bEIfNaCgQ"/>
+    </children>
+    <element xmi:type="map:Datastore" href="resource.map#_FQgSkHo1Ee6i1bEIfNaCgQ?fileId=_DmTakHo1Ee6i1bEIfNaCgQ$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FRJLwXo1Ee6i1bEIfNaCgQ" x="933" y="61"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_JqVZkHo1Ee6i1bEIfNaCgQ" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_JqVZkno1Ee6i1bEIfNaCgQ" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_JqVZk3o1Ee6i1bEIfNaCgQ" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_JqVZlHo1Ee6i1bEIfNaCgQ" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_JqVZlXo1Ee6i1bEIfNaCgQ" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_JqVZlno1Ee6i1bEIfNaCgQ" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_JqVZl3o1Ee6i1bEIfNaCgQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_JqVZmHo1Ee6i1bEIfNaCgQ"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_JqVZmXo1Ee6i1bEIfNaCgQ" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_JqVZmno1Ee6i1bEIfNaCgQ"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_JqVZm3o1Ee6i1bEIfNaCgQ" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_JqVZnHo1Ee6i1bEIfNaCgQ"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_JqVZnXo1Ee6i1bEIfNaCgQ"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_JqVZnno1Ee6i1bEIfNaCgQ" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_JqQhEHo1Ee6i1bEIfNaCgQ?fileId=_DmTakHo1Ee6i1bEIfNaCgQ$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JqVZkXo1Ee6i1bEIfNaCgQ" x="359" y="82"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_Dss9gXo1Ee6i1bEIfNaCgQ"/>
+  <element xmi:type="map:Map" href="resource.map#_DmTakHo1Ee6i1bEIfNaCgQ?fileId=_DmTakHo1Ee6i1bEIfNaCgQ$type=map$name=ALIM_ODS_ADRESSE?"/>
+  <edges xmi:type="notation:Edge" xmi:id="_KcHb0Ho1Ee6i1bEIfNaCgQ" type="targetLink" source="_JqVZkHo1Ee6i1bEIfNaCgQ" target="_GbzoEHo1Ee6i1bEIfNaCgQ">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KcHb0Xo1Ee6i1bEIfNaCgQ" points="[-100, 5, 197, -11]$[-208, 11, 89, -5]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_KcNicHo1Ee6i1bEIfNaCgQ" type="targetDataSetLink" source="_JqVZkHo1Ee6i1bEIfNaCgQ" target="_JqVZkHo1Ee6i1bEIfNaCgQ">
+    <element xmi:type="map:DataSet" href="resource.map#_GbwkwHo1Ee6i1bEIfNaCgQ?fileId=_DmTakHo1Ee6i1bEIfNaCgQ$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KcNicXo1Ee6i1bEIfNaCgQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_KcNicno1Ee6i1bEIfNaCgQ" type="targetSetLink" source="_JqVZkHo1Ee6i1bEIfNaCgQ" target="_JqVZkHo1Ee6i1bEIfNaCgQ">
+    <element xmi:type="map:SetDescriptor" href="resource.map#_KbJygHo1Ee6i1bEIfNaCgQ?fileId=_DmTakHo1Ee6i1bEIfNaCgQ$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KcNic3o1Ee6i1bEIfNaCgQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_LiTn0Ho1Ee6i1bEIfNaCgQ" type="targetLink" source="_FRJLwHo1Ee6i1bEIfNaCgQ" target="_JqVZkHo1Ee6i1bEIfNaCgQ">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LiTn0Xo1Ee6i1bEIfNaCgQ" points="[-83, 3, 298, -10]$[-213, 7, 168, -6]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_LiU18Ho1Ee6i1bEIfNaCgQ" type="targetDataSetLink" source="_FRJLwHo1Ee6i1bEIfNaCgQ" target="_FRJLwHo1Ee6i1bEIfNaCgQ">
+    <element xmi:type="map:DataSet" href="resource.map#_JqSWQHo1Ee6i1bEIfNaCgQ?fileId=_DmTakHo1Ee6i1bEIfNaCgQ$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LiU18Xo1Ee6i1bEIfNaCgQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_LiU18no1Ee6i1bEIfNaCgQ" type="targetSetLink" source="_FRJLwHo1Ee6i1bEIfNaCgQ" target="_FRJLwHo1Ee6i1bEIfNaCgQ">
+    <element xmi:type="map:SetDescriptor" href="resource.map#_Lhw1QHo1Ee6i1bEIfNaCgQ?fileId=_DmTakHo1Ee6i1bEIfNaCgQ$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_LiU183o1Ee6i1bEIfNaCgQ" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>
+]]></diagram>
+</map:map>
