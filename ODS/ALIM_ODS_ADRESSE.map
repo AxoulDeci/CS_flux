@@ -243,7 +243,7 @@
       <styles xmi:type="notation:DrawerStyle" xmi:id="_FSEY0no1Ee6i1bEIfNaCgQ"/>
     </children>
     <element xmi:type="map:Datastore" href="resource.map#_FQgSkHo1Ee6i1bEIfNaCgQ?fileId=_DmTakHo1Ee6i1bEIfNaCgQ$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FRJLwXo1Ee6i1bEIfNaCgQ" x="933" y="61"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_FRJLwXo1Ee6i1bEIfNaCgQ" x="794" y="43"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_JqVZkHo1Ee6i1bEIfNaCgQ" type="2004" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="_JqVZkno1Ee6i1bEIfNaCgQ" type="5005"/>
@@ -263,7 +263,7 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_JqVZnno1Ee6i1bEIfNaCgQ" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_JqQhEHo1Ee6i1bEIfNaCgQ?fileId=_DmTakHo1Ee6i1bEIfNaCgQ$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JqVZkXo1Ee6i1bEIfNaCgQ" x="359" y="82"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JqVZkXo1Ee6i1bEIfNaCgQ" x="298" y="32"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_Dss9gXo1Ee6i1bEIfNaCgQ"/>
   <element xmi:type="map:Map" href="resource.map#_DmTakHo1Ee6i1bEIfNaCgQ?fileId=_DmTakHo1Ee6i1bEIfNaCgQ$type=map$name=ALIM_ODS_ADRESSE?"/>

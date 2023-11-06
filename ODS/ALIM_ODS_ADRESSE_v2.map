@@ -86,8 +86,7 @@
   </datastore>
   <template id="_mSyjlno8Ee6i1bEIfNaCgQ" name="I_ODS_ADRESSE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_i9Nu4Ho8Ee6i1bEIfNaCgQ">
     <parameter id="_p5xRUHo8Ee6i1bEIfNaCgQ" name="truncateTargetTable" value="true"/>
-    <parameter id="_s9lAkHo8Ee6i1bEIfNaCgQ" name="transactionalModeOnWorkTables" value="true"/>
-    <parameter id="_uIDPoHo8Ee6i1bEIfNaCgQ" name="doUpdate" value="false"/>
+    <parameter id="_xog_UHylEe6pkObsxeEFYQ" name="integrationStrategy" value="append"/>
   </template>
   <template id="_mS4qMHo8Ee6i1bEIfNaCgQ" name="L1_ODS_ADRESSE" process="resource.proc#_a-mEoaIhEd68f8w2ej5O-w?fileId=_a-mEoaIhEd68f8w2ej5O-w$type=proc$name=LOAD%20File%20to%20Rdbms?" sourceId="_i9OV_Xo8Ee6i1bEIfNaCgQ" targetId="_i9Nu4Ho8Ee6i1bEIfNaCgQ"/>
   <dataSet id="_i9OWL3o8Ee6i1bEIfNaCgQ">
@@ -154,7 +153,7 @@
       <styles xmi:type="notation:DrawerStyle" xmi:id="3a02109d-8406-4247-bd9e-fbd703e04311"/>
     </children>
     <element xmi:type="map:Datastore" href="resource.map#_i9Nu4Ho8Ee6i1bEIfNaCgQ?fileId=_i9NH0Ho8Ee6i1bEIfNaCgQ$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="2e5180e3-98bb-40fe-862b-66a4bef33ddb" x="258" y="40"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="2e5180e3-98bb-40fe-862b-66a4bef33ddb" x="298" y="43"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="ba1a3d19-2c49-45a8-a6e8-9975d6f6a907"/>
   <element xmi:type="map:Map" href="resource.map#_i9NH0Ho8Ee6i1bEIfNaCgQ?fileId=_i9NH0Ho8Ee6i1bEIfNaCgQ$type=map$name=ALIM_ODS_ADRESSE_v2?"/>
