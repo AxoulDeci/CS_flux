@@ -6,19 +6,20 @@
     <link id="3909de05-8aa0-40dd-9fe5-cb46b393e5de" executionType="OK" generationType="OK_KO" mandatory="1" targetId="3ff3035b-b3bc-44ab-a088-71ddd642756b"/>
   </actionCode>
   <actionCode id="aeaaa0d6-e863-4a87-a084-a0b02aa6a6a9" isBeginAction="false" name="CHECK_ENTETE_PRESENT" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.sqlToParameters">
-    <link id="48ce5b13-7ed1-48d7-b522-3b2d6d098dc0" executionCondition="'{$NB_ENTETE$}'=='0'" executionType="OK" generationType="OK_KO" mandatory="1" targetId="6f94c40a-8366-4c0d-b454-1f5dd51e2f1d"/>
+    <link id="48ce5b13-7ed1-48d7-b522-3b2d6d098dc0" executionCondition="'{$NB_ENTETE$}'=='1'" executionType="OK" generationType="OK_KO" mandatory="1" targetId="6f94c40a-8366-4c0d-b454-1f5dd51e2f1d"/>
+    <link id="71ad91c4-8ff2-4695-bb7a-4357f38c1024" executionCondition="'{$NB_ENTETE$}'!='1'" executionType="OK" generationType="OK_KO" mandatory="0" targetId="62f0d47a-0a10-4c7d-bafc-69b07e74a537"/>
     <parameter id="b2f05185-cbae-46e0-bab6-b542f9bc564b" name="SQL_CONNECTION" type="String"/>
     <code>&lt;sqlToParameters>&#xD;
-	&lt;parameter name=&quot;&quot; type=&quot;String | Integer | Boolean | Long | Float&quot;>&#xD;
+	&lt;parameter name=&quot;NB_ENTETE&quot; type=&quot;String | Integer | Boolean | Long | Float&quot;>&#xD;
 SQL_QUERY&#xD;
-	&lt;/parameter>&#xD;
+	&#xD;
 &lt;/sqlToParameters></code>
   </actionCode>
   <actionProcessRef id="3ff3035b-b3bc-44ab-a088-71ddd642756b" isBeginAction="false" name="ALIM_ODS_ENTETE" nbCycles="-1" toleratedError="false" processMap="true" targetName="resource.map#_V_P-AH-qEe6IE6AcCtnNjw?fileId=_V_P-AH-qEe6IE6AcCtnNjw$name=ALIM_ODS_ENTETE$type=map?">
     <link id="cbf6726f-277d-4f28-98a6-61db34267b53" executionType="OK" generationType="OK_KO" mandatory="1" targetId="aeaaa0d6-e863-4a87-a084-a0b02aa6a6a9"/>
   </actionProcessRef>
   <actionProcessRef id="3de00298-7f0a-4cd7-8e07-9fedf53ad662" isBeginAction="false" name="ALIM_ODS_PIED" nbCycles="-1" toleratedError="false" processMap="true" targetName="resource.map#_CrTgwH-tEe6IE6AcCtnNjw?fileId=_CrTgwH-tEe6IE6AcCtnNjw$name=ALIM_ODS_PIED$type=map?">
-    <link id="96483dcb-68f3-427d-b8cd-d92d5b8b79fa" executionType="OK" generationType="OK_KO" mandatory="1" targetId="62f0d47a-0a10-4c7d-bafc-69b07e74a537"/>
+    <link id="96483dcb-68f3-427d-b8cd-d92d5b8b79fa" executionType="OK" generationType="OK_KO" mandatory="0" targetId="62f0d47a-0a10-4c7d-bafc-69b07e74a537"/>
   </actionProcessRef>
   <actionProcessRef id="6f94c40a-8366-4c0d-b454-1f5dd51e2f1d" isBeginAction="false" name="ALIM_ALL_ODS_F_CLIENT" nbCycles="-1" toleratedError="false" targetName="resource.proc#24893c53-576c-4de7-a707-92256dee5fee?fileId=24893c53-576c-4de7-a707-92256dee5fee$type=proc$name=ALIM_ALL_ODS_F_CLIENT?">
     <link id="5a5f7077-9807-4387-98b5-7c4f73dab765" executionType="OK" generationType="OK_KO" mandatory="1" targetId="3de00298-7f0a-4cd7-8e07-9fedf53ad662"/>
@@ -39,7 +40,7 @@ SQL_QUERY&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_WYDYMX-tEe6IE6AcCtnNjw" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionProcessRef" href="resource.proc#3ff3035b-b3bc-44ab-a088-71ddd642756b?fileId=0ea3f4d0-b077-4a22-8abb-52fc871623cf$type=proc$name=ALIM_ODS_ENTETE?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WYDYMn-tEe6IE6AcCtnNjw" x="55" y="140"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WYDYMn-tEe6IE6AcCtnNjw" x="190" y="130"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_WjM4QH-tEe6IE6AcCtnNjw" type="2003">
     <children xmi:type="notation:Node" xmi:id="_WjOGYH-tEe6IE6AcCtnNjw" type="5003"/>
@@ -55,7 +56,7 @@ SQL_QUERY&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_WjM4QX-tEe6IE6AcCtnNjw" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionProcessRef" href="resource.proc#3de00298-7f0a-4cd7-8e07-9fedf53ad662?fileId=0ea3f4d0-b077-4a22-8abb-52fc871623cf$type=proc$name=ALIM_ODS_PIED?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WjM4Qn-tEe6IE6AcCtnNjw" x="65" y="440"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_WjM4Qn-tEe6IE6AcCtnNjw" x="85" y="430"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_oejqkH-tEe6IE6AcCtnNjw" type="2001">
     <children xmi:type="notation:Node" xmi:id="_oemG0H-tEe6IE6AcCtnNjw" type="5001"/>
@@ -71,7 +72,7 @@ SQL_QUERY&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_oejqkX-tEe6IE6AcCtnNjw" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="resource.proc#62f0d47a-0a10-4c7d-bafc-69b07e74a537?fileId=0ea3f4d0-b077-4a22-8abb-52fc871623cf$type=proc$name=END?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oejqkn-tEe6IE6AcCtnNjw" x="90" y="540"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_oejqkn-tEe6IE6AcCtnNjw" x="225" y="530"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_ou6awH-tEe6IE6AcCtnNjw" type="2001">
     <children xmi:type="notation:Node" xmi:id="_ou7o4H-tEe6IE6AcCtnNjw" type="5001"/>
@@ -87,7 +88,7 @@ SQL_QUERY&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_ou6awX-tEe6IE6AcCtnNjw" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="resource.proc#5ea3e384-49e0-4ea9-9af2-b30a8b880b74?fileId=0ea3f4d0-b077-4a22-8abb-52fc871623cf$type=proc$name=START?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ou6awn-tEe6IE6AcCtnNjw" x="90" y="40"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ou6awn-tEe6IE6AcCtnNjw" x="225" y="30"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_JIHWsH-uEe6IE6AcCtnNjw" type="2003">
     <children xmi:type="notation:Node" xmi:id="_JIKaAH-uEe6IE6AcCtnNjw" type="5003"/>
@@ -103,7 +104,7 @@ SQL_QUERY&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_JIHWsX-uEe6IE6AcCtnNjw" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionProcessRef" href="resource.proc#6f94c40a-8366-4c0d-b454-1f5dd51e2f1d?fileId=0ea3f4d0-b077-4a22-8abb-52fc871623cf$type=proc$name=ALIM_ALL_ODS_F_CLIENT?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JIHWsn-uEe6IE6AcCtnNjw" x="35" y="340"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_JIHWsn-uEe6IE6AcCtnNjw" x="30" y="330"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_UYL8wH-uEe6IE6AcCtnNjw" type="2001">
     <children xmi:type="notation:Node" xmi:id="_UYPnIH-uEe6IE6AcCtnNjw" type="5001"/>
@@ -119,13 +120,13 @@ SQL_QUERY&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_UYL8wX-uEe6IE6AcCtnNjw" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="resource.proc#aeaaa0d6-e863-4a87-a084-a0b02aa6a6a9?fileId=0ea3f4d0-b077-4a22-8abb-52fc871623cf$type=proc$name=CHECK_ENTETE_PRESENT?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UYL8wn-uEe6IE6AcCtnNjw" x="30" y="240"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_UYL8wn-uEe6IE6AcCtnNjw" x="165" y="230"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_gVp0UH-uEe6IE6AcCtnNjw" type="2005">
     <children xmi:type="notation:Node" xmi:id="_gVsQkH-uEe6IE6AcCtnNjw" type="5005"/>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_gVp0UX-uEe6IE6AcCtnNjw" fontName="Segoe UI"/>
     <element xmi:type="proc:Parameter" href="resource.proc#f7a9bac9-1328-4566-877e-6f71a5bd4e70?fileId=0ea3f4d0-b077-4a22-8abb-52fc871623cf$type=proc$name=NB_ENTETE?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gVp0Un-uEe6IE6AcCtnNjw" x="250" y="30"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_gVp0Un-uEe6IE6AcCtnNjw" x="385" y="30"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_TmVegX-tEe6IE6AcCtnNjw"/>
   <element xmi:type="proc:ActionProcess" href="resource.proc#0ea3f4d0-b077-4a22-8abb-52fc871623cf?fileId=0ea3f4d0-b077-4a22-8abb-52fc871623cf$type=proc$name=ODS_F_CLIENT?"/>
@@ -141,16 +142,16 @@ SQL_QUERY&#xD;
     <styles xmi:type="notation:RoutingStyle" xmi:id="_3Fp20X-tEe6IE6AcCtnNjw"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_3Fp20n-tEe6IE6AcCtnNjw" fontName="Segoe UI"/>
     <element xmi:type="proc:Link" href="resource.proc#96483dcb-68f3-427d-b8cd-d92d5b8b79fa?fileId=0ea3f4d0-b077-4a22-8abb-52fc871623cf$type=proc?"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3Fp203-tEe6IE6AcCtnNjw" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_3Fp203-tEe6IE6AcCtnNjw" points="[0, 0, -93, -60]$[93, 60, 0, 0]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3FrE8H-tEe6IE6AcCtnNjw" id="(0.4962962962962963,1.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3a4f8H-tEe6IE6AcCtnNjw" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_3a4f8H-tEe6IE6AcCtnNjw" id="(0.25,0.0)"/>
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_JqE0QH-uEe6IE6AcCtnNjw" type="4001" source="_JIHWsH-uEe6IE6AcCtnNjw" target="_WjM4QH-tEe6IE6AcCtnNjw">
     <styles xmi:type="notation:RoutingStyle" xmi:id="_JqE0QX-uEe6IE6AcCtnNjw"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_JqE0Qn-uEe6IE6AcCtnNjw" fontName="Segoe UI"/>
     <element xmi:type="proc:Link" href="resource.proc#5a5f7077-9807-4387-98b5-7c4f73dab765?fileId=0ea3f4d0-b077-4a22-8abb-52fc871623cf$type=proc?"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JqE0Q3-uEe6IE6AcCtnNjw" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JqFbUH-uEe6IE6AcCtnNjw" id="(0.5,1.0)"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_JqFbUH-uEe6IE6AcCtnNjw" id="(0.643979057591623,1.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_J9gtoH-uEe6IE6AcCtnNjw" id="(0.4962962962962963,0.0)"/>
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_amX9UH-uEe6IE6AcCtnNjw" type="4001" source="_WYDYMH-tEe6IE6AcCtnNjw" target="_UYL8wH-uEe6IE6AcCtnNjw">
@@ -165,9 +166,17 @@ SQL_QUERY&#xD;
     <styles xmi:type="notation:RoutingStyle" xmi:id="_krcI0X-uEe6IE6AcCtnNjw"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_krcI0n-uEe6IE6AcCtnNjw" fontName="Segoe UI"/>
     <element xmi:type="proc:Link" href="resource.proc#48ce5b13-7ed1-48d7-b522-3b2d6d098dc0?fileId=0ea3f4d0-b077-4a22-8abb-52fc871623cf$type=proc?"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_krcI03-uEe6IE6AcCtnNjw" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_krdW8H-uEe6IE6AcCtnNjw" id="(0.4975369458128079,1.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Bq66cH-wEe6IE6AcCtnNjw" id="(0.5,0.0)"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_krcI03-uEe6IE6AcCtnNjw" points="[0, 0, 90, -60]$[-90, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_krdW8H-uEe6IE6AcCtnNjw" id="(0.24630541871921183,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Bq66cH-wEe6IE6AcCtnNjw" id="(0.4973821989528796,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_sBVpQH-3Ee6IE6AcCtnNjw" type="4001" source="_UYL8wH-uEe6IE6AcCtnNjw" target="_oejqkH-tEe6IE6AcCtnNjw">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_sBVpQX-3Ee6IE6AcCtnNjw"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_sBVpQn-3Ee6IE6AcCtnNjw" fontName="Segoe UI"/>
+    <element xmi:type="proc:Link" href="resource.proc#71ad91c4-8ff2-4695-bb7a-4357f38c1024?fileId=0ea3f4d0-b077-4a22-8abb-52fc871623cf$type=proc?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_sBVpQ3-3Ee6IE6AcCtnNjw" points="[7, 20, 0, -246]$[8, 260, 1, -6]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sBWQUH-3Ee6IE6AcCtnNjw" id="(0.47783251231527096,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_sBWQUX-3Ee6IE6AcCtnNjw" id="(0.55,0.15)"/>
   </edges>
 </notation:Diagram>
 ]]></diagram>

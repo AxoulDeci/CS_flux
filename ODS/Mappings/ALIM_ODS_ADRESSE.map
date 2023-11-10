@@ -66,6 +66,12 @@
         <expression>ADRESSE.PAYS</expression>
       </expression>
     </field>
+    <field id="_YQS59H-yEe6IE6AcCtnNjw" name="ID_FICHIER" ref="resource.md#_G0ItcH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?">
+      <expression id="_YQS59X-yEe6IE6AcCtnNjw" setDescriptorRef="_mSvgQHo8Ee6i1bEIfNaCgQ"/>
+    </field>
+    <field id="_YQS58n-yEe6IE6AcCtnNjw" name="DATE_CREATION" ref="resource.md#_G0IGZn-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?">
+      <expression id="_YQS583-yEe6IE6AcCtnNjw" setDescriptorRef="_mSvgQHo8Ee6i1bEIfNaCgQ"/>
+    </field>
     <setDescriptor id="_mSvgQHo8Ee6i1bEIfNaCgQ" label="A"/>
   </datastore>
   <datastore id="_i9OV_Xo8Ee6i1bEIfNaCgQ" alias="ADRESSE" dataset="_i9OWMHo8Ee6i1bEIfNaCgQ" ref="resource.md#_AsBF4XSyEe6Cj7jyPVDy-A?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=ADRESSE?">
@@ -156,7 +162,7 @@
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="2e5180e3-98bb-40fe-862b-66a4bef33ddb" x="258" y="40"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="ba1a3d19-2c49-45a8-a6e8-9975d6f6a907"/>
-  <element xmi:type="map:Map" href="resource.map#_i9NH0Ho8Ee6i1bEIfNaCgQ?fileId=_i9NH0Ho8Ee6i1bEIfNaCgQ$type=map$name=ALIM_ODS_ADRESSE_v2?"/>
+  <element xmi:type="map:Map" href="resource.map#_i9NH0Ho8Ee6i1bEIfNaCgQ?fileId=_i9NH0Ho8Ee6i1bEIfNaCgQ$type=map$name=ALIM_ODS_ADRESSE?"/>
   <edges xmi:type="notation:Edge" xmi:id="_mS2N8Ho8Ee6i1bEIfNaCgQ" type="targetLink" source="5c522979-fc3f-4a61-92ca-3ef7679401e4" target="28a57bde-5884-424d-8320-0ad3b1580149">
     <element xsi:nil="true"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_mS2N8Xo8Ee6i1bEIfNaCgQ" points="[-83, 1, 447, 0]$[-441, 0, 89, -1]"/>
