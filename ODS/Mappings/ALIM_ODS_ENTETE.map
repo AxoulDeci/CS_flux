@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map xmlns:map="http://www.indy.com/v2/map" id="_V_P-AH-qEe6IE6AcCtnNjw" internalVersion="8" tech="resource.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
+  <datastore id="_ffvc0H-qEe6IE6AcCtnNjw" alias="ODS_ENTETE" dataset="_ffx5EX-qEe6IE6AcCtnNjw" ref="resource.md#_YNcT4X-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ODS_ENTETE?" subExpression="[A]">
+    <field id="_ffxSAH-qEe6IE6AcCtnNjw" enable="true" insert="true" name="TYPE_LIGNE" ref="resource.md#_YRqFgH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_LIGNE?" update="true">
+      <expression id="_g6x3cX-qEe6IE6AcCtnNjw" setDescriptorRef="_g6x3cH-qEe6IE6AcCtnNjw">
+        <expression>ENTETE.TYPE_LIGNE</expression>
+      </expression>
+    </field>
+    <field id="_ffxSA3-qEe6IE6AcCtnNjw" enable="true" insert="true" name="DATE_ENTETE" ref="resource.md#_YRshwH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_ENTETE?" update="true">
+      <expression id="_g6x3cn-qEe6IE6AcCtnNjw" setDescriptorRef="_g6x3cH-qEe6IE6AcCtnNjw">
+        <expression>ENTETE.DATE</expression>
+      </expression>
+    </field>
+    <field id="_ffxSBX-qEe6IE6AcCtnNjw" enable="true" insert="true" name="SEQUENCE" ref="resource.md#_YRtI1n-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SEQUENCE?" update="true">
+      <expression id="_g6yegH-qEe6IE6AcCtnNjw" setDescriptorRef="_g6x3cH-qEe6IE6AcCtnNjw">
+        <expression>ENTETE.SEQUENCE</expression>
+      </expression>
+    </field>
+    <field id="_ffxSBH-qEe6IE6AcCtnNjw" enable="true" insert="true" name="SOURCE" ref="resource.md#_YRtI0H-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SOURCE?" update="true">
+      <expression id="_g6yegX-qEe6IE6AcCtnNjw" setDescriptorRef="_g6x3cH-qEe6IE6AcCtnNjw">
+        <expression>ENTETE.SOURCE</expression>
+      </expression>
+    </field>
+    <field id="_ffxSAX-qEe6IE6AcCtnNjw" enable="true" insert="true" name="TYPE_FICHIER" ref="resource.md#_YRqskH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_FICHIER?" update="true">
+      <expression id="_g6yegn-qEe6IE6AcCtnNjw" setDescriptorRef="_g6x3cH-qEe6IE6AcCtnNjw">
+        <expression>ENTETE.TYPE_FICHIER</expression>
+      </expression>
+    </field>
+    <field id="_ffxSAn-qEe6IE6AcCtnNjw" enable="true" insert="true" name="VERSION" ref="resource.md#_YRr6sH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=VERSION?" update="true">
+      <expression id="_g6yeg3-qEe6IE6AcCtnNjw" setDescriptorRef="_g6x3cH-qEe6IE6AcCtnNjw">
+        <expression>ENTETE.VERSION</expression>
+      </expression>
+    </field>
+    <setDescriptor id="_g6x3cH-qEe6IE6AcCtnNjw" label="A"/>
+  </datastore>
+  <datastore id="_fzll4H-qEe6IE6AcCtnNjw" alias="ENTETE" dataset="_fzm0AH-qEe6IE6AcCtnNjw" ref="resource.md#_SbAtIX-oEe6IE6AcCtnNjw?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=ENTETE?">
+    <field id="_fzmM9X-qEe6IE6AcCtnNjw" fullAlias="SOURCE" name="SOURCE" parent="_fzmM8H-qEe6IE6AcCtnNjw" ref="resource.md#_2iVgoH-oEe6IE6AcCtnNjw?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=SOURCE?"/>
+    <field id="_fzmM83-qEe6IE6AcCtnNjw" fullAlias="VERSION" name="VERSION" parent="_fzmM8H-qEe6IE6AcCtnNjw" ref="resource.md#_2eSuIH-oEe6IE6AcCtnNjw?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=VERSION?"/>
+    <field id="_fzmM8H-qEe6IE6AcCtnNjw" expand="true" name="ENTETE" ref="resource.md#_SbAtIX-oEe6IE6AcCtnNjw?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=ENTETE?" updateKey="true"/>
+    <field id="_fzmM9n-qEe6IE6AcCtnNjw" fullAlias="SEQUENCE" name="SEQUENCE" parent="_fzmM8H-qEe6IE6AcCtnNjw" ref="resource.md#_2jtZoH-oEe6IE6AcCtnNjw?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=SEQUENCE?"/>
+    <field id="_fzmM9H-qEe6IE6AcCtnNjw" fullAlias="DATE" name="DATE" parent="_fzmM8H-qEe6IE6AcCtnNjw" ref="resource.md#_2fvfoH-oEe6IE6AcCtnNjw?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=DATE?"/>
+    <field id="_fzmM8n-qEe6IE6AcCtnNjw" fullAlias="TYPE_FICHIER" name="TYPE_FICHIER" parent="_fzmM8H-qEe6IE6AcCtnNjw" ref="resource.md#_2c61IH-oEe6IE6AcCtnNjw?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=TYPE_FICHIER?"/>
+    <field id="_fzmM8X-qEe6IE6AcCtnNjw" fullAlias="TYPE_LIGNE" name="TYPE_LIGNE" parent="_fzmM8H-qEe6IE6AcCtnNjw" ref="resource.md#_2bUSoH-oEe6IE6AcCtnNjw?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=TYPE_LIGNE?"/>
+  </datastore>
+  <template id="_g6zsoH-qEe6IE6AcCtnNjw" name="I_ODS_ENTETE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_ffvc0H-qEe6IE6AcCtnNjw">
+    <parameter id="_iETEQH-qEe6IE6AcCtnNjw" name="truncateTargetTable" value="true"/>
+    <parameter id="_ightQH-qEe6IE6AcCtnNjw" name="integrationStrategy" value="append"/>
+    <parameter id="_8kQU4H-qEe6IE6AcCtnNjw" name="doUpdate" value="false"/>
+  </template>
+  <template id="_g64lIH-qEe6IE6AcCtnNjw" name="L1_ODS_ENTETE" process="resource.proc#_a-mEoaIhEd68f8w2ej5O-w?fileId=_a-mEoaIhEd68f8w2ej5O-w$type=proc$name=LOAD%20File%20to%20Rdbms?" sourceId="_fzll4H-qEe6IE6AcCtnNjw" targetId="_ffvc0H-qEe6IE6AcCtnNjw"/>
+  <dataSet id="_ffx5EX-qEe6IE6AcCtnNjw">
+    <container>_ffvc0H-qEe6IE6AcCtnNjw</container>
+  </dataSet>
+  <dataSet id="_fzm0AH-qEe6IE6AcCtnNjw">
+    <container>_fzll4H-qEe6IE6AcCtnNjw</container>
+  </dataSet>
+  <hint>
+    <usedField>#_fzmM9X-qEe6IE6AcCtnNjw</usedField>
+    <usedField>#_fzmM83-qEe6IE6AcCtnNjw</usedField>
+    <usedField>#_fzmM9n-qEe6IE6AcCtnNjw</usedField>
+    <usedField>#_fzmM9H-qEe6IE6AcCtnNjw</usedField>
+    <usedField>#_fzmM8n-qEe6IE6AcCtnNjw</usedField>
+    <usedField>#_fzmM8X-qEe6IE6AcCtnNjw</usedField>
+  </hint>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="_V_kHEH-qEe6IE6AcCtnNjw" type="Map" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_ffzuQH-qEe6IE6AcCtnNjw" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_ffzuQn-qEe6IE6AcCtnNjw" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ffzuQ3-qEe6IE6AcCtnNjw" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ffzuRH-qEe6IE6AcCtnNjw" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ffzuRX-qEe6IE6AcCtnNjw" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ffzuRn-qEe6IE6AcCtnNjw" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ffzuR3-qEe6IE6AcCtnNjw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ffzuSH-qEe6IE6AcCtnNjw"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ffzuSX-qEe6IE6AcCtnNjw" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_ffzuSn-qEe6IE6AcCtnNjw"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_ffzuS3-qEe6IE6AcCtnNjw" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_ffzuTH-qEe6IE6AcCtnNjw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_ffzuTX-qEe6IE6AcCtnNjw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_ffzuTn-qEe6IE6AcCtnNjw" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_ffvc0H-qEe6IE6AcCtnNjw?fileId=_V_P-AH-qEe6IE6AcCtnNjw$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_ffzuQX-qEe6IE6AcCtnNjw" x="255" y="40"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_fzoCIH-qEe6IE6AcCtnNjw" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_fzoCIn-qEe6IE6AcCtnNjw" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_fzoCI3-qEe6IE6AcCtnNjw" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_fzoCJH-qEe6IE6AcCtnNjw" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_fzoCJX-qEe6IE6AcCtnNjw" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_fzoCJn-qEe6IE6AcCtnNjw" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_fzoCJ3-qEe6IE6AcCtnNjw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_fzoCKH-qEe6IE6AcCtnNjw"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_fzoCKX-qEe6IE6AcCtnNjw" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_fzoCKn-qEe6IE6AcCtnNjw"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_fzoCK3-qEe6IE6AcCtnNjw" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_fzoCLH-qEe6IE6AcCtnNjw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_fzoCLX-qEe6IE6AcCtnNjw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_fzoCLn-qEe6IE6AcCtnNjw" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_fzll4H-qEe6IE6AcCtnNjw?fileId=_V_P-AH-qEe6IE6AcCtnNjw$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_fzoCIX-qEe6IE6AcCtnNjw" x="32" y="32"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_V_kHEX-qEe6IE6AcCtnNjw"/>
+  <element xmi:type="map:Map" href="resource.map#_V_P-AH-qEe6IE6AcCtnNjw?fileId=_V_P-AH-qEe6IE6AcCtnNjw$type=map$name=ALIM_ODS_ENTETE?"/>
+  <edges xmi:type="notation:Edge" xmi:id="_g62I4H-qEe6IE6AcCtnNjw" type="targetLink" source="_ffzuQH-qEe6IE6AcCtnNjw" target="_fzoCIH-qEe6IE6AcCtnNjw">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_g62I4X-qEe6IE6AcCtnNjw" points="[-81, -6, 257, 19]$[-250, -19, 88, 6]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_g62v8n-qEe6IE6AcCtnNjw" type="targetDataSetLink" source="_ffzuQH-qEe6IE6AcCtnNjw" target="_ffzuQH-qEe6IE6AcCtnNjw">
+    <element xmi:type="map:DataSet" href="resource.map#_fzm0AH-qEe6IE6AcCtnNjw?fileId=_V_P-AH-qEe6IE6AcCtnNjw$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_g62v83-qEe6IE6AcCtnNjw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_g63XAH-qEe6IE6AcCtnNjw" type="targetSetLink" source="_ffzuQH-qEe6IE6AcCtnNjw" target="_ffzuQH-qEe6IE6AcCtnNjw">
+    <element xmi:type="map:SetDescriptor" href="resource.map#_g6x3cH-qEe6IE6AcCtnNjw?fileId=_V_P-AH-qEe6IE6AcCtnNjw$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_g63XAX-qEe6IE6AcCtnNjw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>
+]]></diagram>
+</map:map>

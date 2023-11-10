@@ -153,7 +153,7 @@
       <styles xmi:type="notation:DrawerStyle" xmi:id="3a02109d-8406-4247-bd9e-fbd703e04311"/>
     </children>
     <element xmi:type="map:Datastore" href="resource.map#_i9Nu4Ho8Ee6i1bEIfNaCgQ?fileId=_i9NH0Ho8Ee6i1bEIfNaCgQ$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="2e5180e3-98bb-40fe-862b-66a4bef33ddb" x="298" y="43"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="2e5180e3-98bb-40fe-862b-66a4bef33ddb" x="258" y="40"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="ba1a3d19-2c49-45a8-a6e8-9975d6f6a907"/>
   <element xmi:type="map:Map" href="resource.map#_i9NH0Ho8Ee6i1bEIfNaCgQ?fileId=_i9NH0Ho8Ee6i1bEIfNaCgQ$type=map$name=ALIM_ODS_ADRESSE_v2?"/>

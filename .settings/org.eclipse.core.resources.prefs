@@ -1,2 +1,9 @@
 eclipse.preferences.version=1
-encoding//ODS/ALIM_ODS_ADRESSE.map=UTF-8
+encoding//ODS/Mappings/ALIM_ODS_CLIENT.map=UTF-8
+encoding//ODS/Mappings/ALIM_ODS_COMPTE.map=UTF-8
+encoding//ODS/Mappings/ALIM_ODS_EMAIL.map=UTF-8
+encoding//ODS/Mappings/ALIM_ODS_ENTETE.map=UTF-8
+encoding//ODS/Mappings/ALIM_ODS_PIED.map=UTF-8
+encoding//ODS/Mappings/ALIM_ODS_TELEPHONE.map=UTF-8
+encoding//ODS/Process/ALIM_ALL_ODS_F_CLIENT.proc=UTF-8
+encoding//ODS/Process/ODS_F_CLIENT.proc=UTF-8

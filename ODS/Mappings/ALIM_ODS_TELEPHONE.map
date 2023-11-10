@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map xmlns:map="http://www.indy.com/v2/map" id="_PY1SYH-kEe6JNIokCBopZg" internalVersion="8" tech="resource.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
+  <datastore id="_uvorQH-mEe6IE6AcCtnNjw" alias="TEL" dataset="_uvqgdH-mEe6IE6AcCtnNjw" ref="resource.md#_BJj9gXSyEe6Cj7jyPVDy-A?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=TEL?">
+    <field id="_uvp5ZH-mEe6IE6AcCtnNjw" fullAlias="CLE_CLIENT" name="CLE_CLIENT" parent="_uvp5YX-mEe6IE6AcCtnNjw" ref="resource.md#_62ONYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=CLE_CLIENT?"/>
+    <field id="_uvp5Y3-mEe6IE6AcCtnNjw" fullAlias="ACTION" name="ACTION" parent="_uvp5YX-mEe6IE6AcCtnNjw" ref="resource.md#_6wbHYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=ACTION?"/>
+    <field id="_uvp5aH-mEe6IE6AcCtnNjw" fullAlias="TYPE" name="TYPE" parent="_uvp5YX-mEe6IE6AcCtnNjw" ref="resource.md#_7roycHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=TYPE?"/>
+    <field id="_uvp5Yn-mEe6IE6AcCtnNjw" fullAlias="TYPE_LIGNE" name="TYPE_LIGNE" parent="_uvp5YX-mEe6IE6AcCtnNjw" ref="resource.md#_6lvhYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=TYPE_LIGNE?"/>
+    <field id="_uvp5Z3-mEe6IE6AcCtnNjw" fullAlias="FAVORI" name="FAVORI" parent="_uvp5YX-mEe6IE6AcCtnNjw" ref="resource.md#_7oCr4HomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=FAVORI?"/>
+    <field id="_uvp5Zn-mEe6IE6AcCtnNjw" fullAlias="STATUS" name="STATUS" parent="_uvp5YX-mEe6IE6AcCtnNjw" ref="resource.md#_7hQHYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=STATUS?"/>
+    <field id="_uvp5YX-mEe6IE6AcCtnNjw" expand="true" name="TEL" ref="resource.md#_BJj9gXSyEe6Cj7jyPVDy-A?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=TEL?" updateKey="true"/>
+    <field id="_uvp5ZX-mEe6IE6AcCtnNjw" fullAlias="PHONE" name="PHONE" parent="_uvp5YX-mEe6IE6AcCtnNjw" ref="resource.md#_7aibYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=PHONE?"/>
+  </datastore>
+  <datastore id="_vVMPYH-mEe6IE6AcCtnNjw" alias="ODS_TELEPHONE" dataset="_vVPSsH-mEe6IE6AcCtnNjw" ref="resource.md#_bkye4XozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ODS_TELEPHONE?" subExpression="[A]">
+    <field id="_vVNdgX-mEe6IE6AcCtnNjw" enable="true" insert="true" name="CLE_CLIENT" ref="resource.md#_boSe0HozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CLIENT?" update="true">
+      <expression id="_vucc4H-mEe6IE6AcCtnNjw" setDescriptorRef="_vub10H-mEe6IE6AcCtnNjw">
+        <expression>TEL.CLE_CLIENT</expression>
+      </expression>
+    </field>
+    <field id="_vVM2cX-mEe6IE6AcCtnNjw" enable="true" insert="true" name="TYPE_LIGNE" ref="resource.md#_boQCkHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_LIGNE?" update="true">
+      <expression id="_vucc4X-mEe6IE6AcCtnNjw" setDescriptorRef="_vub10H-mEe6IE6AcCtnNjw">
+        <expression>TEL.TYPE_LIGNE</expression>
+      </expression>
+    </field>
+    <field id="_vVOEkH-mEe6IE6AcCtnNjw" enable="true" insert="true" name="TYPE" ref="resource.md#_boTs_HozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE?" update="true">
+      <expression id="_vucc4n-mEe6IE6AcCtnNjw" setDescriptorRef="_vub10H-mEe6IE6AcCtnNjw">
+        <expression>TEL.TYPE</expression>
+      </expression>
+    </field>
+    <field id="_vVNdgH-mEe6IE6AcCtnNjw" enable="true" insert="true" name="ACTION" ref="resource.md#_boRQsHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ACTION?" update="true">
+      <expression id="_vucc43-mEe6IE6AcCtnNjw" setDescriptorRef="_vub10H-mEe6IE6AcCtnNjw">
+        <expression>TEL.ACTION</expression>
+      </expression>
+    </field>
+    <field id="_vVNdg3-mEe6IE6AcCtnNjw" enable="true" insert="true" name="STATUS" ref="resource.md#_boTs8HozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS?" update="true">
+      <expression id="_vudD8H-mEe6IE6AcCtnNjw" setDescriptorRef="_vub10H-mEe6IE6AcCtnNjw">
+        <expression>TEL.STATUS</expression>
+      </expression>
+    </field>
+    <field id="_vVOEkX-mEe6IE6AcCtnNjw" name="DATE_CREATION" ref="resource.md#_G_qoBn-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?">
+      <expression id="_vudD8X-mEe6IE6AcCtnNjw" setDescriptorRef="_vub10H-mEe6IE6AcCtnNjw">
+        <expression></expression>
+      </expression>
+    </field>
+    <field id="_vVNdhH-mEe6IE6AcCtnNjw" enable="true" insert="true" name="FAVORI" ref="resource.md#_boTs9nozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=FAVORI?" update="true">
+      <expression id="_vudD8n-mEe6IE6AcCtnNjw" setDescriptorRef="_vub10H-mEe6IE6AcCtnNjw">
+        <expression>TEL.FAVORI</expression>
+      </expression>
+    </field>
+    <field id="_vVNdgn-mEe6IE6AcCtnNjw" enable="true" insert="true" name="PHONE" ref="resource.md#_boTF4HozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=PHONE?" update="true">
+      <expression id="_vudD83-mEe6IE6AcCtnNjw" setDescriptorRef="_vub10H-mEe6IE6AcCtnNjw">
+        <expression>TEL.PHONE</expression>
+      </expression>
+    </field>
+    <field id="_vVOEkn-mEe6IE6AcCtnNjw" name="ID_FICHIER" ref="resource.md#_G_rPEH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?">
+      <expression id="_vudD9H-mEe6IE6AcCtnNjw" setDescriptorRef="_vub10H-mEe6IE6AcCtnNjw">
+        <expression></expression>
+      </expression>
+    </field>
+    <setDescriptor id="_vub10H-mEe6IE6AcCtnNjw" label="A"/>
+  </datastore>
+  <template id="_vueSFn-mEe6IE6AcCtnNjw" name="I_ODS_TELEPHONE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_vVMPYH-mEe6IE6AcCtnNjw">
+    <parameter id="_CmdEsH-nEe6IE6AcCtnNjw" name="doUpdate" value="false"/>
+    <parameter id="_DruDoH-nEe6IE6AcCtnNjw" name="integrationStrategy" value="append"/>
+  </template>
+  <template id="_vuk_wH-mEe6IE6AcCtnNjw" name="L1_ODS_TELEPHONE" process="resource.proc#_a-mEoaIhEd68f8w2ej5O-w?fileId=_a-mEoaIhEd68f8w2ej5O-w$type=proc$name=LOAD%20File%20to%20Rdbms?" sourceId="_uvorQH-mEe6IE6AcCtnNjw" targetId="_vVMPYH-mEe6IE6AcCtnNjw"/>
+  <dataSet id="_uvqgdH-mEe6IE6AcCtnNjw">
+    <container>_uvorQH-mEe6IE6AcCtnNjw</container>
+  </dataSet>
+  <dataSet id="_vVPSsH-mEe6IE6AcCtnNjw">
+    <container>_vVMPYH-mEe6IE6AcCtnNjw</container>
+  </dataSet>
+  <hint>
+    <usedField>#_uvp5ZH-mEe6IE6AcCtnNjw</usedField>
+    <usedField>#_uvp5Y3-mEe6IE6AcCtnNjw</usedField>
+    <usedField>#_uvp5aH-mEe6IE6AcCtnNjw</usedField>
+    <usedField>#_uvp5Yn-mEe6IE6AcCtnNjw</usedField>
+    <usedField>#_uvp5Z3-mEe6IE6AcCtnNjw</usedField>
+    <usedField>#_uvp5Zn-mEe6IE6AcCtnNjw</usedField>
+    <usedField>#_uvp5ZX-mEe6IE6AcCtnNjw</usedField>
+  </hint>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="_dagygH-mEe6IE6AcCtnNjw" type="Map" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_uvsVon-mEe6IE6AcCtnNjw" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_uvs8sH-mEe6IE6AcCtnNjw" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_uvs8sX-mEe6IE6AcCtnNjw" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_uvs8sn-mEe6IE6AcCtnNjw" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_uvs8s3-mEe6IE6AcCtnNjw" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_uvs8tH-mEe6IE6AcCtnNjw" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_uvs8tX-mEe6IE6AcCtnNjw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_uvs8tn-mEe6IE6AcCtnNjw"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_uvs8t3-mEe6IE6AcCtnNjw" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_uvs8uH-mEe6IE6AcCtnNjw"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_uvs8uX-mEe6IE6AcCtnNjw" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_uvs8un-mEe6IE6AcCtnNjw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_uvs8u3-mEe6IE6AcCtnNjw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_uvs8vH-mEe6IE6AcCtnNjw" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_uvorQH-mEe6IE6AcCtnNjw?fileId=_PY1SYH-kEe6JNIokCBopZg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uvsVo3-mEe6IE6AcCtnNjw" x="32" y="40"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_vVQg0H-mEe6IE6AcCtnNjw" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_vVQg0n-mEe6IE6AcCtnNjw" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_vVQg03-mEe6IE6AcCtnNjw" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_vVQg1H-mEe6IE6AcCtnNjw" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_vVRH4H-mEe6IE6AcCtnNjw" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_vVRH4X-mEe6IE6AcCtnNjw" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_vVRH4n-mEe6IE6AcCtnNjw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_vVRH43-mEe6IE6AcCtnNjw"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_vVRH5H-mEe6IE6AcCtnNjw" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_vVRH5X-mEe6IE6AcCtnNjw"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_vVRH5n-mEe6IE6AcCtnNjw" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_vVRH53-mEe6IE6AcCtnNjw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_vVRH6H-mEe6IE6AcCtnNjw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_vVRH6X-mEe6IE6AcCtnNjw" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_vVMPYH-mEe6IE6AcCtnNjw?fileId=_PY1SYH-kEe6JNIokCBopZg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vVQg0X-mEe6IE6AcCtnNjw" x="245" y="32"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_dagygX-mEe6IE6AcCtnNjw"/>
+  <element xmi:type="map:Map" href="resource.map#_PY1SYH-kEe6JNIokCBopZg?fileId=_PY1SYH-kEe6JNIokCBopZg$type=map$name=ALIM_ODS_TELEPHONE?"/>
+  <edges xmi:type="notation:Edge" xmi:id="_vuh8cH-mEe6IE6AcCtnNjw" type="targetLink" source="_vVQg0H-mEe6IE6AcCtnNjw" target="_uvsVon-mEe6IE6AcCtnNjw">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vuh8cX-mEe6IE6AcCtnNjw" points="[-88, -10, 168, 19]$[-173, -20, 83, 9]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_vujKkH-mEe6IE6AcCtnNjw" type="targetDataSetLink" source="_vVQg0H-mEe6IE6AcCtnNjw" target="_vVQg0H-mEe6IE6AcCtnNjw">
+    <element xmi:type="map:DataSet" href="resource.map#_uvqgdH-mEe6IE6AcCtnNjw?fileId=_PY1SYH-kEe6JNIokCBopZg$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vujKkX-mEe6IE6AcCtnNjw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_vujKkn-mEe6IE6AcCtnNjw" type="targetSetLink" source="_vVQg0H-mEe6IE6AcCtnNjw" target="_vVQg0H-mEe6IE6AcCtnNjw">
+    <element xmi:type="map:SetDescriptor" href="resource.map#_vub10H-mEe6IE6AcCtnNjw?fileId=_PY1SYH-kEe6JNIokCBopZg$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vujKk3-mEe6IE6AcCtnNjw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>
+]]></diagram>
+</map:map>
