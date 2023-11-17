@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map xmlns:map="http://www.indy.com/v2/map" id="_WIgAYIUrEe6kybSjKPTayw" internalVersion="8" tech="resource.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
+  <datastore id="_7ZfKoIUrEe6kybSjKPTayw" alias="SAS_TELEPHONE" control="true" dataset="_7ZjcEIUrEe6kybSjKPTayw" ref="resource.md#_He_f8H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_TELEPHONE?" subExpression="[A]">
+    <field id="_7Zg_0YUrEe6kybSjKPTayw" enable="true" insert="true" name="TYPE_LIGNE" ref="resource.md#_Him0oH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_LIGNE?" update="true">
+      <expression id="_7_9UwIUrEe6kybSjKPTayw" setDescriptorRef="_7_8tsIUrEe6kybSjKPTayw">
+        <expression>ODS_TELEPHONE.TYPE_LIGNE</expression>
+      </expression>
+    </field>
+    <field id="_7Zhm4IUrEe6kybSjKPTayw" enable="true" insert="true" name="ACTION" ref="resource.md#_HioCwH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ACTION?" update="true">
+      <expression id="_7_9UwYUrEe6kybSjKPTayw" setDescriptorRef="_7_8tsIUrEe6kybSjKPTayw">
+        <expression>ODS_TELEPHONE.ACTION</expression>
+      </expression>
+    </field>
+    <field id="_7ZiN8oUrEe6kybSjKPTayw" enable="true" insert="true" name="DATE_CREATION" ref="resource.md#_HisUMH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?" update="true">
+      <expression id="_7_9UwoUrEe6kybSjKPTayw" setDescriptorRef="_7_8tsIUrEe6kybSjKPTayw">
+        <expression>ODS_TELEPHONE.DATE_CREATION</expression>
+      </expression>
+    </field>
+    <field id="_7ZiN84UrEe6kybSjKPTayw" enable="true" insert="true" name="ID_FICHIER" ref="resource.md#_His7QH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?" update="true">
+      <expression id="_7_970IUrEe6kybSjKPTayw" setDescriptorRef="_7_8tsIUrEe6kybSjKPTayw">
+        <expression>ODS_TELEPHONE.ID_FICHIER</expression>
+      </expression>
+    </field>
+    <field id="_7ZiN8IUrEe6kybSjKPTayw" enable="true" insert="true" name="FAVORI" ref="resource.md#_HirGEH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=FAVORI?" update="true">
+      <expression id="_7_970YUrEe6kybSjKPTayw" setDescriptorRef="_7_8tsIUrEe6kybSjKPTayw">
+        <expression>ODS_TELEPHONE.FAVORI</expression>
+      </expression>
+    </field>
+    <field id="_7ZiN8YUrEe6kybSjKPTayw" enable="true" insert="true" name="TYPE" ref="resource.md#_HirtIH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE?" update="true" updateKey="true">
+      <expression id="_7_970oUrEe6kybSjKPTayw" setDescriptorRef="_7_8tsIUrEe6kybSjKPTayw">
+        <expression>ODS_TELEPHONE.TYPE</expression>
+      </expression>
+    </field>
+    <field id="_7Zi1AIUrEe6kybSjKPTayw" enable="true" insert="true" name="LIB_TYPE_TEL" ref="resource.md#_HiuJYH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_TYPE_TEL?" update="true">
+      <expression id="_7_9704UrEe6kybSjKPTayw" setDescriptorRef="_7_8tsIUrEe6kybSjKPTayw">
+        <expression>ODS_TELEPHONE.LIB_TYPE_TEL</expression>
+      </expression>
+    </field>
+    <field id="_7Zhm44UrEe6kybSjKPTayw" enable="true" insert="true" name="STATUS" ref="resource.md#_Hip38H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS?" update="true">
+      <expression id="_7_-i4IUrEe6kybSjKPTayw" setDescriptorRef="_7_8tsIUrEe6kybSjKPTayw">
+        <expression>ODS_TELEPHONE.STATUS</expression>
+      </expression>
+    </field>
+    <field id="_7Zhm4oUrEe6kybSjKPTayw" enable="true" insert="true" name="PHONE" ref="resource.md#_HipQ4H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=PHONE?" update="true">
+      <expression id="_7_-i4YUrEe6kybSjKPTayw" setDescriptorRef="_7_8tsIUrEe6kybSjKPTayw">
+        <expression>ODS_TELEPHONE.PHONE</expression>
+      </expression>
+    </field>
+    <field id="_7Zhm4YUrEe6kybSjKPTayw" enable="true" insert="true" name="CLE_CLIENT" ref="resource.md#_Hiop0H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CLIENT?" update="true" updateKey="true">
+      <expression id="_7_-i4oUrEe6kybSjKPTayw" setDescriptorRef="_7_8tsIUrEe6kybSjKPTayw">
+        <expression>ODS_TELEPHONE.CLE_CLIENT</expression>
+      </expression>
+    </field>
+    <constraint id="_7Zi1AYUrEe6kybSjKPTayw" name="SAS_TELEPHONE_PK" ref="resource.md#_-0SgAH-5Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_TELEPHONE_PK?" reject="true"/>
+    <constraint id="_ojUOgIUuEe6kybSjKPTayw" name="CTRL_FAVORI" ref="resource.md#_epBh4YUpEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FAVORI?" reject="true"/>
+    <constraint id="_ojU1kIUuEe6kybSjKPTayw" name="CTRL_PHONE" ref="resource.md#_F30SEYUpEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_PHONE?" reject="true"/>
+    <constraint id="_ojU1kYUuEe6kybSjKPTayw" name="CTRL_FK_CLIENT" ref="resource.md#_z38EwYUrEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FK_CLIENT?" reject="true"/>
+    <constraint id="_ojU1koUuEe6kybSjKPTayw" name="CTRL_STATUS" ref="resource.md#_RrPc0YUpEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
+    <constraint id="_ojU1k4UuEe6kybSjKPTayw" name="CTRL_TYPE" ref="resource.md#_-YjrMYUoEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_TYPE?" reject="true"/>
+    <setDescriptor id="_7_8tsIUrEe6kybSjKPTayw" label="A"/>
+  </datastore>
+  <datastore id="_7mrSEIUrEe6kybSjKPTayw" alias="ODS_TELEPHONE" dataset="_7muVYIUrEe6kybSjKPTayw" ref="resource.md#_bkye4XozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ODS_TELEPHONE?">
+    <field id="_7msgMoUrEe6kybSjKPTayw" fullAlias="PHONE" name="PHONE" ref="resource.md#_boTF4HozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=PHONE?"/>
+    <field id="_7msgMYUrEe6kybSjKPTayw" fullAlias="CLE_CLIENT" name="CLE_CLIENT" ref="resource.md#_boSe0HozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CLIENT?"/>
+    <field id="_7msgMIUrEe6kybSjKPTayw" fullAlias="ACTION" name="ACTION" ref="resource.md#_boRQsHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ACTION?"/>
+    <field id="_7mtHQYUrEe6kybSjKPTayw" fullAlias="DATE_CREATION" name="DATE_CREATION" ref="resource.md#_G_qoBn-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?"/>
+    <field id="_7msgM4UrEe6kybSjKPTayw" fullAlias="STATUS" name="STATUS" ref="resource.md#_boTs8HozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS?"/>
+    <field id="_7mtHQIUrEe6kybSjKPTayw" fullAlias="TYPE" name="TYPE" ref="resource.md#_boTs_HozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE?"/>
+    <field id="_7msgNIUrEe6kybSjKPTayw" fullAlias="FAVORI" name="FAVORI" ref="resource.md#_boTs9nozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=FAVORI?"/>
+    <field id="_7mtHQoUrEe6kybSjKPTayw" fullAlias="ID_FICHIER" name="ID_FICHIER" ref="resource.md#_G_rPEH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?"/>
+    <field id="_7mr5IYUrEe6kybSjKPTayw" fullAlias="TYPE_LIGNE" name="TYPE_LIGNE" ref="resource.md#_boQCkHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_LIGNE?"/>
+    <field id="_7mtHQ4UrEe6kybSjKPTayw" fullAlias="LIB_TYPE_TEL" name="LIB_TYPE_TEL" ref="resource.md#_M6gGYH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_TYPE_TEL?"/>
+  </datastore>
+  <template id="_7__J_4UrEe6kybSjKPTayw" name="I_SAS_TELEPHONE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_7ZfKoIUrEe6kybSjKPTayw">
+    <parameter id="_9eERgIUrEe6kybSjKPTayw" name="truncateTargetTable" value="true"/>
+    <parameter id="_9zlOgIUrEe6kybSjKPTayw" name="doUpdate" value="false"/>
+  </template>
+  <template id="_pE6NwIUwEe6kybSjKPTayw" name="R_SAS_TELEPHONE" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_7ZfKoIUrEe6kybSjKPTayw"/>
+  <dataSet id="_7ZjcEIUrEe6kybSjKPTayw">
+    <container>_7ZfKoIUrEe6kybSjKPTayw</container>
+  </dataSet>
+  <dataSet id="_7muVYIUrEe6kybSjKPTayw">
+    <container>_7mrSEIUrEe6kybSjKPTayw</container>
+  </dataSet>
+  <hint>
+    <usedField>#_7msgMoUrEe6kybSjKPTayw</usedField>
+    <usedField>#_7msgMYUrEe6kybSjKPTayw</usedField>
+    <usedField>#_7msgMIUrEe6kybSjKPTayw</usedField>
+    <usedField>#_7mtHQYUrEe6kybSjKPTayw</usedField>
+    <usedField>#_7msgM4UrEe6kybSjKPTayw</usedField>
+    <usedField>#_7mtHQIUrEe6kybSjKPTayw</usedField>
+    <usedField>#_7msgNIUrEe6kybSjKPTayw</usedField>
+    <usedField>#_7mtHQoUrEe6kybSjKPTayw</usedField>
+    <usedField>#_7mr5IYUrEe6kybSjKPTayw</usedField>
+    <usedField>#_7mtHQ4UrEe6kybSjKPTayw</usedField>
+  </hint>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="_WIyUQIUrEe6kybSjKPTayw" type="Map" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_7ZlRQIUrEe6kybSjKPTayw" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_7ZlRQoUrEe6kybSjKPTayw" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7ZlRQ4UrEe6kybSjKPTayw" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7ZlRRIUrEe6kybSjKPTayw" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7ZlRRYUrEe6kybSjKPTayw" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_7ZlRRoUrEe6kybSjKPTayw" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_7ZlRR4UrEe6kybSjKPTayw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_7ZlRSIUrEe6kybSjKPTayw"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7ZlRSYUrEe6kybSjKPTayw" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_7ZlRSoUrEe6kybSjKPTayw"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7ZlRS4UrEe6kybSjKPTayw" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_7ZlRTIUrEe6kybSjKPTayw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_7ZlRTYUrEe6kybSjKPTayw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_7ZlRToUrEe6kybSjKPTayw" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_7ZfKoIUrEe6kybSjKPTayw?fileId=_WIgAYIUrEe6kybSjKPTayw$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7ZlRQYUrEe6kybSjKPTayw" x="256" y="32"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_7mwKkIUrEe6kybSjKPTayw" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_7mwKkoUrEe6kybSjKPTayw" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7mwKk4UrEe6kybSjKPTayw" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7mwKlIUrEe6kybSjKPTayw" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7mwKlYUrEe6kybSjKPTayw" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_7mwKloUrEe6kybSjKPTayw" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_7mwKl4UrEe6kybSjKPTayw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_7mwKmIUrEe6kybSjKPTayw"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7mwKmYUrEe6kybSjKPTayw" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_7mwKmoUrEe6kybSjKPTayw"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7mwKm4UrEe6kybSjKPTayw" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_7mwKnIUrEe6kybSjKPTayw"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_7mwKnYUrEe6kybSjKPTayw"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_7mwKnoUrEe6kybSjKPTayw" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_7mrSEIUrEe6kybSjKPTayw?fileId=_WIgAYIUrEe6kybSjKPTayw$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7mwKkYUrEe6kybSjKPTayw" x="32" y="32"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_WIyUQYUrEe6kybSjKPTayw"/>
+  <element xmi:type="map:Map" href="resource.map#_WIgAYIUrEe6kybSjKPTayw?fileId=_WIgAYIUrEe6kybSjKPTayw$type=map$name=ALIM_SAS_TELEPHONE?"/>
+  <edges xmi:type="notation:Edge" xmi:id="_8ADbYIUrEe6kybSjKPTayw" type="targetLink" source="_7ZlRQIUrEe6kybSjKPTayw" target="_7mwKkIUrEe6kybSjKPTayw">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8ADbYYUrEe6kybSjKPTayw" points="[-88, -21, 151, 36]$[-151, -36, 88, 21]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_8AECcIUrEe6kybSjKPTayw" type="targetDataSetLink" source="_7ZlRQIUrEe6kybSjKPTayw" target="_7ZlRQIUrEe6kybSjKPTayw">
+    <element xmi:type="map:DataSet" href="resource.map#_7muVYIUrEe6kybSjKPTayw?fileId=_WIgAYIUrEe6kybSjKPTayw$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8AECcYUrEe6kybSjKPTayw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_8AECcoUrEe6kybSjKPTayw" type="targetSetLink" source="_7ZlRQIUrEe6kybSjKPTayw" target="_7ZlRQIUrEe6kybSjKPTayw">
+    <element xmi:type="map:SetDescriptor" href="resource.map#_7_8tsIUrEe6kybSjKPTayw?fileId=_WIgAYIUrEe6kybSjKPTayw$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_8AECc4UrEe6kybSjKPTayw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>
+]]></diagram>
+</map:map>
