@@ -93,17 +93,20 @@
     <field id="_i9OWCXo8Ee6i1bEIfNaCgQ" fullAlias="VILLE" name="VILLE" parent="_i9OWCHo8Ee6i1bEIfNaCgQ" ref="resource.md#_kcDGYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=VILLE?"/>
     <field id="_i9OWCno8Ee6i1bEIfNaCgQ" fullAlias="LIGNE_1" name="LIGNE_1" parent="_i9OWCHo8Ee6i1bEIfNaCgQ" ref="resource.md#_j49AYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=LIGNE_1?"/>
     <field id="_i9OWC3o8Ee6i1bEIfNaCgQ" fullAlias="TYPE_LIGNE" name="TYPE_LIGNE" parent="_i9OWCHo8Ee6i1bEIfNaCgQ" ref="resource.md#_jgigYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=TYPE_LIGNE?"/>
-    <field id="_HYmZAIqzEe6UQ4O0GYlsJg" fullAlias="file_name" name="file_name" parent="_i9OWCHo8Ee6i1bEIfNaCgQ" ref="resource.md#_4H52JIqyEe6UQ4O0GYlsJg?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=file_name?"/>
+    <field id="_HYmZAIqzEe6UQ4O0GYlsJg" fullAlias="file_name" name="file_name" parent="_i9OWCHo8Ee6i1bEIfNaCgQ" ref="resource.md#_8o6NEIq7Ee6UQ4O0GYlsJg?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=file_name?"/>
   </datastore>
   <datastore id="_6sI4AIqzEe6UQ4O0GYlsJg" alias="SOURCE" dataset="_6sKGIIqzEe6UQ4O0GYlsJg" ref="resource.md#_HVz1IX-6Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SOURCE?">
     <field id="_6sI4AoqzEe6UQ4O0GYlsJg" fullAlias="ID_FICHIER" name="ID_FICHIER" ref="resource.md#_HZUcIH-6Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?"/>
     <field id="_6sI4A4qzEe6UQ4O0GYlsJg" fullAlias="LIBELLE_FICHIER" name="LIBELLE_FICHIER" ref="resource.md#_HZUcJ3-6Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIBELLE_FICHIER?"/>
     <field id="_6sI4BIqzEe6UQ4O0GYlsJg" name="DATE_CHARGEMENT_FICHIER" ref="resource.md#_HZVDMH-6Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CHARGEMENT_FICHIER?"/>
-    <field id="_6sI4BYqzEe6UQ4O0GYlsJg" name="NB_LIGNES" ref="resource.md#_uezqYIqxEe6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=NB_LIGNES?"/>
+    <field id="_wT_pYIq8Ee6UQ4O0GYlsJg" name="NB_LIGNES" ref="resource.md#_v6-sfIq8Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=NB_LIGNES?"/>
   </datastore>
   <join id="_JH7ooIqzEe6UQ4O0GYlsJg" location="WRK" left="_i9OV_Xo8Ee6i1bEIfNaCgQ" order="10" right="_6sI4AIqzEe6UQ4O0GYlsJg">
     <expression>ADRESSE.file_name = SOURCE.LIBELLE_FICHIER</expression>
   </join>
+  <filter id="_h4ZtEIq9Ee6UQ4O0GYlsJg" location="SRC" aggregate="true">
+    <expression>SOURCE.ID_FICHIER = MAX(SOURCE.ID_FICHIER)</expression>
+  </filter>
   <template id="_mSyjlno8Ee6i1bEIfNaCgQ" name="I_ODS_ADRESSE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_i9Nu4Ho8Ee6i1bEIfNaCgQ">
     <parameter id="_p5xRUHo8Ee6i1bEIfNaCgQ" name="truncateTargetTable" value="true"/>
     <parameter id="_xog_UHylEe6pkObsxeEFYQ" name="integrationStrategy" value="append"/>
@@ -177,7 +180,7 @@
       <styles xmi:type="notation:DrawerStyle" xmi:id="3a02109d-8406-4247-bd9e-fbd703e04311"/>
     </children>
     <element xmi:type="map:Datastore" href="resource.map#_i9Nu4Ho8Ee6i1bEIfNaCgQ?fileId=_i9NH0Ho8Ee6i1bEIfNaCgQ$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="2e5180e3-98bb-40fe-862b-66a4bef33ddb" x="603" y="32"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="2e5180e3-98bb-40fe-862b-66a4bef33ddb" x="665" y="32"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_JIUDIIqzEe6UQ4O0GYlsJg" type="2005">
     <styles xmi:type="notation:DescriptionStyle" xmi:id="_JIUDIYqzEe6UQ4O0GYlsJg"/>
@@ -206,6 +209,13 @@
     <element xmi:type="map:Datastore" href="resource.map#_6sI4AIqzEe6UQ4O0GYlsJg?fileId=_i9NH0Ho8Ee6i1bEIfNaCgQ$type=map?"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6sUeMYqzEe6UQ4O0GYlsJg" x="308" y="120"/>
   </children>
+  <children xmi:type="notation:Node" xmi:id="_h4o9oIq9Ee6UQ4O0GYlsJg" type="2002">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_h4o9oYq9Ee6UQ4O0GYlsJg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_h4o9ooq9Ee6UQ4O0GYlsJg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_h4o9o4q9Ee6UQ4O0GYlsJg"/>
+    <element xmi:type="map:Filter" href="resource.map#_h4ZtEIq9Ee6UQ4O0GYlsJg?fileId=_i9NH0Ho8Ee6i1bEIfNaCgQ$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h4o9pIq9Ee6UQ4O0GYlsJg" x="587" y="156"/>
+  </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="ba1a3d19-2c49-45a8-a6e8-9975d6f6a907"/>
   <element xmi:type="map:Map" href="resource.map#_i9NH0Ho8Ee6i1bEIfNaCgQ?fileId=_i9NH0Ho8Ee6i1bEIfNaCgQ$type=map$name=ALIM_ODS_ADRESSE?"/>
   <edges xmi:type="notation:Edge" xmi:id="_mS2N8Ho8Ee6i1bEIfNaCgQ" type="targetLink" source="5c522979-fc3f-4a61-92ca-3ef7679401e4" target="28a57bde-5884-424d-8320-0ad3b1580149">
@@ -231,6 +241,10 @@
   <edges xmi:type="notation:Edge" xmi:id="_6sZ9woqzEe6UQ4O0GYlsJg" type="targetDataSetLink" source="5c522979-fc3f-4a61-92ca-3ef7679401e4" target="5c522979-fc3f-4a61-92ca-3ef7679401e4">
     <element xmi:type="map:DataSet" href="resource.map#_6sKGIIqzEe6UQ4O0GYlsJg?fileId=_i9NH0Ho8Ee6i1bEIfNaCgQ$type=map?"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_6sZ9w4qzEe6UQ4O0GYlsJg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_h4soAIq9Ee6UQ4O0GYlsJg" type="joinLink" source="_h4o9oIq9Ee6UQ4O0GYlsJg" target="_6sUeMIqzEe6UQ4O0GYlsJg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_h4soAYq9Ee6UQ4O0GYlsJg" points="[0, 0, -431, -171]$[308, 122, -123, -49]"/>
   </edges>
 </notation:Diagram>
 ]]></diagram>
