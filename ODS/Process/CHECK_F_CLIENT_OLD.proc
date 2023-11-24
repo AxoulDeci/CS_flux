@@ -11,7 +11,7 @@
     <link id="54edcf4e-b03f-40cc-bdf3-30ab76624917" executionCondition="'${NB_ENTETE}$'>'1' | '${NB_ENTETE}$'=='0'" executionType="OK" generationType="OK_KO" mandatory="1" targetId="9834edca-3671-4118-a192-175883db9b7c"/>
     <metaDataLink id="4d17236d-0de6-403c-84aa-551af3edb071" name="ODS_ENTETE" target="resource.md#_YNcT4X-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ODS_ENTETE?"/>
     <metaDataLink id="152f1a36-fb1d-438b-be73-a38ed762d692" name="ODS_ENTETE_2" target="resource.md#_YNcT4X-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ODS_ENTETE?"/>
-    <parameter id="b2f05185-cbae-46e0-bab6-b542f9bc564b" name="SQL_CONNECTION" type="String"/>
+    <parameter id="b2f05185-cbae-46e0-bab6-b542f9bc564b" name="SQL_CONNECTION" type="String" value=""/>
     <code>&lt;sqlToParameters>&#xD;
 	&lt;parameter name=&quot;~/NB_ENTETE&quot; type=&quot;Integer&quot;>&#xD;
 select count(*) from %x{$ODS_ENTETE/tech:physicalPath()}x%&#xD;
@@ -198,7 +198,7 @@ select count(*) from %x{$ODS_PIED/tech:physicalPath()}x%&#xD;
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_5WUnwoUlEe6kybSjKPTayw" x="170" y="540"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_TmVegX-tEe6IE6AcCtnNjw"/>
-  <element xmi:type="proc:ActionProcess" href="resource.proc#0ea3f4d0-b077-4a22-8abb-52fc871623cf?fileId=0ea3f4d0-b077-4a22-8abb-52fc871623cf$type=proc$name=CHECK_F_CLIENT_EP?"/>
+  <element xmi:type="proc:ActionProcess" href="resource.proc#0ea3f4d0-b077-4a22-8abb-52fc871623cf?fileId=0ea3f4d0-b077-4a22-8abb-52fc871623cf$type=proc$name=CHECK_F_CLIENT_OLD?"/>
   <edges xmi:type="notation:Edge" xmi:id="_w9HLQH-tEe6IE6AcCtnNjw" type="4001" source="_ou6awH-tEe6IE6AcCtnNjw" target="_WYDYMH-tEe6IE6AcCtnNjw">
     <styles xmi:type="notation:RoutingStyle" xmi:id="_w9HLQX-tEe6IE6AcCtnNjw"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_w9HLQn-tEe6IE6AcCtnNjw" fontName="Segoe UI"/>
