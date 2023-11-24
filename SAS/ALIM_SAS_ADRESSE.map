@@ -101,8 +101,9 @@
     <parameter id="_cXFCgIUrEe6kybSjKPTayw" name="truncateTargetTable" value="true"/>
     <parameter id="_dR5sAIUrEe6kybSjKPTayw" name="integrationStrategy" value="auto"/>
     <parameter id="_hSdXYIUrEe6kybSjKPTayw" name="doUpdate" value="false"/>
+    <parameter id="_1Vka8Iq-Ee66Xe2NrY9mWA" name="recycleRejects" value="true"/>
   </template>
-  <template id="_lIsrEIq7Ee6UQ4O0GYlsJg" name="R_SAS_ADRESSE" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_aRgdIIUrEe6kybSjKPTayw"/>
+  <template id="_3AEN4Iq-Ee66Xe2NrY9mWA" name="R_SAS_ADRESSE" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_aRgdIIUrEe6kybSjKPTayw"/>
   <dataSet id="_aRwUwIUrEe6kybSjKPTayw">
     <container>_aRgdIIUrEe6kybSjKPTayw</container>
   </dataSet>

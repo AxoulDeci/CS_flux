@@ -52,9 +52,9 @@
       </expression>
     </field>
     <constraint id="_yiIIYIUrEe6kybSjKPTayw" name="SAS_COMPTE_PK" ref="resource.md#_-utccH-5Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_COMPTE_PK?" reject="true"/>
-    <constraint id="_oisjcIUuEe6kybSjKPTayw" name="CTRL_STATUS" ref="resource.md#_6MKqoYUlEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
-    <constraint id="_oisjcYUuEe6kybSjKPTayw" name="CTRL_TYPE_CPT" ref="resource.md#_yq6xoYUjEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_TYPE_CPT?" reject="true"/>
-    <constraint id="_oitKgIUuEe6kybSjKPTayw" name="CTRL_CABINET_RATTACHEMENT" ref="resource.md#_JkcmwYUnEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_CABINET_RATTACHEMENT?" reject="true"/>
+    <constraint id="_oisjcIUuEe6kybSjKPTayw" name="CTRL_STATUS" ref="resource.md#_E8wIBYq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
+    <constraint id="_oisjcYUuEe6kybSjKPTayw" name="CTRL_TYPE_CPT" ref="resource.md#_E8wICoq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_TYPE_CPT?" reject="true"/>
+    <constraint id="_oitKgIUuEe6kybSjKPTayw" name="CTRL_CABINET_RATTACHEMENT" ref="resource.md#_E8wIAIq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_CABINET_RATTACHEMENT?" reject="true"/>
     <setDescriptor id="_zDDrMIUrEe6kybSjKPTayw" label="A"/>
   </datastore>
   <template id="_zDGHcIUrEe6kybSjKPTayw" name="I_SAS_COMPTE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_yiFsIIUrEe6kybSjKPTayw">
