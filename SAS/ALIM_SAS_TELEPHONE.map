@@ -31,11 +31,6 @@
         <expression>ODS_TELEPHONE.TYPE</expression>
       </expression>
     </field>
-    <field id="_7Zi1AIUrEe6kybSjKPTayw" enable="true" insert="true" name="LIB_TYPE_TEL" ref="resource.md#_HiuJYH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_TYPE_TEL?" update="true">
-      <expression id="_7_9704UrEe6kybSjKPTayw" setDescriptorRef="_7_8tsIUrEe6kybSjKPTayw">
-        <expression>ODS_TELEPHONE.LIB_TYPE_TEL</expression>
-      </expression>
-    </field>
     <field id="_7Zhm44UrEe6kybSjKPTayw" enable="true" insert="true" name="STATUS" ref="resource.md#_Hip38H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS?" update="true">
       <expression id="_7_-i4IUrEe6kybSjKPTayw" setDescriptorRef="_7_8tsIUrEe6kybSjKPTayw">
         <expression>ODS_TELEPHONE.STATUS</expression>
@@ -69,7 +64,6 @@
     <field id="_7msgNIUrEe6kybSjKPTayw" fullAlias="FAVORI" name="FAVORI" ref="resource.md#_boTs9nozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=FAVORI?"/>
     <field id="_7mtHQoUrEe6kybSjKPTayw" fullAlias="ID_FICHIER" name="ID_FICHIER" ref="resource.md#_G_rPEH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?"/>
     <field id="_7mr5IYUrEe6kybSjKPTayw" fullAlias="TYPE_LIGNE" name="TYPE_LIGNE" ref="resource.md#_boQCkHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_LIGNE?"/>
-    <field id="_7mtHQ4UrEe6kybSjKPTayw" fullAlias="LIB_TYPE_TEL" name="LIB_TYPE_TEL" ref="resource.md#_M6gGYH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_TYPE_TEL?"/>
   </datastore>
   <template id="_7__J_4UrEe6kybSjKPTayw" name="I_SAS_TELEPHONE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_7ZfKoIUrEe6kybSjKPTayw">
     <parameter id="_9eERgIUrEe6kybSjKPTayw" name="truncateTargetTable" value="true"/>
@@ -92,7 +86,6 @@
     <usedField>#_7msgNIUrEe6kybSjKPTayw</usedField>
     <usedField>#_7mtHQoUrEe6kybSjKPTayw</usedField>
     <usedField>#_7mr5IYUrEe6kybSjKPTayw</usedField>
-    <usedField>#_7mtHQ4UrEe6kybSjKPTayw</usedField>
   </hint>
   <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="_WIyUQIUrEe6kybSjKPTayw" type="Map" measurementUnit="Pixel">

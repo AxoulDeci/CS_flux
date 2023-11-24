@@ -111,7 +111,7 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_1pW_HoUrEe6kybSjKPTayw" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_1pStoIUrEe6kybSjKPTayw?fileId=_UGByUIUrEe6kybSjKPTayw$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1pW_EYUrEe6kybSjKPTayw" x="32" y="32"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_1pW_EYUrEe6kybSjKPTayw" x="32" y="65"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_UGV7YYUrEe6kybSjKPTayw"/>
   <element xmi:type="map:Map" href="resource.map#_UGByUIUrEe6kybSjKPTayw?fileId=_UGByUIUrEe6kybSjKPTayw$type=map$name=ALIM_SAS_EMAIL?"/>
