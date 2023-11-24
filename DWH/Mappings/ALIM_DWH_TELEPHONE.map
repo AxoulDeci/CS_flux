@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map xmlns:map="http://www.indy.com/v2/map" id="_gZq5gIqiEe6Bpuf23-D2iA" internalVersion="8" tech="resource.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
+  <datastore id="_hQaUQIqiEe6Bpuf23-D2iA" alias="SAS_TELEPHONE" dataset="_hQfMwIqiEe6Bpuf23-D2iA" ref="resource.md#_He_f8H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_TELEPHONE?">
+    <field id="_hQdXkYqiEe6Bpuf23-D2iA" fullAlias="PHONE" name="PHONE" ref="resource.md#_HipQ4H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=PHONE?"/>
+    <field id="_hQdXkoqiEe6Bpuf23-D2iA" fullAlias="STATUS" name="STATUS" ref="resource.md#_Hip38H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS?"/>
+    <field id="_hQdXlYqiEe6Bpuf23-D2iA" fullAlias="DATE_CREATION" name="DATE_CREATION" ref="resource.md#_HisUMH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?"/>
+    <field id="_hQdXloqiEe6Bpuf23-D2iA" fullAlias="ID_FICHIER" name="ID_FICHIER" ref="resource.md#_His7QH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?"/>
+    <field id="_hQdXl4qiEe6Bpuf23-D2iA" fullAlias="LIB_TYPE_TEL" name="LIB_TYPE_TEL" ref="resource.md#_HiuJYH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_TYPE_TEL?"/>
+    <field id="_hQcwgIqiEe6Bpuf23-D2iA" name="TYPE_LIGNE" ref="resource.md#_Him0oH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_LIGNE?"/>
+    <field id="_hQdXkIqiEe6Bpuf23-D2iA" name="CLE_CLIENT" ref="resource.md#_Hiop0H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CLIENT?" updateKey="true"/>
+    <field id="_hQdXlIqiEe6Bpuf23-D2iA" fullAlias="TYPE" name="TYPE" ref="resource.md#_HirtIH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE?" updateKey="true"/>
+    <field id="_hQcwgYqiEe6Bpuf23-D2iA" name="ACTION" ref="resource.md#_HioCwH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ACTION?"/>
+    <field id="_hQdXk4qiEe6Bpuf23-D2iA" fullAlias="FAVORI" name="FAVORI" ref="resource.md#_HirGEH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=FAVORI?"/>
+    <constraint id="_hQd-oIqiEe6Bpuf23-D2iA" name="CTRL_STATUS" ref="resource.md#_RrPc0YUpEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
+    <constraint id="_hQd-oYqiEe6Bpuf23-D2iA" name="CTRL_FK_CLIENT" ref="resource.md#_z38EwYUrEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FK_CLIENT?" reject="true"/>
+    <constraint id="_hQd-ooqiEe6Bpuf23-D2iA" name="CTRL_FAVORI" ref="resource.md#_epBh4YUpEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FAVORI?" reject="true"/>
+    <constraint id="_hQd-o4qiEe6Bpuf23-D2iA" name="CTRL_TYPE" ref="resource.md#_-YjrMYUoEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_TYPE?" reject="true"/>
+    <constraint id="_hQd-pIqiEe6Bpuf23-D2iA" name="SAS_TELEPHONE_PK" ref="resource.md#_-0SgAH-5Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_TELEPHONE_PK?" reject="true"/>
+    <constraint id="_hQd-pYqiEe6Bpuf23-D2iA" name="CTRL_PHONE" ref="resource.md#_F30SEYUpEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_PHONE?" reject="true"/>
+  </datastore>
+  <datastore id="_h0QBIIqiEe6Bpuf23-D2iA" alias="DWH_TELEPHONE" dataset="_h0SdYIqiEe6Bpuf23-D2iA" ref="resource.md#_Qq5IcX-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DWH_TELEPHONE?" subExpression="[A]">
+    <field id="_h0QoMIqiEe6Bpuf23-D2iA" enable="true" insert="true" name="TYPE_TEL" ref="resource.md#_QwKqAH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_TEL?" update="true" updateKey="true">
+      <expression id="_kAeoIIqiEe6Bpuf23-D2iA" setDescriptorRef="_kAeBEIqiEe6Bpuf23-D2iA">
+        <expression>SAS_TELEPHONE.TYPE</expression>
+      </expression>
+    </field>
+    <field id="_h0QoM4qiEe6Bpuf23-D2iA" enable="true" insert="true" name="FAVORI_TEL" ref="resource.md#_QwMfMH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=FAVORI_TEL?" update="true">
+      <expression id="_kAeoIYqiEe6Bpuf23-D2iA" setDescriptorRef="_kAeBEIqiEe6Bpuf23-D2iA">
+        <expression>SAS_TELEPHONE.FAVORI</expression>
+      </expression>
+    </field>
+    <field id="_h0QBIoqiEe6Bpuf23-D2iA" name="SID_CLI" ref="resource.md#_QwJb4H-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SID_CLI?" updateKey="true">
+      <expression id="_kAeoIoqiEe6Bpuf23-D2iA" setDescriptorRef="_kAeBEIqiEe6Bpuf23-D2iA">
+        <expression></expression>
+      </expression>
+    </field>
+    <field id="_h0QoMoqiEe6Bpuf23-D2iA" enable="true" insert="true" name="STATUS_TEL" ref="resource.md#_QwL4IH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS_TEL?" update="true">
+      <expression id="_kAfPMIqiEe6Bpuf23-D2iA" setDescriptorRef="_kAeBEIqiEe6Bpuf23-D2iA">
+        <expression>SAS_TELEPHONE.STATUS</expression>
+      </expression>
+    </field>
+    <field id="_h0RPQYqiEe6Bpuf23-D2iA" name="DERNIERE_DATE_MAJ_TEL" ref="resource.md#_QwQJkH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DERNIERE_DATE_MAJ_TEL?">
+      <expression id="_kAfPMYqiEe6Bpuf23-D2iA" setDescriptorRef="_kAeBEIqiEe6Bpuf23-D2iA">
+        <expression></expression>
+      </expression>
+    </field>
+    <field id="_h0RPQoqiEe6Bpuf23-D2iA" enable="true" insert="true" name="DATE_CREATION_TEL" ref="resource.md#_QwQJln-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_TEL?" update="true">
+      <expression id="_kAfPMoqiEe6Bpuf23-D2iA" setDescriptorRef="_kAeBEIqiEe6Bpuf23-D2iA">
+        <expression>SAS_TELEPHONE.DATE_CREATION</expression>
+      </expression>
+    </field>
+    <field id="_h0RPQIqiEe6Bpuf23-D2iA" enable="true" insert="true" name="ID_FICHIER" ref="resource.md#_QwPigH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?" update="true">
+      <expression id="_kAfPM4qiEe6Bpuf23-D2iA" setDescriptorRef="_kAeBEIqiEe6Bpuf23-D2iA">
+        <expression>SAS_TELEPHONE.ID_FICHIER</expression>
+      </expression>
+    </field>
+    <field id="_h0RPQ4qiEe6Bpuf23-D2iA" enable="true" insert="true" name="LIB_TYPE_TEL" ref="resource.md#_RCsq0H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_TYPE_TEL?" update="true">
+      <expression id="_kAfPNIqiEe6Bpuf23-D2iA" setDescriptorRef="_kAeBEIqiEe6Bpuf23-D2iA">
+        <expression>SAS_TELEPHONE.LIB_TYPE_TEL</expression>
+      </expression>
+    </field>
+    <field id="_h0QoMYqiEe6Bpuf23-D2iA" enable="true" insert="true" name="NUM_TEL" ref="resource.md#_QwLREH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=NUM_TEL?" update="true">
+      <expression id="_kAf2QIqiEe6Bpuf23-D2iA" setDescriptorRef="_kAeBEIqiEe6Bpuf23-D2iA">
+        <expression>SAS_TELEPHONE.PHONE</expression>
+      </expression>
+    </field>
+    <field id="_h0RPRIqiEe6Bpuf23-D2iA" name="RECORD_VERSION" ref="resource.md#_biidZoqgEe6Bpuf23-D2iA?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=RECORD_VERSION?">
+      <expression id="_kAf2QYqiEe6Bpuf23-D2iA" setDescriptorRef="_kAeBEIqiEe6Bpuf23-D2iA">
+        <expression></expression>
+      </expression>
+    </field>
+    <constraint id="_h0R2UIqiEe6Bpuf23-D2iA" name="DWH_TELEPHONE_PK" ref="resource.md#_QwTz8H-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DWH_TELEPHONE_PK?" reject="true"/>
+    <setDescriptor id="_kAeBEIqiEe6Bpuf23-D2iA" label="A"/>
+  </datastore>
+  <template id="_kAhEYIqiEe6Bpuf23-D2iA" name="I_DWH_TELEPHONE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_h0QBIIqiEe6Bpuf23-D2iA"/>
+  <dataSet id="_hQfMwIqiEe6Bpuf23-D2iA">
+    <container>_hQaUQIqiEe6Bpuf23-D2iA</container>
+  </dataSet>
+  <dataSet id="_h0SdYIqiEe6Bpuf23-D2iA">
+    <container>_h0QBIIqiEe6Bpuf23-D2iA</container>
+  </dataSet>
+  <hint>
+    <usedField>#_hQdXkYqiEe6Bpuf23-D2iA</usedField>
+    <usedField>#_hQdXkoqiEe6Bpuf23-D2iA</usedField>
+    <usedField>#_hQdXlYqiEe6Bpuf23-D2iA</usedField>
+    <usedField>#_hQdXloqiEe6Bpuf23-D2iA</usedField>
+    <usedField>#_hQdXl4qiEe6Bpuf23-D2iA</usedField>
+    <usedField>#_hQdXlIqiEe6Bpuf23-D2iA</usedField>
+    <usedField>#_hQdXk4qiEe6Bpuf23-D2iA</usedField>
+  </hint>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="_gcGicIqiEe6Bpuf23-D2iA" type="Map" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_hQnvoIqiEe6Bpuf23-D2iA" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_hQnvooqiEe6Bpuf23-D2iA" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_hQnvo4qiEe6Bpuf23-D2iA" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_hQnvpIqiEe6Bpuf23-D2iA" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_hQnvpYqiEe6Bpuf23-D2iA" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_hQnvpoqiEe6Bpuf23-D2iA" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_hQnvp4qiEe6Bpuf23-D2iA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_hQnvqIqiEe6Bpuf23-D2iA"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_hQnvqYqiEe6Bpuf23-D2iA" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_hQoWsIqiEe6Bpuf23-D2iA"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_hQoWsYqiEe6Bpuf23-D2iA" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_hQoWsoqiEe6Bpuf23-D2iA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_hQoWs4qiEe6Bpuf23-D2iA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_hQoWtIqiEe6Bpuf23-D2iA" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_hQaUQIqiEe6Bpuf23-D2iA?fileId=_gZq5gIqiEe6Bpuf23-D2iA$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_hQnvoYqiEe6Bpuf23-D2iA" x="452" y="253"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_h0USkIqiEe6Bpuf23-D2iA" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_h0USkoqiEe6Bpuf23-D2iA" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_h0USk4qiEe6Bpuf23-D2iA" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_h0USlIqiEe6Bpuf23-D2iA" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_h0USlYqiEe6Bpuf23-D2iA" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_h0USloqiEe6Bpuf23-D2iA" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_h0USl4qiEe6Bpuf23-D2iA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_h0USmIqiEe6Bpuf23-D2iA"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_h0USmYqiEe6Bpuf23-D2iA" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_h0USmoqiEe6Bpuf23-D2iA"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_h0USm4qiEe6Bpuf23-D2iA" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_h0USnIqiEe6Bpuf23-D2iA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_h0USnYqiEe6Bpuf23-D2iA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_h0USnoqiEe6Bpuf23-D2iA" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_h0QBIIqiEe6Bpuf23-D2iA?fileId=_gZq5gIqiEe6Bpuf23-D2iA$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_h0USkYqiEe6Bpuf23-D2iA" x="812" y="247"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_gcGicYqiEe6Bpuf23-D2iA"/>
+  <element xmi:type="map:Map" href="resource.map#_gZq5gIqiEe6Bpuf23-D2iA?fileId=_gZq5gIqiEe6Bpuf23-D2iA$type=map$name=ALIM_DWH_TELEPHONE?"/>
+  <edges xmi:type="notation:Edge" xmi:id="_kAlV0IqiEe6Bpuf23-D2iA" type="targetLink" source="_h0USkIqiEe6Bpuf23-D2iA" target="_hQnvoIqiEe6Bpuf23-D2iA">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kAlV0YqiEe6Bpuf23-D2iA" points="[-112, 6, 272, 0]$[-296, 0, 88, -6]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_kAl84IqiEe6Bpuf23-D2iA" type="targetDataSetLink" source="_h0USkIqiEe6Bpuf23-D2iA" target="_h0USkIqiEe6Bpuf23-D2iA">
+    <element xmi:type="map:DataSet" href="resource.map#_hQfMwIqiEe6Bpuf23-D2iA?fileId=_gZq5gIqiEe6Bpuf23-D2iA$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kAl84YqiEe6Bpuf23-D2iA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_kAmj8IqiEe6Bpuf23-D2iA" type="targetSetLink" source="_h0USkIqiEe6Bpuf23-D2iA" target="_h0USkIqiEe6Bpuf23-D2iA">
+    <element xmi:type="map:SetDescriptor" href="resource.map#_kAeBEIqiEe6Bpuf23-D2iA?fileId=_gZq5gIqiEe6Bpuf23-D2iA$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_kAmj8YqiEe6Bpuf23-D2iA" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>
+]]></diagram>
+</map:map>
