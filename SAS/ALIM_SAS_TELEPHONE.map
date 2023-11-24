@@ -47,11 +47,11 @@
       </expression>
     </field>
     <constraint id="_7Zi1AYUrEe6kybSjKPTayw" name="SAS_TELEPHONE_PK" ref="resource.md#_-0SgAH-5Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_TELEPHONE_PK?" reject="true"/>
-    <constraint id="_ojUOgIUuEe6kybSjKPTayw" name="CTRL_FAVORI" ref="resource.md#_epBh4YUpEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FAVORI?" reject="true"/>
-    <constraint id="_ojU1kIUuEe6kybSjKPTayw" name="CTRL_PHONE" ref="resource.md#_F30SEYUpEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_PHONE?" reject="true"/>
-    <constraint id="_ojU1kYUuEe6kybSjKPTayw" name="CTRL_FK_CLIENT" ref="resource.md#_z38EwYUrEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FK_CLIENT?" reject="true"/>
-    <constraint id="_ojU1koUuEe6kybSjKPTayw" name="CTRL_STATUS" ref="resource.md#_RrPc0YUpEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
-    <constraint id="_ojU1k4UuEe6kybSjKPTayw" name="CTRL_TYPE" ref="resource.md#_-YjrMYUoEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_TYPE?" reject="true"/>
+    <constraint id="_ojUOgIUuEe6kybSjKPTayw" name="CTRL_FAVORI" ref="resource.md#_RHlGIIq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FAVORI?" reject="true"/>
+    <constraint id="_ojU1kIUuEe6kybSjKPTayw" name="CTRL_PHONE" ref="resource.md#_RHlGKoq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_PHONE?" reject="true"/>
+    <constraint id="_ojU1kYUuEe6kybSjKPTayw" name="CTRL_FK_CLIENT" ref="resource.md#_RHlGJYq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FK_CLIENT?" reject="true"/>
+    <constraint id="_ojU1koUuEe6kybSjKPTayw" name="CTRL_STATUS" ref="resource.md#_RHlGL4q7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
+    <constraint id="_ojU1k4UuEe6kybSjKPTayw" name="CTRL_TYPE" ref="resource.md#_RHlGNIq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_TYPE?" reject="true"/>
     <setDescriptor id="_7_8tsIUrEe6kybSjKPTayw" label="A"/>
   </datastore>
   <datastore id="_7mrSEIUrEe6kybSjKPTayw" alias="ODS_TELEPHONE" dataset="_7muVYIUrEe6kybSjKPTayw" ref="resource.md#_bkye4XozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ODS_TELEPHONE?">
@@ -69,7 +69,7 @@
     <parameter id="_9eERgIUrEe6kybSjKPTayw" name="truncateTargetTable" value="true"/>
     <parameter id="_9zlOgIUrEe6kybSjKPTayw" name="doUpdate" value="false"/>
   </template>
-  <template id="_pE6NwIUwEe6kybSjKPTayw" name="R_SAS_TELEPHONE" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_7ZfKoIUrEe6kybSjKPTayw"/>
+  <template id="_m-RFkIq7Ee6UQ4O0GYlsJg" name="R_SAS_TELEPHONE" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_7ZfKoIUrEe6kybSjKPTayw"/>
   <dataSet id="_7ZjcEIUrEe6kybSjKPTayw">
     <container>_7ZfKoIUrEe6kybSjKPTayw</container>
   </dataSet>

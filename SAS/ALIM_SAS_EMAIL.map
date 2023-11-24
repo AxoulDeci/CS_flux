@@ -37,9 +37,9 @@
       </expression>
     </field>
     <constraint id="_1M4edIUrEe6kybSjKPTayw" name="SAS_EMAIL_PK" ref="resource.md#__C8nEH-5Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_EMAIL_PK?" reject="true"/>
-    <constraint id="_oi9pMIUuEe6kybSjKPTayw" name="CTRL_EMAIL" ref="resource.md#_ahT7EYUoEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_EMAIL?" reject="true"/>
-    <constraint id="_oi-QQIUuEe6kybSjKPTayw" name="CTRL_STATUS" ref="resource.md#_PPPJ4YUoEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
-    <constraint id="_oi-QQYUuEe6kybSjKPTayw" name="CTRL_FK_CLIENT" ref="resource.md#_jFO8kYUrEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FK_CLIENT?" reject="true"/>
+    <constraint id="_oi9pMIUuEe6kybSjKPTayw" name="CTRL_EMAIL" ref="resource.md#_NEAjAIq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_EMAIL?" reject="true"/>
+    <constraint id="_oi-QQIUuEe6kybSjKPTayw" name="CTRL_STATUS" ref="resource.md#_NEAjCoq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
+    <constraint id="_oi-QQYUuEe6kybSjKPTayw" name="CTRL_FK_CLIENT" ref="resource.md#_NEAjBYq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FK_CLIENT?" reject="true"/>
     <setDescriptor id="_2X_msIUrEe6kybSjKPTayw" label="A"/>
   </datastore>
   <datastore id="_1pStoIUrEe6kybSjKPTayw" alias="ODS_EMAIL" dataset="_1pVJ4IUrEe6kybSjKPTayw" ref="resource.md#_bg0k4XozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ODS_EMAIL?">
@@ -55,7 +55,7 @@
     <parameter id="__DiagIUrEe6kybSjKPTayw" name="truncateTargetTable" value="true"/>
     <parameter id="__NFYEIUrEe6kybSjKPTayw" name="doUpdate" value="false"/>
   </template>
-  <template id="_onYkQIUwEe6kybSjKPTayw" name="R_SAS_EMAIL" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_1M2CMIUrEe6kybSjKPTayw"/>
+  <template id="_mcUPEIq7Ee6UQ4O0GYlsJg" name="R_SAS_EMAIL" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_1M2CMIUrEe6kybSjKPTayw"/>
   <dataSet id="_1M5skIUrEe6kybSjKPTayw">
     <container>_1M2CMIUrEe6kybSjKPTayw</container>
   </dataSet>
