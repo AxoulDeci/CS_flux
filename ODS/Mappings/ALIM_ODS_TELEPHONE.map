@@ -9,6 +9,7 @@
     <field id="_uvp5Zn-mEe6IE6AcCtnNjw" fullAlias="STATUS" name="STATUS" parent="_uvp5YX-mEe6IE6AcCtnNjw" ref="resource.md#_7hQHYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=STATUS?"/>
     <field id="_uvp5YX-mEe6IE6AcCtnNjw" expand="true" name="TEL" ref="resource.md#_BJj9gXSyEe6Cj7jyPVDy-A?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=TEL?" updateKey="true"/>
     <field id="_uvp5ZX-mEe6IE6AcCtnNjw" fullAlias="PHONE" name="PHONE" parent="_uvp5YX-mEe6IE6AcCtnNjw" ref="resource.md#_7aibYHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=PHONE?"/>
+    <field id="_ERqAyYq0Ee6UQ4O0GYlsJg" fullAlias="file_name" name="file_name" parent="_uvp5YX-mEe6IE6AcCtnNjw" ref="resource.md#_G_0FkIqzEe6UQ4O0GYlsJg?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=file_name?"/>
   </datastore>
   <datastore id="_vVMPYH-mEe6IE6AcCtnNjw" alias="ODS_TELEPHONE" dataset="_vVPSsH-mEe6IE6AcCtnNjw" ref="resource.md#_bkye4XozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ODS_TELEPHONE?" subExpression="[A]">
     <field id="_vVNdgX-mEe6IE6AcCtnNjw" enable="true" insert="true" name="CLE_CLIENT" ref="resource.md#_boSe0HozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CLIENT?" update="true">
@@ -36,9 +37,9 @@
         <expression>TEL.STATUS</expression>
       </expression>
     </field>
-    <field id="_vVOEkX-mEe6IE6AcCtnNjw" name="DATE_CREATION" ref="resource.md#_G_qoBn-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?">
+    <field id="_vVOEkX-mEe6IE6AcCtnNjw" enable="true" insert="true" name="DATE_CREATION" ref="resource.md#_G_qoBn-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?" update="true">
       <expression id="_vudD8X-mEe6IE6AcCtnNjw" setDescriptorRef="_vub10H-mEe6IE6AcCtnNjw">
-        <expression></expression>
+        <expression>SYSDATE</expression>
       </expression>
     </field>
     <field id="_vVNdhH-mEe6IE6AcCtnNjw" enable="true" insert="true" name="FAVORI" ref="resource.md#_boTs9nozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=FAVORI?" update="true">
@@ -51,13 +52,25 @@
         <expression>TEL.PHONE</expression>
       </expression>
     </field>
-    <field id="_vVOEkn-mEe6IE6AcCtnNjw" name="ID_FICHIER" ref="resource.md#_G_rPEH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?">
+    <field id="_vVOEkn-mEe6IE6AcCtnNjw" enable="true" insert="true" name="ID_FICHIER" ref="resource.md#_G_rPEH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?" update="true">
       <expression id="_vudD9H-mEe6IE6AcCtnNjw" setDescriptorRef="_vub10H-mEe6IE6AcCtnNjw">
-        <expression></expression>
+        <expression>SOURCE.ID_FICHIER</expression>
       </expression>
+    </field>
+    <field id="_ER-J04q0Ee6UQ4O0GYlsJg" name="LIB_TYPE_TEL" ref="resource.md#_M6gGYH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_TYPE_TEL?">
+      <expression id="_ER-J1Iq0Ee6UQ4O0GYlsJg" setDescriptorRef="_vub10H-mEe6IE6AcCtnNjw"/>
     </field>
     <setDescriptor id="_vub10H-mEe6IE6AcCtnNjw" label="A"/>
   </datastore>
+  <datastore id="_H7GMoIq0Ee6UQ4O0GYlsJg" alias="SOURCE" dataset="_uvqgdH-mEe6IE6AcCtnNjw" ref="resource.md#_HVz1IX-6Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SOURCE?">
+    <field id="_H7IB0Iq0Ee6UQ4O0GYlsJg" fullAlias="LIBELLE_FICHIER" name="LIBELLE_FICHIER" ref="resource.md#_HZUcJ3-6Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIBELLE_FICHIER?"/>
+    <field id="_H7IB0Yq0Ee6UQ4O0GYlsJg" name="DATE_CHARGEMENT_FICHIER" ref="resource.md#_HZVDMH-6Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CHARGEMENT_FICHIER?"/>
+    <field id="_H7IB0oq0Ee6UQ4O0GYlsJg" name="NB_LIGNES" ref="resource.md#_uezqYIqxEe6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=NB_LIGNES?"/>
+    <field id="_H7HawYq0Ee6UQ4O0GYlsJg" fullAlias="ID_FICHIER" name="ID_FICHIER" ref="resource.md#_HZUcIH-6Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?"/>
+  </datastore>
+  <join id="_KvSykIq0Ee6UQ4O0GYlsJg" location="WRK" left="_H7GMoIq0Ee6UQ4O0GYlsJg" order="10" right="_uvorQH-mEe6IE6AcCtnNjw">
+    <expression>SOURCE.LIBELLE_FICHIER = TEL.file_name</expression>
+  </join>
   <template id="_vueSFn-mEe6IE6AcCtnNjw" name="I_ODS_TELEPHONE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_vVMPYH-mEe6IE6AcCtnNjw">
     <parameter id="_CmdEsH-nEe6IE6AcCtnNjw" name="doUpdate" value="false"/>
     <parameter id="_DruDoH-nEe6IE6AcCtnNjw" name="integrationStrategy" value="append"/>
@@ -65,6 +78,7 @@
   <template id="_vuk_wH-mEe6IE6AcCtnNjw" name="L1_ODS_TELEPHONE" process="resource.proc#_a-mEoaIhEd68f8w2ej5O-w?fileId=_a-mEoaIhEd68f8w2ej5O-w$type=proc$name=LOAD%20File%20to%20Rdbms?" sourceId="_uvorQH-mEe6IE6AcCtnNjw" targetId="_vVMPYH-mEe6IE6AcCtnNjw"/>
   <dataSet id="_uvqgdH-mEe6IE6AcCtnNjw">
     <container>_uvorQH-mEe6IE6AcCtnNjw</container>
+    <container>_H7GMoIq0Ee6UQ4O0GYlsJg</container>
   </dataSet>
   <dataSet id="_vVPSsH-mEe6IE6AcCtnNjw">
     <container>_vVMPYH-mEe6IE6AcCtnNjw</container>
@@ -77,6 +91,9 @@
     <usedField>#_uvp5Z3-mEe6IE6AcCtnNjw</usedField>
     <usedField>#_uvp5Zn-mEe6IE6AcCtnNjw</usedField>
     <usedField>#_uvp5ZX-mEe6IE6AcCtnNjw</usedField>
+    <usedField>#_ERqAyYq0Ee6UQ4O0GYlsJg</usedField>
+    <usedField>#_H7IB0Iq0Ee6UQ4O0GYlsJg</usedField>
+    <usedField>#_H7HawYq0Ee6UQ4O0GYlsJg</usedField>
   </hint>
   <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="_dagygH-mEe6IE6AcCtnNjw" type="Map" measurementUnit="Pixel">
@@ -98,7 +115,7 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_uvs8vH-mEe6IE6AcCtnNjw" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_uvorQH-mEe6IE6AcCtnNjw?fileId=_PY1SYH-kEe6JNIokCBopZg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uvsVo3-mEe6IE6AcCtnNjw" x="32" y="40"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_uvsVo3-mEe6IE6AcCtnNjw" x="377" y="40"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_vVQg0H-mEe6IE6AcCtnNjw" type="2004" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="_vVQg0n-mEe6IE6AcCtnNjw" type="5005"/>
@@ -118,7 +135,34 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_vVRH6X-mEe6IE6AcCtnNjw" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_vVMPYH-mEe6IE6AcCtnNjw?fileId=_PY1SYH-kEe6JNIokCBopZg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vVQg0X-mEe6IE6AcCtnNjw" x="245" y="32"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_vVQg0X-mEe6IE6AcCtnNjw" x="590" y="32"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_H7OIcIq0Ee6UQ4O0GYlsJg" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_H7OvgIq0Ee6UQ4O0GYlsJg" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_H7OvgYq0Ee6UQ4O0GYlsJg" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_H7Ovgoq0Ee6UQ4O0GYlsJg" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_H7Ovg4q0Ee6UQ4O0GYlsJg" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_H7OvhIq0Ee6UQ4O0GYlsJg" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_H7OvhYq0Ee6UQ4O0GYlsJg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_H7Ovhoq0Ee6UQ4O0GYlsJg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_H7Ovh4q0Ee6UQ4O0GYlsJg" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_H7OviIq0Ee6UQ4O0GYlsJg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_H7OviYq0Ee6UQ4O0GYlsJg" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_H7Ovioq0Ee6UQ4O0GYlsJg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_H7Ovi4q0Ee6UQ4O0GYlsJg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_H7OvjIq0Ee6UQ4O0GYlsJg" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_H7GMoIq0Ee6UQ4O0GYlsJg?fileId=_PY1SYH-kEe6JNIokCBopZg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H7OIcYq0Ee6UQ4O0GYlsJg" x="32" y="80"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_KvdKoIq0Ee6UQ4O0GYlsJg" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_KvdKoYq0Ee6UQ4O0GYlsJg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_KvdKooq0Ee6UQ4O0GYlsJg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_KvdKo4q0Ee6UQ4O0GYlsJg"/>
+    <element xmi:type="map:Join" href="resource.map#_KvSykIq0Ee6UQ4O0GYlsJg?fileId=_PY1SYH-kEe6JNIokCBopZg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_KvdKpIq0Ee6UQ4O0GYlsJg" x="311" y="119"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_dagygX-mEe6IE6AcCtnNjw"/>
   <element xmi:type="map:Map" href="resource.map#_PY1SYH-kEe6JNIokCBopZg?fileId=_PY1SYH-kEe6JNIokCBopZg$type=map$name=ALIM_ODS_TELEPHONE?"/>
@@ -133,6 +177,18 @@
   <edges xmi:type="notation:Edge" xmi:id="_vujKkn-mEe6IE6AcCtnNjw" type="targetSetLink" source="_vVQg0H-mEe6IE6AcCtnNjw" target="_vVQg0H-mEe6IE6AcCtnNjw">
     <element xmi:type="map:SetDescriptor" href="resource.map#_vub10H-mEe6IE6AcCtnNjw?fileId=_PY1SYH-kEe6JNIokCBopZg$type=map?"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_vujKk3-mEe6IE6AcCtnNjw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_J4NZkIq0Ee6UQ4O0GYlsJg" type="targetLink" source="_vVQg0H-mEe6IE6AcCtnNjw" target="_H7OIcIq0Ee6UQ4O0GYlsJg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_J4NZkYq0Ee6UQ4O0GYlsJg" points="[-39, 100, 47, -123]$[-66, 172, 20, -51]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_KveYwIq0Ee6UQ4O0GYlsJg" type="joinLink" source="_KvdKoIq0Ee6UQ4O0GYlsJg" target="_uvsVon-mEe6IE6AcCtnNjw">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KveYwYq0Ee6UQ4O0GYlsJg" points="[-1, -1, -115, -132]$[34, 40, -80, -91]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_KveYwoq0Ee6UQ4O0GYlsJg" type="joinLink" source="_KvdKoIq0Ee6UQ4O0GYlsJg" target="_H7OIcIq0Ee6UQ4O0GYlsJg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_KveYw4q0Ee6UQ4O0GYlsJg" points="[-1, -1, -294, -355]$[250, 303, -43, -51]"/>
   </edges>
 </notation:Diagram>
 ]]></diagram>

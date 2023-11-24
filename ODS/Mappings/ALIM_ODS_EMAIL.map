@@ -6,9 +6,9 @@
         <expression>EMAIL.EMAIL_LIB</expression>
       </expression>
     </field>
-    <field id="_x5TK5X-mEe6IE6AcCtnNjw" name="DATE_CREATION" ref="resource.md#_G747QH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?">
+    <field id="_x5TK5X-mEe6IE6AcCtnNjw" enable="true" insert="true" name="DATE_CREATION" ref="resource.md#_G747QH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?" update="true">
       <expression id="_yrMh4X-mEe6IE6AcCtnNjw" setDescriptorRef="_yrL60H-mEe6IE6AcCtnNjw">
-        <expression></expression>
+        <expression>sysdate</expression>
       </expression>
     </field>
     <field id="_x5TK5H-mEe6IE6AcCtnNjw" enable="true" insert="true" name="STATUS" ref="resource.md#_bksYRnozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS?" update="true">
@@ -21,9 +21,9 @@
         <expression>EMAIL.CLE_CLIENT</expression>
       </expression>
     </field>
-    <field id="_x5TK5n-mEe6IE6AcCtnNjw" name="ID_FICHIER" ref="resource.md#_G75iUH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?">
+    <field id="_x5TK5n-mEe6IE6AcCtnNjw" enable="true" insert="true" name="ID_FICHIER" ref="resource.md#_G75iUH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?" update="true">
       <expression id="_yrNI8H-mEe6IE6AcCtnNjw" setDescriptorRef="_yrL60H-mEe6IE6AcCtnNjw">
-        <expression></expression>
+        <expression>SOURCE.ID_FICHIER</expression>
       </expression>
     </field>
     <field id="_x5TK4X-mEe6IE6AcCtnNjw" enable="true" insert="true" name="ACTION" ref="resource.md#_bkqjEHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ACTION?" update="true">
@@ -38,14 +38,24 @@
     </field>
     <setDescriptor id="_yrL60H-mEe6IE6AcCtnNjw" label="A"/>
   </datastore>
-  <datastore id="__6ZRoH-nEe6IE6AcCtnNjw" alias="EMAIL" dataset="__6bt4H-nEe6IE6AcCtnNjw" ref="resource.md#_AIErUXSyEe6Cj7jyPVDy-A?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=EMAIL?">
+  <datastore id="__6ZRoH-nEe6IE6AcCtnNjw" alias="EMAIL" dataset="_8UgkAoqzEe6UQ4O0GYlsJg" ref="resource.md#_AIErUXSyEe6Cj7jyPVDy-A?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=EMAIL?">
     <field id="__6Z4sH-nEe6IE6AcCtnNjw" expand="true" name="EMAIL" ref="resource.md#_AIErUXSyEe6Cj7jyPVDy-A?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=EMAIL?" updateKey="true"/>
     <field id="__6Z4s3-nEe6IE6AcCtnNjw" fullAlias="CLE_CLIENT" name="CLE_CLIENT" parent="__6Z4sH-nEe6IE6AcCtnNjw" ref="resource.md#_V5teUHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=CLE_CLIENT?"/>
     <field id="__6Z4tX-nEe6IE6AcCtnNjw" fullAlias="STATUS" name="STATUS" parent="__6Z4sH-nEe6IE6AcCtnNjw" ref="resource.md#_WBCOUHomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=STATUS?"/>
     <field id="__6Z4sn-nEe6IE6AcCtnNjw" fullAlias="ACTION" name="ACTION" parent="__6Z4sH-nEe6IE6AcCtnNjw" ref="resource.md#_V1-N0HomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=ACTION?"/>
     <field id="__6Z4sX-nEe6IE6AcCtnNjw" fullAlias="TYPE_LIGNE" name="TYPE_LIGNE" parent="__6Z4sH-nEe6IE6AcCtnNjw" ref="resource.md#_V0dK4HomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=TYPE_LIGNE?"/>
     <field id="__6Z4tH-nEe6IE6AcCtnNjw" fullAlias="EMAIL_LIB" name="EMAIL_LIB" parent="__6Z4sH-nEe6IE6AcCtnNjw" ref="resource.md#_V7Un4HomEe62SbngGOCG7g?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=EMAIL_LIB?"/>
+    <field id="_78JuYIqzEe6UQ4O0GYlsJg" fullAlias="file_name" name="file_name" parent="__6Z4sH-nEe6IE6AcCtnNjw" ref="resource.md#_E9WekIqzEe6UQ4O0GYlsJg?fileId=_HfTNAHSxEe6Cj7jyPVDy-A$type=md$name=file_name?"/>
   </datastore>
+  <datastore id="_8UdgsIqzEe6UQ4O0GYlsJg" alias="SOURCE" dataset="_8UgkAoqzEe6UQ4O0GYlsJg" ref="resource.md#_HVz1IX-6Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SOURCE?">
+    <field id="_8Uf88IqzEe6UQ4O0GYlsJg" fullAlias="ID_FICHIER" name="ID_FICHIER" ref="resource.md#_HZUcIH-6Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?"/>
+    <field id="_8Uf88oqzEe6UQ4O0GYlsJg" name="DATE_CHARGEMENT_FICHIER" ref="resource.md#_HZVDMH-6Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CHARGEMENT_FICHIER?"/>
+    <field id="_8Uf88YqzEe6UQ4O0GYlsJg" fullAlias="LIBELLE_FICHIER" name="LIBELLE_FICHIER" ref="resource.md#_HZUcJ3-6Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIBELLE_FICHIER?"/>
+    <field id="_8Uf884qzEe6UQ4O0GYlsJg" name="NB_LIGNES" ref="resource.md#_uezqYIqxEe6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=NB_LIGNES?"/>
+  </datastore>
+  <join id="_-DJQEIqzEe6UQ4O0GYlsJg" location="WRK" left="__6ZRoH-nEe6IE6AcCtnNjw" order="10" right="_8UdgsIqzEe6UQ4O0GYlsJg">
+    <expression>EMAIL.file_name = SOURCE.LIBELLE_FICHIER</expression>
+  </join>
   <template id="_yrOXEH-mEe6IE6AcCtnNjw" name="I_ODS_EMAIL" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_x5Sj0H-mEe6IE6AcCtnNjw">
     <parameter id="_2hmLsH-mEe6IE6AcCtnNjw" name="truncateTargetTable" value="true"/>
     <parameter id="_20NlsH-mEe6IE6AcCtnNjw" name="integrationStrategy" value="append"/>
@@ -55,7 +65,8 @@
   <dataSet id="_x5Tx8X-mEe6IE6AcCtnNjw">
     <container>_x5Sj0H-mEe6IE6AcCtnNjw</container>
   </dataSet>
-  <dataSet id="__6bt4H-nEe6IE6AcCtnNjw">
+  <dataSet id="_8UgkAoqzEe6UQ4O0GYlsJg">
+    <container>_8UdgsIqzEe6UQ4O0GYlsJg</container>
     <container>__6ZRoH-nEe6IE6AcCtnNjw</container>
   </dataSet>
   <hint>
@@ -64,6 +75,9 @@
     <usedField>#__6Z4sn-nEe6IE6AcCtnNjw</usedField>
     <usedField>#__6Z4sX-nEe6IE6AcCtnNjw</usedField>
     <usedField>#__6Z4tH-nEe6IE6AcCtnNjw</usedField>
+    <usedField>#_78JuYIqzEe6UQ4O0GYlsJg</usedField>
+    <usedField>#_8Uf88IqzEe6UQ4O0GYlsJg</usedField>
+    <usedField>#_8Uf88YqzEe6UQ4O0GYlsJg</usedField>
   </hint>
   <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="_SQGIgH-mEe6IE6AcCtnNjw" type="Map" measurementUnit="Pixel">
@@ -85,7 +99,7 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_x5WOMH-mEe6IE6AcCtnNjw" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_x5Sj0H-mEe6IE6AcCtnNjw?fileId=_NoNpUH-kEe6JNIokCBopZg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x5VnIX-mEe6IE6AcCtnNjw" x="245" y="32"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_x5VnIX-mEe6IE6AcCtnNjw" x="590" y="32"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="__6jCoH-nEe6IE6AcCtnNjw" type="2004" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="__6jCon-nEe6IE6AcCtnNjw" type="5005"/>
@@ -105,7 +119,34 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="__6jCrn-nEe6IE6AcCtnNjw" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#__6ZRoH-nEe6IE6AcCtnNjw?fileId=_NoNpUH-kEe6JNIokCBopZg$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__6jCoX-nEe6IE6AcCtnNjw" x="32" y="40"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__6jCoX-nEe6IE6AcCtnNjw" x="32" y="32"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_8UnRsIqzEe6UQ4O0GYlsJg" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="_8UnRsoqzEe6UQ4O0GYlsJg" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_8UnRs4qzEe6UQ4O0GYlsJg" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_8UnRtIqzEe6UQ4O0GYlsJg" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_8UnRtYqzEe6UQ4O0GYlsJg" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_8UnRtoqzEe6UQ4O0GYlsJg" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_8UnRt4qzEe6UQ4O0GYlsJg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_8UnRuIqzEe6UQ4O0GYlsJg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_8UnRuYqzEe6UQ4O0GYlsJg" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_8UnRuoqzEe6UQ4O0GYlsJg"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_8UnRu4qzEe6UQ4O0GYlsJg" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_8UnRvIqzEe6UQ4O0GYlsJg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_8UnRvYqzEe6UQ4O0GYlsJg"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_8UnRvoqzEe6UQ4O0GYlsJg" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_8UdgsIqzEe6UQ4O0GYlsJg?fileId=_NoNpUH-kEe6JNIokCBopZg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_8UnRsYqzEe6UQ4O0GYlsJg" x="295" y="56"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_-DUPMIqzEe6UQ4O0GYlsJg" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_-DUPMYqzEe6UQ4O0GYlsJg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_-DUPMoqzEe6UQ4O0GYlsJg" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_-DUPM4qzEe6UQ4O0GYlsJg"/>
+    <element xmi:type="map:Join" href="resource.map#_-DJQEIqzEe6UQ4O0GYlsJg?fileId=_NoNpUH-kEe6JNIokCBopZg$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-DUPNIqzEe6UQ4O0GYlsJg" x="229" y="95"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_SQGIgX-mEe6IE6AcCtnNjw"/>
   <element xmi:type="map:Map" href="resource.map#_NoNpUH-kEe6JNIokCBopZg?fileId=_NoNpUH-kEe6JNIokCBopZg$type=map$name=ALIM_ODS_EMAIL?"/>
@@ -113,13 +154,25 @@
     <element xsi:nil="true"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__6pwUX-nEe6IE6AcCtnNjw" points="[-150, -41, 245, 66]$[-395, -107, 0, 0]"/>
   </edges>
-  <edges xmi:type="notation:Edge" xmi:id="__6pwUn-nEe6IE6AcCtnNjw" type="targetDataSetLink" source="_x5VnIH-mEe6IE6AcCtnNjw" target="_x5VnIH-mEe6IE6AcCtnNjw">
-    <element xmi:type="map:DataSet" href="resource.map#__6bt4H-nEe6IE6AcCtnNjw?fileId=_NoNpUH-kEe6JNIokCBopZg$type=map?"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__6pwU3-nEe6IE6AcCtnNjw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
-  </edges>
   <edges xmi:type="notation:Edge" xmi:id="__6pwVH-nEe6IE6AcCtnNjw" type="targetSetLink" source="_x5VnIH-mEe6IE6AcCtnNjw" target="_x5VnIH-mEe6IE6AcCtnNjw">
     <element xmi:type="map:SetDescriptor" href="resource.map#_yrL60H-mEe6IE6AcCtnNjw?fileId=_NoNpUH-kEe6JNIokCBopZg$type=map?"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="__6pwVX-nEe6IE6AcCtnNjw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_9cxzoIqzEe6UQ4O0GYlsJg" type="targetLink" source="_x5VnIH-mEe6IE6AcCtnNjw" target="_8UnRsIqzEe6UQ4O0GYlsJg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9cxzoYqzEe6UQ4O0GYlsJg" points="[-11, 76, 22, -158]$[-26, 183, 7, -51]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_9cxzooqzEe6UQ4O0GYlsJg" type="targetDataSetLink" source="_x5VnIH-mEe6IE6AcCtnNjw" target="_x5VnIH-mEe6IE6AcCtnNjw">
+    <element xmi:type="map:DataSet" href="resource.map#_8UgkAoqzEe6UQ4O0GYlsJg?fileId=_NoNpUH-kEe6JNIokCBopZg$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_9cxzo4qzEe6UQ4O0GYlsJg" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_-DVdUIqzEe6UQ4O0GYlsJg" type="joinLink" source="_-DUPMIqzEe6UQ4O0GYlsJg" target="_8UnRsIqzEe6UQ4O0GYlsJg">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-DVdUYqzEe6UQ4O0GYlsJg" points="[-1, -1, -355, -342]$[301, 290, -53, -51]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_-DWEYIqzEe6UQ4O0GYlsJg" type="joinLink" source="_-DUPMIqzEe6UQ4O0GYlsJg" target="__6jCoH-nEe6IE6AcCtnNjw">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_-DWEYYqzEe6UQ4O0GYlsJg" points="[-1, -1, -115, -116]$[39, 40, -75, -75]"/>
   </edges>
 </notation:Diagram>
 ]]></diagram>

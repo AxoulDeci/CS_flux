@@ -8,7 +8,10 @@
     <link id="6c81ee17-7c19-4993-a710-6990b9a9ea7b" executionType="OK" generationType="OK_KO" mandatory="1" targetId="ea2241c2-dd70-457e-badf-389427675cb1"/>
   </actionProcessRef>
   <actionProcessRef id="3879c094-4f81-4561-abf7-bc615046e117" isBeginAction="false" name="CHECK_F_CLIENT" nbCycles="-1" toleratedError="false" targetName="resource.proc#_ndVwkIqiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc$name=CHECK_F_CLIENT?">
-    <link id="1164643b-9101-4622-893f-79a5f467b837" executionType="OK" generationType="OK_KO" mandatory="1" targetId="e944ba82-93f8-428d-8ac5-f59ff97652de"/>
+    <link id="c2d26572-e317-4852-ae59-e44208f30b3a" executionType="OK" generationType="OK_KO" mandatory="1" targetId="cbc6a4bf-444b-472b-8d76-0469b6626d4e"/>
+  </actionProcessRef>
+  <actionProcessRef id="cbc6a4bf-444b-472b-8d76-0469b6626d4e" isBeginAction="false" name="ALIM_SOURCE" nbCycles="-1" toleratedError="false" targetName="resource.proc#e4e03f10-7c4a-4d07-acd6-e459628e59ba?fileId=e4e03f10-7c4a-4d07-acd6-e459628e59ba$type=proc$name=ALIM_SOURCE?">
+    <link id="64139368-ed5b-4ed0-9a5f-da1df79ebd25" executionType="OK" generationType="OK_KO" mandatory="1" targetId="e944ba82-93f8-428d-8ac5-f59ff97652de"/>
   </actionProcessRef>
   <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmlns:proc="http://www.example.org/proc" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation http://www.eclipse.org/gmf/runtime/1.0.3/notation#/?fileId=0472fd36-8084-444e-b199-456429504b6e?" xmi:id="_FwPiMIOvEe6FZpdx97PoxQ" type="Proc" measurementUnit="Pixel">
@@ -42,7 +45,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_HZ5noYOvEe6FZpdx97PoxQ" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="resource.proc#ea2241c2-dd70-457e-badf-389427675cb1?fileId=0472fd36-8084-444e-b199-456429504b6e$type=proc$name=KO?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HZ5nooOvEe6FZpdx97PoxQ" x="85" y="330"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_HZ5nooOvEe6FZpdx97PoxQ" x="85" y="430"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="__Ga5EIOvEe6FZpdx97PoxQ" type="2003">
     <children xmi:type="notation:Node" xmi:id="__Ga5E4OvEe6FZpdx97PoxQ" type="5003"/>
@@ -58,7 +61,7 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="__Ga5EYOvEe6FZpdx97PoxQ" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionProcessRef" href="resource.proc#e944ba82-93f8-428d-8ac5-f59ff97652de?fileId=0472fd36-8084-444e-b199-456429504b6e$type=proc$name=ALIM_ALL_ODS_F_CLIENT?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__Ga5EoOvEe6FZpdx97PoxQ" x="30" y="230"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="__Ga5EoOvEe6FZpdx97PoxQ" x="30" y="330"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_rRbtQIqiEe6wS8JTT7vucg" type="2003">
     <children xmi:type="notation:Node" xmi:id="_rRdicIqiEe6wS8JTT7vucg" type="5003"/>
@@ -74,7 +77,23 @@
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_rRbtQYqiEe6wS8JTT7vucg" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionProcessRef" href="resource.proc#3879c094-4f81-4561-abf7-bc615046e117?fileId=0472fd36-8084-444e-b199-456429504b6e$type=proc$name=CHECK_F_CLIENT?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rRbtQoqiEe6wS8JTT7vucg" x="45" y="130"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_rRbtQoqiEe6wS8JTT7vucg" x="50" y="130"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_OTfSEIq0Ee6UQ4O0GYlsJg" type="2003">
+    <children xmi:type="notation:Node" xmi:id="_OThHQIq0Ee6UQ4O0GYlsJg" type="5003"/>
+    <children xmi:type="notation:Node" xmi:id="_OThHQYq0Ee6UQ4O0GYlsJg" type="7003">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_OThHQoq0Ee6UQ4O0GYlsJg" collapsed="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_OThHQ4q0Ee6UQ4O0GYlsJg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_OThHRIq0Ee6UQ4O0GYlsJg"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_OThHRYq0Ee6UQ4O0GYlsJg" type="7004">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_OThHRoq0Ee6UQ4O0GYlsJg" collapsed="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_OThHR4q0Ee6UQ4O0GYlsJg"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_OThHSIq0Ee6UQ4O0GYlsJg"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_OTfSEYq0Ee6UQ4O0GYlsJg" fontName="Segoe UI"/>
+    <element xmi:type="proc:ActionProcessRef" href="resource.proc#cbc6a4bf-444b-472b-8d76-0469b6626d4e?fileId=0472fd36-8084-444e-b199-456429504b6e$type=proc$name=ALIM_SOURCE?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_OTfSEoq0Ee6UQ4O0GYlsJg" x="60" y="230"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_FwPiMYOvEe6FZpdx97PoxQ"/>
   <element xmi:type="proc:ActionProcess" href="resource.proc#0472fd36-8084-444e-b199-456429504b6e?fileId=0472fd36-8084-444e-b199-456429504b6e$type=proc$name=MAIN_ODS_F_CLIENT?"/>
@@ -92,15 +111,23 @@
     <element xmi:type="proc:Link" href="resource.proc#4759465b-4dca-4fd5-b817-7d5c8a2d7e0f?fileId=0472fd36-8084-444e-b199-456429504b6e$type=proc?"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_rnNI84qiEe6wS8JTT7vucg" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rnNwAIqiEe6wS8JTT7vucg" id="(0.5,1.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rnNwAYqiEe6wS8JTT7vucg" id="(0.5,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_rnNwAYqiEe6wS8JTT7vucg" id="(0.4966442953020134,0.0)"/>
   </edges>
-  <edges xmi:type="notation:Edge" xmi:id="_siBLYIqiEe6wS8JTT7vucg" type="4001" source="_rRbtQIqiEe6wS8JTT7vucg" target="__Ga5EIOvEe6FZpdx97PoxQ">
-    <styles xmi:type="notation:RoutingStyle" xmi:id="_siBLYYqiEe6wS8JTT7vucg"/>
-    <styles xmi:type="notation:FontStyle" xmi:id="_siBLYoqiEe6wS8JTT7vucg" fontName="Segoe UI"/>
-    <element xmi:type="proc:Link" href="resource.proc#1164643b-9101-4622-893f-79a5f467b837?fileId=0472fd36-8084-444e-b199-456429504b6e$type=proc?"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_siBLY4qiEe6wS8JTT7vucg" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_siBycIqiEe6wS8JTT7vucg" id="(0.5,1.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_siBycYqiEe6wS8JTT7vucg" id="(0.49740932642487046,0.0)"/>
+  <edges xmi:type="notation:Edge" xmi:id="_QMBhAIq0Ee6UQ4O0GYlsJg" type="4001" source="_rRbtQIqiEe6wS8JTT7vucg" target="_OTfSEIq0Ee6UQ4O0GYlsJg">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_QMBhAYq0Ee6UQ4O0GYlsJg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_QMBhAoq0Ee6UQ4O0GYlsJg" fontName="Segoe UI"/>
+    <element xmi:type="proc:Link" href="resource.proc#c2d26572-e317-4852-ae59-e44208f30b3a?fileId=0472fd36-8084-444e-b199-456429504b6e$type=proc?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QMBhA4q0Ee6UQ4O0GYlsJg" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QMCIEIq0Ee6UQ4O0GYlsJg" id="(0.4966442953020134,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_QMCIEYq0Ee6UQ4O0GYlsJg" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_QdzNgIq0Ee6UQ4O0GYlsJg" type="4001" source="_OTfSEIq0Ee6UQ4O0GYlsJg" target="__Ga5EIOvEe6FZpdx97PoxQ">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_QdzNgYq0Ee6UQ4O0GYlsJg"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_QdzNgoq0Ee6UQ4O0GYlsJg" fontName="Segoe UI"/>
+    <element xmi:type="proc:Link" href="resource.proc#64139368-ed5b-4ed0-9a5f-da1df79ebd25?fileId=0472fd36-8084-444e-b199-456429504b6e$type=proc?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_QdzNg4q0Ee6UQ4O0GYlsJg" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Qdz0kIq0Ee6UQ4O0GYlsJg" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Qdz0kYq0Ee6UQ4O0GYlsJg" id="(0.49740932642487046,0.0)"/>
   </edges>
 </notation:Diagram>
 ]]></diagram>
