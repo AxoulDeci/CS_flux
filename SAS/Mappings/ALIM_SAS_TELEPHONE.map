@@ -52,6 +52,7 @@
     <constraint id="_ojU1kYUuEe6kybSjKPTayw" name="CTRL_FK_CLIENT" ref="resource.md#_RHlGJYq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FK_CLIENT?" reject="true"/>
     <constraint id="_ojU1koUuEe6kybSjKPTayw" name="CTRL_STATUS" ref="resource.md#_RHlGL4q7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
     <constraint id="_ojU1k4UuEe6kybSjKPTayw" name="CTRL_TYPE" ref="resource.md#_RHlGNIq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_TYPE?" reject="true"/>
+    <constraint id="_RiQ78JAqEe6u8_TKo8ZMQA" ref="resource.md#_3VnB0ZApEe6u8_TKo8ZMQA?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md?" reject="true"/>
     <setDescriptor id="_7_8tsIUrEe6kybSjKPTayw" label="A"/>
   </datastore>
   <datastore id="_7mrSEIUrEe6kybSjKPTayw" alias="ODS_TELEPHONE" dataset="_7muVYIUrEe6kybSjKPTayw" ref="resource.md#_bkye4XozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ODS_TELEPHONE?">
@@ -65,9 +66,10 @@
     <field id="_7mtHQoUrEe6kybSjKPTayw" fullAlias="ID_FICHIER" name="ID_FICHIER" ref="resource.md#_G_rPEH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?"/>
     <field id="_7mr5IYUrEe6kybSjKPTayw" fullAlias="TYPE_LIGNE" name="TYPE_LIGNE" ref="resource.md#_boQCkHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_LIGNE?"/>
   </datastore>
-  <template id="_7__J_4UrEe6kybSjKPTayw" name="I_SAS_TELEPHONE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_7ZfKoIUrEe6kybSjKPTayw">
+  <template id="_7__J_4UrEe6kybSjKPTayw" name="I_SAS_TELEPHONE" process="resource.proc#_8c1f9be7-1fdc-457b-bc08-d3db9d701af9?fileId=_8c1f9be7-1fdc-457b-bc08-d3db9d701af9$type=proc$name=INTEGRATION%20Oracle%2020130715?" targetId="_7ZfKoIUrEe6kybSjKPTayw">
     <parameter id="_9eERgIUrEe6kybSjKPTayw" name="truncateTargetTable" value="true"/>
     <parameter id="_9zlOgIUrEe6kybSjKPTayw" name="doUpdate" value="false"/>
+    <parameter id="_0cPdcJAoEe6u8_TKo8ZMQA" name="recycleRejects" value="true"/>
   </template>
   <template id="_m-RFkIq7Ee6UQ4O0GYlsJg" name="R_SAS_TELEPHONE" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_7ZfKoIUrEe6kybSjKPTayw"/>
   <dataSet id="_7ZjcEIUrEe6kybSjKPTayw">

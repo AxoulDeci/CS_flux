@@ -61,7 +61,7 @@
     <parameter id="_BFOlcIUsEe6kybSjKPTayw" name="truncateTargetTable" value="true"/>
     <parameter id="_vw7sQJAlEe6u8_TKo8ZMQA" name="integrationStrategy" value="append"/>
     <parameter id="_3jsBcJAmEe6u8_TKo8ZMQA" name="appendMode" value="true"/>
-    <parameter id="_7Nrm8JAmEe6u8_TKo8ZMQA" name="createIndexOnIntegrationTable" value="false"/>
+    <parameter id="_2q_M8JAoEe6u8_TKo8ZMQA" name="recycleRejects" value="true"/>
   </template>
   <template id="_oK6DoIUwEe6kybSjKPTayw" name="R_SAS_COMPTE" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_yiFsIIUrEe6kybSjKPTayw"/>
   <dataSet id="_ySFhQIUrEe6kybSjKPTayw">

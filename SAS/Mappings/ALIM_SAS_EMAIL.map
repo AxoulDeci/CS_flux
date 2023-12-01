@@ -51,9 +51,10 @@
     <field id="_1pT7wIUrEe6kybSjKPTayw" fullAlias="CLE_CLIENT" name="CLE_CLIENT" ref="resource.md#_bkrxMHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CLIENT?"/>
     <field id="_1pT7w4UrEe6kybSjKPTayw" fullAlias="DATE_CREATION" name="DATE_CREATION" ref="resource.md#_G747QH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?"/>
   </datastore>
-  <template id="_2YCC8IUrEe6kybSjKPTayw" name="I_SAS_EMAIL" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_1M2CMIUrEe6kybSjKPTayw">
+  <template id="_2YCC8IUrEe6kybSjKPTayw" name="I_SAS_EMAIL" process="resource.proc#_8c1f9be7-1fdc-457b-bc08-d3db9d701af9?fileId=_8c1f9be7-1fdc-457b-bc08-d3db9d701af9$type=proc$name=INTEGRATION%20Oracle%2020130715?" targetId="_1M2CMIUrEe6kybSjKPTayw">
     <parameter id="__DiagIUrEe6kybSjKPTayw" name="truncateTargetTable" value="true"/>
     <parameter id="__NFYEIUrEe6kybSjKPTayw" name="doUpdate" value="false"/>
+    <parameter id="_1tV48JAoEe6u8_TKo8ZMQA" name="recycleRejects" value="true"/>
   </template>
   <template id="_mcUPEIq7Ee6UQ4O0GYlsJg" name="R_SAS_EMAIL" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_1M2CMIUrEe6kybSjKPTayw"/>
   <dataSet id="_1M5skIUrEe6kybSjKPTayw">

@@ -97,11 +97,12 @@
     <field id="_acsZcoUrEe6kybSjKPTayw" fullAlias="DATE_CREATION" name="DATE_CREATION" ref="resource.md#_G0IGZn-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?"/>
     <field id="_acrLUYUrEe6kybSjKPTayw" fullAlias="ACTION" name="ACTION" ref="resource.md#_bdVMAHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ACTION?"/>
   </datastore>
-  <template id="_bXM54IUrEe6kybSjKPTayw" name="I_SAS_ADRESSE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_aRgdIIUrEe6kybSjKPTayw">
+  <template id="_bXM54IUrEe6kybSjKPTayw" name="I_SAS_ADRESSE" process="resource.proc#_8c1f9be7-1fdc-457b-bc08-d3db9d701af9?fileId=_8c1f9be7-1fdc-457b-bc08-d3db9d701af9$type=proc$name=INTEGRATION%20Oracle%2020130715?" targetId="_aRgdIIUrEe6kybSjKPTayw">
     <parameter id="_cXFCgIUrEe6kybSjKPTayw" name="truncateTargetTable" value="true"/>
     <parameter id="_dR5sAIUrEe6kybSjKPTayw" name="integrationStrategy" value="auto"/>
     <parameter id="_hSdXYIUrEe6kybSjKPTayw" name="doUpdate" value="false"/>
     <parameter id="_1Vka8Iq-Ee66Xe2NrY9mWA" name="recycleRejects" value="true"/>
+    <parameter id="_nzOHcJAoEe6u8_TKo8ZMQA" name="appendMode" value="true"/>
   </template>
   <template id="_3AEN4Iq-Ee66Xe2NrY9mWA" name="R_SAS_ADRESSE" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_aRgdIIUrEe6kybSjKPTayw"/>
   <dataSet id="_aRwUwIUrEe6kybSjKPTayw">

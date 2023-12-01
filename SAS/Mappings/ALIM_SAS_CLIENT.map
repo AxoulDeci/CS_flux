@@ -71,7 +71,7 @@
         <expression>ODS_CLIENT.CIVILITE</expression>
       </expression>
     </field>
-    <constraint id="_rcI9IoUrEe6kybSjKPTayw" name="SAS_CLIENT_PK" ref="resource.md#_-lvGoH-5Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_CLIENT_PK?" reject="false"/>
+    <constraint id="_rcI9IoUrEe6kybSjKPTayw" name="SAS_CLIENT_PK" ref="resource.md#_-lvGoH-5Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_CLIENT_PK?" reject="true"/>
     <constraint id="_oiGGgIUuEe6kybSjKPTayw" name="CTRL_TYPE" ref="resource.md#_-t7OT4q6Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_TYPE?" reject="true"/>
     <constraint id="_oiGtkIUuEe6kybSjKPTayw" name="CTRL_FK_COMPTE" ref="resource.md#_-t7ORYq6Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FK_COMPTE?" reject="true"/>
     <constraint id="_oiGtkYUuEe6kybSjKPTayw" name="CTRL_STATUS" ref="resource.md#_-t7OSoq6Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
@@ -93,9 +93,11 @@
     <field id="_sI8YwYUrEe6kybSjKPTayw" fullAlias="CLE_COMPTE" name="CLE_COMPTE" ref="resource.md#_bZzW5XozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_COMPTE?"/>
     <field id="_sI8Yw4UrEe6kybSjKPTayw" fullAlias="TYPE" name="TYPE" ref="resource.md#_bZzW8XozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE?"/>
   </datastore>
-  <template id="_sxyhcIUrEe6kybSjKPTayw" name="I_SAS_CLIENT" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_rcErsIUrEe6kybSjKPTayw">
+  <template id="_sxyhcIUrEe6kybSjKPTayw" name="I_SAS_CLIENT" process="resource.proc#_8c1f9be7-1fdc-457b-bc08-d3db9d701af9?fileId=_8c1f9be7-1fdc-457b-bc08-d3db9d701af9$type=proc$name=INTEGRATION%20Oracle%2020130715?" targetId="_rcErsIUrEe6kybSjKPTayw">
     <parameter id="_t2anMIUrEe6kybSjKPTayw" name="truncateTargetTable" value="true"/>
     <parameter id="_yARlQIU7Ee6kybSjKPTayw" name="integrationStrategy" value="incremental"/>
+    <parameter id="_XL03YJAoEe6u8_TKo8ZMQA" name="appendMode" value="true"/>
+    <parameter id="_2W8PkJAoEe6u8_TKo8ZMQA" name="recycleRejects" value="true"/>
   </template>
   <template id="_mAP-IIq7Ee6UQ4O0GYlsJg" name="R_SAS_CLIENT" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_rcErsIUrEe6kybSjKPTayw"/>
   <dataSet id="_rcKLQIUrEe6kybSjKPTayw">
