@@ -57,9 +57,11 @@
     <constraint id="_oitKgIUuEe6kybSjKPTayw" name="CTRL_CABINET_RATTACHEMENT" ref="resource.md#_E8wIAIq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_CABINET_RATTACHEMENT?" reject="true"/>
     <setDescriptor id="_zDDrMIUrEe6kybSjKPTayw" label="A"/>
   </datastore>
-  <template id="_zDGHcIUrEe6kybSjKPTayw" name="I_SAS_COMPTE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_yiFsIIUrEe6kybSjKPTayw">
+  <template id="_zDGHcIUrEe6kybSjKPTayw" name="I_SAS_COMPTE" process="resource.proc#_8c1f9be7-1fdc-457b-bc08-d3db9d701af9?fileId=_8c1f9be7-1fdc-457b-bc08-d3db9d701af9$type=proc$name=INTEGRATION%20Oracle%2020130715?" targetId="_yiFsIIUrEe6kybSjKPTayw">
     <parameter id="_BFOlcIUsEe6kybSjKPTayw" name="truncateTargetTable" value="true"/>
-    <parameter id="_BOU3EIUsEe6kybSjKPTayw" name="doUpdate" value="false"/>
+    <parameter id="_vw7sQJAlEe6u8_TKo8ZMQA" name="integrationStrategy" value="append"/>
+    <parameter id="_3jsBcJAmEe6u8_TKo8ZMQA" name="appendMode" value="true"/>
+    <parameter id="_7Nrm8JAmEe6u8_TKo8ZMQA" name="createIndexOnIntegrationTable" value="false"/>
   </template>
   <template id="_oK6DoIUwEe6kybSjKPTayw" name="R_SAS_COMPTE" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_yiFsIIUrEe6kybSjKPTayw"/>
   <dataSet id="_ySFhQIUrEe6kybSjKPTayw">

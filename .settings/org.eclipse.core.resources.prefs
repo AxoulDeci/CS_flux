@@ -1,6 +1,7 @@
 eclipse.preferences.version=1
-encoding//SAS/ALIM_SAS_ADRESSE.map=UTF-8
-encoding//SAS/ALIM_SAS_CLIENT.map=UTF-8
-encoding//SAS/ALIM_SAS_COMPTE.map=UTF-8
-encoding//SAS/ALIM_SAS_EMAIL.map=UTF-8
-encoding//SAS/ALIM_SAS_TELEPHONE.map=UTF-8
+encoding//SAS/Mappings/ALIM_SAS_ADRESSE.map=UTF-8
+encoding//SAS/Mappings/ALIM_SAS_CLIENT.map=UTF-8
+encoding//SAS/Mappings/ALIM_SAS_COMPTE.map=UTF-8
+encoding//SAS/Mappings/ALIM_SAS_EMAIL.map=UTF-8
+encoding//SAS/Mappings/ALIM_SAS_TELEPHONE.map=UTF-8
+encoding//SAS/Process/MAIN_SAS.proc=UTF-8

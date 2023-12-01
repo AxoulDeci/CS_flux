@@ -71,7 +71,7 @@
         <expression>ODS_CLIENT.CIVILITE</expression>
       </expression>
     </field>
-    <constraint id="_rcI9IoUrEe6kybSjKPTayw" name="SAS_CLIENT_PK" ref="resource.md#_-lvGoH-5Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_CLIENT_PK?" reject="true"/>
+    <constraint id="_rcI9IoUrEe6kybSjKPTayw" name="SAS_CLIENT_PK" ref="resource.md#_-lvGoH-5Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_CLIENT_PK?" reject="false"/>
     <constraint id="_oiGGgIUuEe6kybSjKPTayw" name="CTRL_TYPE" ref="resource.md#_-t7OT4q6Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_TYPE?" reject="true"/>
     <constraint id="_oiGtkIUuEe6kybSjKPTayw" name="CTRL_FK_COMPTE" ref="resource.md#_-t7ORYq6Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FK_COMPTE?" reject="true"/>
     <constraint id="_oiGtkYUuEe6kybSjKPTayw" name="CTRL_STATUS" ref="resource.md#_-t7OSoq6Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
