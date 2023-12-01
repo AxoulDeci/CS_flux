@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map xmlns:map="http://www.indy.com/v2/map" id="_3yUSUJAxEe6u8_TKo8ZMQA" internalVersion="8" tech="resource.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
+  <datastore id="_3yUSUZAxEe6u8_TKo8ZMQA" alias="SAS_EMAIL" control="true" dataset="_3yUScpAxEe6u8_TKo8ZMQA" ref="resource.md#_HqKOIX-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_EMAIL?" subExpression="[A]">
+    <field id="_3yUSUpAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="EMAIL" ref="resource.md#_Htxi0H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=EMAIL?" update="true">
+      <expression id="_3yUSU5AxEe6u8_TKo8ZMQA" setDescriptorRef="_3yUSZJAxEe6u8_TKo8ZMQA">
+        <expression>ODS_EMAIL.EMAIL</expression>
+      </expression>
+    </field>
+    <field id="_3yUSVJAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="DATE_CREATION" ref="resource.md#_Htyw8H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?" update="true">
+      <expression id="_3yUSVZAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yUSZJAxEe6u8_TKo8ZMQA">
+        <expression>ODS_EMAIL.DATE_CREATION</expression>
+      </expression>
+    </field>
+    <field id="_3yUSVpAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="ID_FICHIER" ref="resource.md#_Htz_EH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?" update="true">
+      <expression id="_3yUSV5AxEe6u8_TKo8ZMQA" setDescriptorRef="_3yUSZJAxEe6u8_TKo8ZMQA">
+        <expression>ODS_EMAIL.ID_FICHIER</expression>
+      </expression>
+    </field>
+    <field id="_3yUSWJAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="TYPE_LIGNE" ref="resource.md#_HtvGkH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_LIGNE?" update="true">
+      <expression id="_3yUSWZAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yUSZJAxEe6u8_TKo8ZMQA">
+        <expression>ODS_EMAIL.TYPE_LIGNE</expression>
+      </expression>
+    </field>
+    <field id="_3yUSWpAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="STATUS" ref="resource.md#_HtyJ4H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS?" update="true">
+      <expression id="_3yUSW5AxEe6u8_TKo8ZMQA" setDescriptorRef="_3yUSZJAxEe6u8_TKo8ZMQA">
+        <expression>ODS_EMAIL.STATUS</expression>
+      </expression>
+    </field>
+    <field id="_3yUSXJAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="ACTION" ref="resource.md#_HtvtoH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ACTION?" update="true">
+      <expression id="_3yUSXZAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yUSZJAxEe6u8_TKo8ZMQA">
+        <expression>ODS_EMAIL.ACTION</expression>
+      </expression>
+    </field>
+    <field id="_3yUSXpAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="CLE_CLIENT" ref="resource.md#_Htw7wH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CLIENT?" update="true" updateKey="true">
+      <expression id="_3yUSX5AxEe6u8_TKo8ZMQA" setDescriptorRef="_3yUSZJAxEe6u8_TKo8ZMQA">
+        <expression>ODS_EMAIL.CLE_CLIENT</expression>
+      </expression>
+    </field>
+    <constraint id="_3yUSYJAxEe6u8_TKo8ZMQA" name="SAS_EMAIL_PK" ref="resource.md#__C8nEH-5Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_EMAIL_PK?" reject="true"/>
+    <constraint id="_3yUSYZAxEe6u8_TKo8ZMQA" name="CTRL_EMAIL" ref="resource.md#_NEAjAIq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_EMAIL?" reject="true"/>
+    <constraint id="_3yUSYpAxEe6u8_TKo8ZMQA" name="CTRL_STATUS" ref="resource.md#_NEAjCoq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
+    <constraint id="_3yUSY5AxEe6u8_TKo8ZMQA" name="CTRL_FK_CLIENT" ref="resource.md#_NEAjBYq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FK_CLIENT?" reject="true"/>
+    <setDescriptor id="_3yUSZJAxEe6u8_TKo8ZMQA" label="A"/>
+  </datastore>
+  <datastore id="_3yUSZZAxEe6u8_TKo8ZMQA" alias="ODS_EMAIL" dataset="_3yUSc5AxEe6u8_TKo8ZMQA" ref="resource.md#_bg0k4XozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ODS_EMAIL?">
+    <field id="_3yUSZpAxEe6u8_TKo8ZMQA" fullAlias="STATUS" name="STATUS" ref="resource.md#_bksYRnozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS?"/>
+    <field id="_3yUSZ5AxEe6u8_TKo8ZMQA" fullAlias="TYPE_LIGNE" name="TYPE_LIGNE" ref="resource.md#_bkpU8HozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_LIGNE?"/>
+    <field id="_3yUSaJAxEe6u8_TKo8ZMQA" fullAlias="ID_FICHIER" name="ID_FICHIER" ref="resource.md#_G75iUH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?"/>
+    <field id="_3yUSaZAxEe6u8_TKo8ZMQA" fullAlias="EMAIL" name="EMAIL" ref="resource.md#_bksYQHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=EMAIL?"/>
+    <field id="_3yUSapAxEe6u8_TKo8ZMQA" fullAlias="ACTION" name="ACTION" ref="resource.md#_bkqjEHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ACTION?"/>
+    <field id="_3yUSa5AxEe6u8_TKo8ZMQA" fullAlias="CLE_CLIENT" name="CLE_CLIENT" ref="resource.md#_bkrxMHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CLIENT?"/>
+    <field id="_3yUSbJAxEe6u8_TKo8ZMQA" fullAlias="DATE_CREATION" name="DATE_CREATION" ref="resource.md#_G747QH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?"/>
+  </datastore>
+  <template id="_3yUSbZAxEe6u8_TKo8ZMQA" name="I_SAS_EMAIL" process="resource.proc#_8c1f9be7-1fdc-457b-bc08-d3db9d701af9?fileId=_8c1f9be7-1fdc-457b-bc08-d3db9d701af9$type=proc$name=INTEGRATION%20Oracle%2020130715?" targetId="_3yUSUZAxEe6u8_TKo8ZMQA">
+    <parameter id="_3yUSbpAxEe6u8_TKo8ZMQA" name="truncateTargetTable" value="true"/>
+    <parameter id="_3yUSb5AxEe6u8_TKo8ZMQA" name="doUpdate" value="false"/>
+    <parameter id="_3yUScJAxEe6u8_TKo8ZMQA" name="recycleRejects" value="true"/>
+  </template>
+  <template id="_3yUScZAxEe6u8_TKo8ZMQA" name="R_SAS_EMAIL" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_3yUSUZAxEe6u8_TKo8ZMQA"/>
+  <dataSet id="_3yUScpAxEe6u8_TKo8ZMQA">
+    <container>_3yUSUZAxEe6u8_TKo8ZMQA</container>
+  </dataSet>
+  <dataSet id="_3yUSc5AxEe6u8_TKo8ZMQA">
+    <container>_3yUSZZAxEe6u8_TKo8ZMQA</container>
+  </dataSet>
+  <hint>
+    <usedField>#_3yUSZpAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yUSZ5AxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yUSaJAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yUSaZAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yUSapAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yUSa5AxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yUSbJAxEe6u8_TKo8ZMQA</usedField>
+  </hint>
+  <diagram><![CDATA[<?xml version="1.0" ?><notation:Diagram xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:version="2.0" type="Map" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="1ed45e52-8d3f-4c7d-bef4-0159e066500d" measurementUnit="Pixel"><children fontName="Segoe UI" xmi:type="notation:Shape" type="2004" xmi:id="86ce8a80-3c3d-4f44-89fa-f663b2588a96"><children xmi:type="notation:DecorationNode" type="5005" xmi:id="3f481d36-a195-4bd7-bc2b-49fb276bbc2e"></children><children xmi:type="notation:DecorationNode" type="5007" xmi:id="aba3402e-d4a8-42ef-97e0-853244f479d9"></children><children xmi:type="notation:DecorationNode" type="7003" xmi:id="29517fa4-5146-4b13-b085-92aef8a24187"></children><children xmi:type="notation:DecorationNode" type="7009" xmi:id="1e331a5b-cf04-46f5-8a95-8ebfe757955c"></children><children xmi:type="notation:BasicCompartment" type="7004" xmi:id="d7bb5454-1175-46ff-87e1-3c1ccf6607fc"><styles xmi:type="notation:SortingStyle" xmi:id="c7b7d802-7c08-47b8-a528-c1e164720127"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="3edcfcfe-e430-43c2-9807-0f19dbd39f3c"></styles></children><children xmi:type="notation:DecorationNode" type="5009" xmi:id="97129277-8211-4dea-9ae3-1d9a616157d9"><styles xmi:type="notation:DrawerStyle" xmi:id="b7293fbd-def2-4af8-be79-1f63d725c415"></styles></children><children xmi:type="notation:DecorationNode" type="7005" xmi:id="4d90a50a-b2c5-46ce-bdad-38449ad9eaa4"><styles xmi:type="notation:SortingStyle" xmi:id="731e755d-73e3-4e2e-bffc-7a4a4f16f61d"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="c27723b0-dcc2-4818-9077-8bba93541b73"></styles></children><children xmi:type="notation:BasicCompartment" type="7007" xmi:id="4f275d1a-399e-45ce-900f-9f7f38666b11"></children><element xmi:type="map:Datastore" href="resource#_3yUSUZAxEe6u8_TKo8ZMQA?fileId=_3yUSUJAxEe6u8_TKo8ZMQA?"></element><layoutConstraint x="256" xmi:type="notation:Bounds" y="32" xmi:id="22eb0813-5919-4f1a-8010-be5ed7969a22"></layoutConstraint></children><children fontName="Segoe UI" xmi:type="notation:Shape" type="2004" xmi:id="9702988d-96a7-4b23-863a-008558d1dffe"><children xmi:type="notation:DecorationNode" type="5005" xmi:id="fdf95c9d-23d8-423f-929c-20706d212ee0"></children><children xmi:type="notation:DecorationNode" type="5007" xmi:id="a7eb13dd-24d5-475a-b98b-ff793605b158"></children><children xmi:type="notation:DecorationNode" type="7003" xmi:id="a0c3f966-16c0-480b-be2b-e5d8ddbfe21e"></children><children xmi:type="notation:DecorationNode" type="7009" xmi:id="ce2f6522-5621-424f-9a7b-29bf6217a87f"></children><children xmi:type="notation:BasicCompartment" type="7004" xmi:id="0d2b8162-2bfb-4c30-87fd-7b1a6ef3b368"><styles xmi:type="notation:SortingStyle" xmi:id="6b1b951d-99aa-43e1-9913-8ec23558c296"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="13c9093b-b74b-4e09-a475-98efa0649d1e"></styles></children><children xmi:type="notation:DecorationNode" type="5009" xmi:id="8e2d1978-5706-445f-a366-3611899d7ed0"><styles xmi:type="notation:DrawerStyle" xmi:id="073b0ec9-3a09-497a-bea4-4effc0bfb1b3"></styles></children><children xmi:type="notation:DecorationNode" type="7005" xmi:id="64713d3e-76af-41c2-9ea1-d1fb2c34c345"><styles xmi:type="notation:SortingStyle" xmi:id="8db0e9ce-d063-47d9-9d11-da65c967b3b9"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="0948522e-91e3-4da6-9737-25877b436443"></styles></children><children xmi:type="notation:BasicCompartment" type="7007" xmi:id="13f0ec5a-6d7e-4a67-931f-50c3e43f5432"></children><element xmi:type="map:Datastore" href="resource#_3yUSZZAxEe6u8_TKo8ZMQA?fileId=_3yUSUJAxEe6u8_TKo8ZMQA?"></element><layoutConstraint x="32" xmi:type="notation:Bounds" y="65" xmi:id="613b6ccc-5ca8-470e-b541-c288989dfb53"></layoutConstraint></children><styles xmi:type="notation:DiagramStyle" xmi:id="3fef052a-4503-4dad-813d-2a6cdbddde92"></styles><element xmi:type="map:Map" href="resource#_3yUSUJAxEe6u8_TKo8ZMQA?fileId=_3yUSUJAxEe6u8_TKo8ZMQA?"></element><edges xmi:type="notation:Edge" source="86ce8a80-3c3d-4f44-89fa-f663b2588a96" type="targetLink" xmi:id="4a40c545-127f-4c20-a344-743a1bce1a30" target="9702988d-96a7-4b23-863a-008558d1dffe"><element xsi:nil="true"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="99d4e317-5892-4f60-a9f4-dcfdc6fae5b9" points="[-88, 4, 182, -9]$[-182, 9, 88, -4]"></bendpoints></edges><edges xmi:type="notation:Edge" source="86ce8a80-3c3d-4f44-89fa-f663b2588a96" type="targetDataSetLink" xmi:id="659d8899-ed50-4140-822e-8817c5bc8323" target="86ce8a80-3c3d-4f44-89fa-f663b2588a96"><element xmi:type="map:DataSet" href="resource#_3yUSc5AxEe6u8_TKo8ZMQA?fileId=_3yUSUJAxEe6u8_TKo8ZMQA?"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="14c0c96a-eb8c-4229-b4a6-fcfb66ff0df9" points="[0, 0, 0, 0]$[0, 0, 0, 0]"></bendpoints></edges><edges xmi:type="notation:Edge" source="86ce8a80-3c3d-4f44-89fa-f663b2588a96" type="targetSetLink" xmi:id="eef9a4c5-9625-45dc-9fb0-8debf5772e6e" target="86ce8a80-3c3d-4f44-89fa-f663b2588a96"><element xmi:type="map:SetDescriptor" href="resource#_3yUSZJAxEe6u8_TKo8ZMQA?fileId=_3yUSUJAxEe6u8_TKo8ZMQA?"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="2db2c4d5-b44a-40bb-a494-182e558ce030" points="[0, 0, 0, 0]$[0, 0, 0, 0]"></bendpoints></edges></notation:Diagram>]]></diagram>
+</map:map>

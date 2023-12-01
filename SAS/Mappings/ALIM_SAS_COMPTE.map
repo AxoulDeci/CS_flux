@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map xmlns:map="http://www.indy.com/v2/map" id="_3yTrQJAxEe6u8_TKo8ZMQA" internalVersion="8" tech="resource.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
+  <datastore id="_3yTrQZAxEe6u8_TKo8ZMQA" alias="ODS_COMPTE" dataset="_3yTrZpAxEe6u8_TKo8ZMQA" ref="resource.md#_bdhZQXozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ODS_COMPTE?">
+    <field id="_3yTrQpAxEe6u8_TKo8ZMQA" fullAlias="CLE_COMPTE" name="CLE_COMPTE" ref="resource.md#_bgvFVnozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_COMPTE?"/>
+    <field id="_3yTrQ5AxEe6u8_TKo8ZMQA" fullAlias="TYPE" name="TYPE" ref="resource.md#_bgvsZnozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE?"/>
+    <field id="_3yTrRJAxEe6u8_TKo8ZMQA" fullAlias="ID_FICHIER" name="ID_FICHIER" ref="resource.md#_G4MHBn-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?"/>
+    <field id="_3yTrRZAxEe6u8_TKo8ZMQA" fullAlias="DATE_CREATION" name="DATE_CREATION" ref="resource.md#_G4MHAH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?"/>
+    <field id="_3yTrRpAxEe6u8_TKo8ZMQA" fullAlias="ACTION" name="ACTION" ref="resource.md#_bgvFUHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ACTION?"/>
+    <field id="_3yTrR5AxEe6u8_TKo8ZMQA" fullAlias="STATUS" name="STATUS" ref="resource.md#_bgvsYHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS?"/>
+    <field id="_3yTrSJAxEe6u8_TKo8ZMQA" fullAlias="CABINET_RATTACHEMENT" name="CABINET_RATTACHEMENT" ref="resource.md#_bgvsbHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CABINET_RATTACHEMENT?"/>
+    <field id="_3yTrSZAxEe6u8_TKo8ZMQA" fullAlias="TYPE_LIGNE" name="TYPE_LIGNE" ref="resource.md#_bgueQHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_LIGNE?"/>
+  </datastore>
+  <datastore id="_3yTrSpAxEe6u8_TKo8ZMQA" alias="SAS_COMPTE" control="true" dataset="_3yTrZ5AxEe6u8_TKo8ZMQA" ref="resource.md#_HbPBUX-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_COMPTE?" subExpression="[A]">
+    <field id="_3yTrS5AxEe6u8_TKo8ZMQA" enable="true" insert="true" name="CLE_COMPTE" ref="resource.md#_HevBQH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_COMPTE?" update="true" updateKey="true">
+      <expression id="_3yTrTJAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yTrX5AxEe6u8_TKo8ZMQA">
+        <expression>ODS_COMPTE.CLE_COMPTE</expression>
+      </expression>
+    </field>
+    <field id="_3yTrTZAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="STATUS" ref="resource.md#_HevoUH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS?" update="true">
+      <expression id="_3yTrTpAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yTrX5AxEe6u8_TKo8ZMQA">
+        <expression>ODS_COMPTE.STATUS</expression>
+      </expression>
+    </field>
+    <field id="_3yTrT5AxEe6u8_TKo8ZMQA" enable="true" insert="true" name="ACTION" ref="resource.md#_HeuaMH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ACTION?" update="true">
+      <expression id="_3yTrUJAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yTrX5AxEe6u8_TKo8ZMQA">
+        <expression>ODS_COMPTE.ACTION</expression>
+      </expression>
+    </field>
+    <field id="_3yTrUZAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="TYPE" ref="resource.md#_HewPYH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE?" update="true">
+      <expression id="_3yTrUpAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yTrX5AxEe6u8_TKo8ZMQA">
+        <expression>ODS_COMPTE.TYPE</expression>
+      </expression>
+    </field>
+    <field id="_3yTrU5AxEe6u8_TKo8ZMQA" enable="true" insert="true" name="DATE_CREATION" ref="resource.md#_HeyEkH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?" update="true">
+      <expression id="_3yTrVJAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yTrX5AxEe6u8_TKo8ZMQA">
+        <expression>ODS_COMPTE.DATE_CREATION</expression>
+      </expression>
+    </field>
+    <field id="_3yTrVZAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="ID_FICHIER" ref="resource.md#_HeyroH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?" update="true">
+      <expression id="_3yTrVpAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yTrX5AxEe6u8_TKo8ZMQA">
+        <expression>ODS_COMPTE.ID_FICHIER</expression>
+      </expression>
+    </field>
+    <field id="_3yTrV5AxEe6u8_TKo8ZMQA" enable="true" insert="true" name="TYPE_LIGNE" ref="resource.md#_HetMEH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_LIGNE?" update="true">
+      <expression id="_3yTrWJAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yTrX5AxEe6u8_TKo8ZMQA">
+        <expression>ODS_COMPTE.TYPE_LIGNE</expression>
+      </expression>
+    </field>
+    <field id="_3yTrWZAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="CABINET_RATTACHEMENT" ref="resource.md#_HexdgH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CABINET_RATTACHEMENT?" update="true">
+      <expression id="_3yTrWpAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yTrX5AxEe6u8_TKo8ZMQA">
+        <expression>ODS_COMPTE.CABINET_RATTACHEMENT</expression>
+      </expression>
+    </field>
+    <constraint id="_3yTrW5AxEe6u8_TKo8ZMQA" name="SAS_COMPTE_PK" ref="resource.md#_-utccH-5Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_COMPTE_PK?" reject="true"/>
+    <constraint id="_3yTrXJAxEe6u8_TKo8ZMQA" name="CTRL_STATUS" ref="resource.md#_E8wIBYq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
+    <constraint id="_3yTrXZAxEe6u8_TKo8ZMQA" name="CTRL_TYPE_CPT" ref="resource.md#_E8wICoq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_TYPE_CPT?" reject="true"/>
+    <constraint id="_3yTrXpAxEe6u8_TKo8ZMQA" name="CTRL_CABINET_RATTACHEMENT" ref="resource.md#_E8wIAIq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_CABINET_RATTACHEMENT?" reject="true"/>
+    <setDescriptor id="_3yTrX5AxEe6u8_TKo8ZMQA" label="A"/>
+  </datastore>
+  <template id="_3yTrYJAxEe6u8_TKo8ZMQA" name="I_SAS_COMPTE" process="resource.proc#_8c1f9be7-1fdc-457b-bc08-d3db9d701af9?fileId=_8c1f9be7-1fdc-457b-bc08-d3db9d701af9$type=proc$name=INTEGRATION%20Oracle%2020130715?" targetId="_3yTrSpAxEe6u8_TKo8ZMQA">
+    <parameter id="_3yTrYZAxEe6u8_TKo8ZMQA" name="truncateTargetTable" value="true"/>
+    <parameter id="_3yTrYpAxEe6u8_TKo8ZMQA" name="integrationStrategy" value="append"/>
+    <parameter id="_3yTrY5AxEe6u8_TKo8ZMQA" name="appendMode" value="true"/>
+    <parameter id="_3yTrZJAxEe6u8_TKo8ZMQA" name="recycleRejects" value="true"/>
+  </template>
+  <template id="_3yTrZZAxEe6u8_TKo8ZMQA" name="R_SAS_COMPTE" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_3yTrSpAxEe6u8_TKo8ZMQA"/>
+  <dataSet id="_3yTrZpAxEe6u8_TKo8ZMQA">
+    <container>_3yTrQZAxEe6u8_TKo8ZMQA</container>
+  </dataSet>
+  <dataSet id="_3yTrZ5AxEe6u8_TKo8ZMQA">
+    <container>_3yTrSpAxEe6u8_TKo8ZMQA</container>
+  </dataSet>
+  <hint>
+    <usedField>#_3yTrQpAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yTrQ5AxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yTrRJAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yTrRZAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yTrRpAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yTrR5AxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yTrSJAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yTrSZAxEe6u8_TKo8ZMQA</usedField>
+  </hint>
+  <diagram><![CDATA[<?xml version="1.0" ?><notation:Diagram xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:version="2.0" type="Map" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="ba85a069-202f-4cce-9050-a2ef9b3010c7" measurementUnit="Pixel"><children fontName="Segoe UI" xmi:type="notation:Shape" type="2004" xmi:id="2e75b857-2f9f-4498-a9a7-bb78b6b22645"><children xmi:type="notation:DecorationNode" type="5005" xmi:id="fa7ba6cc-5737-4ded-ab04-f826361e2a33"></children><children xmi:type="notation:DecorationNode" type="5007" xmi:id="c70e45d1-9c34-41db-bb77-a0371d85a0ef"></children><children xmi:type="notation:DecorationNode" type="7003" xmi:id="1e4b49b2-9c34-4f92-97db-ee69af99a9f0"></children><children xmi:type="notation:DecorationNode" type="7009" xmi:id="8ac3d8bc-025d-4ad3-a935-807556e2bc6c"></children><children xmi:type="notation:BasicCompartment" type="7004" xmi:id="9010fbdc-e03c-453d-9236-5806b5db97c7"><styles xmi:type="notation:SortingStyle" xmi:id="860331dd-e095-4234-8478-83d1eec7a117"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="756e0bbc-42f6-419b-acc0-958439ff99a2"></styles></children><children xmi:type="notation:DecorationNode" type="5009" xmi:id="43686bf6-39a6-40ce-91ee-63c162a877c4"><styles xmi:type="notation:DrawerStyle" xmi:id="08f96f8a-d18a-4a65-a102-8d4ffb25b676"></styles></children><children xmi:type="notation:DecorationNode" type="7005" xmi:id="66910036-ef79-46a4-89ed-7f8137e43d6e"><styles xmi:type="notation:SortingStyle" xmi:id="04da8e24-54b8-4247-887c-812cbaf823de"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="ef94e653-2326-4238-85ff-50ef097b6c6a"></styles></children><children xmi:type="notation:BasicCompartment" type="7007" xmi:id="4f854c5f-8947-40a7-8960-73ed3d8d2667"></children><element xmi:type="map:Datastore" href="resource#_3yTrQZAxEe6u8_TKo8ZMQA?fileId=_3yTrQJAxEe6u8_TKo8ZMQA?"></element><layoutConstraint x="32" xmi:type="notation:Bounds" y="32" xmi:id="c2607e11-8837-4b3c-9273-0fb642a7611c"></layoutConstraint></children><children fontName="Segoe UI" xmi:type="notation:Shape" type="2004" xmi:id="770bbf99-3705-4b48-9f0b-2e7624d23a40"><children xmi:type="notation:DecorationNode" type="5005" xmi:id="4d94af67-467e-4f7e-b92e-3e24ad4a0975"></children><children xmi:type="notation:DecorationNode" type="5007" xmi:id="0c1fd37f-b4e0-4069-b2e8-522e16c4c12c"></children><children xmi:type="notation:DecorationNode" type="7003" xmi:id="9a3c435d-ac0d-45d1-8e6d-cf9f90e12efd"></children><children xmi:type="notation:DecorationNode" type="7009" xmi:id="fe184824-f60a-4bee-a4c3-61f53b3bc6d5"></children><children xmi:type="notation:BasicCompartment" type="7004" xmi:id="d8b532c8-ab5e-4cbb-bd48-c69a2b0f6604"><styles xmi:type="notation:SortingStyle" xmi:id="30c024e7-5431-45e6-8413-198c4c5325b3"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="674a88a8-eacd-401f-a261-163ba426b21c"></styles></children><children xmi:type="notation:DecorationNode" type="5009" xmi:id="ce41e747-bf8c-4ecb-bda1-75130986ddc8"><styles xmi:type="notation:DrawerStyle" xmi:id="756c8b12-8994-404d-97e3-69f551cb3486"></styles></children><children xmi:type="notation:DecorationNode" type="7005" xmi:id="e4f47149-df7a-40cf-a59a-730c9cca3e28"><styles xmi:type="notation:SortingStyle" xmi:id="3006e431-5a0c-4f8f-a49e-a1d075f77e90"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="d68d1d7c-39ca-444e-8b85-2c602534420f"></styles></children><children xmi:type="notation:BasicCompartment" type="7007" xmi:id="5d9a2d04-ab75-4efc-b56a-b1eef3df3ff7"></children><element xmi:type="map:Datastore" href="resource#_3yTrSpAxEe6u8_TKo8ZMQA?fileId=_3yTrQJAxEe6u8_TKo8ZMQA?"></element><layoutConstraint x="310" xmi:type="notation:Bounds" y="32" xmi:id="5bb0870c-0fcd-4a27-bcf5-df5c0eb669b9"></layoutConstraint></children><styles xmi:type="notation:DiagramStyle" xmi:id="17d59433-7978-401d-bf3e-0f59b5a566ff"></styles><element xmi:type="map:Map" href="resource#_3yTrQJAxEe6u8_TKo8ZMQA?fileId=_3yTrQJAxEe6u8_TKo8ZMQA?"></element><edges xmi:type="notation:Edge" source="770bbf99-3705-4b48-9f0b-2e7624d23a40" type="targetLink" xmi:id="9567b7d2-c333-4927-a4a3-558178f60bfc" target="2e75b857-2f9f-4498-a9a7-bb78b6b22645"><element xsi:nil="true"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="9c76a810-e8a3-4a4e-9dd1-c09516558d5f" points="[-115, -23, 424, 84]$[-424, -84, 115, 23]"></bendpoints></edges><edges xmi:type="notation:Edge" source="770bbf99-3705-4b48-9f0b-2e7624d23a40" type="targetDataSetLink" xmi:id="4831544b-fe1d-4d2e-a3ac-9d34b8d622a3" target="770bbf99-3705-4b48-9f0b-2e7624d23a40"><element xmi:type="map:DataSet" href="resource#_3yTrZpAxEe6u8_TKo8ZMQA?fileId=_3yTrQJAxEe6u8_TKo8ZMQA?"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="899de2ca-1797-4602-ab4e-5679e962710e" points="[0, 0, 0, 0]$[0, 0, 0, 0]"></bendpoints></edges><edges xmi:type="notation:Edge" source="770bbf99-3705-4b48-9f0b-2e7624d23a40" type="targetSetLink" xmi:id="dec453da-846c-4c3f-957a-0324fce63cb5" target="770bbf99-3705-4b48-9f0b-2e7624d23a40"><element xmi:type="map:SetDescriptor" href="resource#_3yTrX5AxEe6u8_TKo8ZMQA?fileId=_3yTrQJAxEe6u8_TKo8ZMQA?"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="2b597bc0-354f-45ed-9061-9fac7b43ebd3" points="[0, 0, 0, 0]$[0, 0, 0, 0]"></bendpoints></edges></notation:Diagram>]]></diagram>
+</map:map>

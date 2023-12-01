@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map:map xmlns:map="http://www.indy.com/v2/map" id="_3yQn8JAxEe6u8_TKo8ZMQA" internalVersion="8" tech="resource.tech#_waYSMH8VEd2__Mzb_dB76A?fileId=_waYSMH8VEd2__Mzb_dB76A$type=tech$name=flow?">
+  <datastore id="_3yRPAJAxEe6u8_TKo8ZMQA" alias="SAS_ADRESSE" control="true" dataset="_3yR2JpAxEe6u8_TKo8ZMQA" ref="resource.md#_HizB4X-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_ADRESSE?" subExpression="[A]">
+    <field id="_3yRPAZAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="DATE_CREATION" ref="resource.md#_HmhEQH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?" update="true">
+      <expression id="_3yRPApAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yRPIZAxEe6u8_TKo8ZMQA">
+        <expression>ODS_ADRESSE.DATE_CREATION</expression>
+      </expression>
+    </field>
+    <field id="_3yRPA5AxEe6u8_TKo8ZMQA" enable="true" insert="true" name="STATUS" ref="resource.md#_Hmcy0H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS?" update="true">
+      <expression id="_3yRPBJAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yRPIZAxEe6u8_TKo8ZMQA">
+        <expression>ODS_ADRESSE.STATUS</expression>
+      </expression>
+    </field>
+    <field id="_3yRPBZAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="TYPE_LIGNE" ref="resource.md#_Hma9oH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_LIGNE?" update="true">
+      <expression id="_3yRPBpAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yRPIZAxEe6u8_TKo8ZMQA">
+        <expression>ODS_ADRESSE.TYPE_LIGNE</expression>
+      </expression>
+    </field>
+    <field id="_3yRPB5AxEe6u8_TKo8ZMQA" enable="true" insert="true" name="LIGNE_4" ref="resource.md#_HmeoAH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_4?" update="true">
+      <expression id="_3yRPCJAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yRPIZAxEe6u8_TKo8ZMQA">
+        <expression>ODS_ADRESSE.LIGNE_4</expression>
+      </expression>
+    </field>
+    <field id="_3yRPCZAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="LIGNE_2" ref="resource.md#_HmeA8H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_2?" update="true">
+      <expression id="_3yRPCpAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yRPIZAxEe6u8_TKo8ZMQA">
+        <expression>ODS_ADRESSE.LIGNE_2</expression>
+      </expression>
+    </field>
+    <field id="_3yRPC5AxEe6u8_TKo8ZMQA" enable="true" insert="true" name="QUALITE" ref="resource.md#_HmgdNn-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=QUALITE?" update="true">
+      <expression id="_3yRPDJAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yRPIZAxEe6u8_TKo8ZMQA">
+        <expression>ODS_ADRESSE.QUALITE</expression>
+      </expression>
+    </field>
+    <field id="_3yRPDZAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="LIGNE_1" ref="resource.md#_HmdZ4H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_1?" update="true">
+      <expression id="_3yRPDpAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yRPIZAxEe6u8_TKo8ZMQA">
+        <expression>ODS_ADRESSE.LIGNE_1</expression>
+      </expression>
+    </field>
+    <field id="_3yRPD5AxEe6u8_TKo8ZMQA" enable="true" insert="true" name="ACTION" ref="resource.md#_HmbksH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ACTION?" update="true">
+      <expression id="_3yRPEJAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yRPIZAxEe6u8_TKo8ZMQA">
+        <expression>ODS_ADRESSE.ACTION</expression>
+      </expression>
+    </field>
+    <field id="_3yRPEZAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="ID_FICHIER" ref="resource.md#_HmhERn-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?" update="true">
+      <expression id="_3yRPEpAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yRPIZAxEe6u8_TKo8ZMQA">
+        <expression>ODS_ADRESSE.ID_FICHIER</expression>
+      </expression>
+    </field>
+    <field id="_3yRPE5AxEe6u8_TKo8ZMQA" enable="true" insert="true" name="LIGNE_5" ref="resource.md#_HmfPEH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_5?" update="true">
+      <expression id="_3yRPFJAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yRPIZAxEe6u8_TKo8ZMQA">
+        <expression>ODS_ADRESSE.LIGNE_5</expression>
+      </expression>
+    </field>
+    <field id="_3yRPFZAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="VILLE" ref="resource.md#_Hmf2IH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=VILLE?" update="true">
+      <expression id="_3yRPFpAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yRPIZAxEe6u8_TKo8ZMQA">
+        <expression>ODS_ADRESSE.VILLE</expression>
+      </expression>
+    </field>
+    <field id="_3yRPF5AxEe6u8_TKo8ZMQA" enable="true" insert="true" name="PAYS" ref="resource.md#_HmgdMH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=PAYS?" update="true">
+      <expression id="_3yRPGJAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yRPIZAxEe6u8_TKo8ZMQA">
+        <expression>ODS_ADRESSE.PAYS</expression>
+      </expression>
+    </field>
+    <field id="_3yRPGZAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="CODE_POSTAL" ref="resource.md#_Hmf2Jn-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CODE_POSTAL?" update="true">
+      <expression id="_3yRPGpAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yRPIZAxEe6u8_TKo8ZMQA">
+        <expression>ODS_ADRESSE.CODE_POSTAL</expression>
+      </expression>
+    </field>
+    <field id="_3yRPG5AxEe6u8_TKo8ZMQA" enable="true" insert="true" name="CLE_CLIENT" ref="resource.md#_HmcLxH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CLIENT?" update="true" updateKey="true">
+      <expression id="_3yRPHJAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yRPIZAxEe6u8_TKo8ZMQA">
+        <expression>ODS_ADRESSE.CLE_CLIENT</expression>
+      </expression>
+    </field>
+    <field id="_3yRPHZAxEe6u8_TKo8ZMQA" enable="true" insert="true" name="LIGNE_3" ref="resource.md#_HmeA9n-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_3?" update="true">
+      <expression id="_3yRPHpAxEe6u8_TKo8ZMQA" setDescriptorRef="_3yRPIZAxEe6u8_TKo8ZMQA">
+        <expression>ODS_ADRESSE.LIGNE_3</expression>
+      </expression>
+    </field>
+    <constraint id="_3yRPH5AxEe6u8_TKo8ZMQA" name="SAS_ADRESSE_PK" ref="resource.md#_-6M6wH-5Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_ADRESSE_PK?" reject="true"/>
+    <constraint id="_3yRPIJAxEe6u8_TKo8ZMQA" name="CTRL_STATUS" ref="resource.md#_5orywIq6Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
+    <setDescriptor id="_3yRPIZAxEe6u8_TKo8ZMQA" label="A"/>
+  </datastore>
+  <datastore id="_3yRPIpAxEe6u8_TKo8ZMQA" alias="ODS_ADRESSE" dataset="_3yR2J5AxEe6u8_TKo8ZMQA" ref="resource.md#_bZ6EkHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ODS_ADRESSE?">
+    <field id="_3yR2EJAxEe6u8_TKo8ZMQA" fullAlias="LIGNE_1" name="LIGNE_1" ref="resource.md#_bdYPUHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_1?"/>
+    <field id="_3yR2EZAxEe6u8_TKo8ZMQA" fullAlias="TYPE_LIGNE" name="TYPE_LIGNE" ref="resource.md#_bdT94HozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_LIGNE?"/>
+    <field id="_3yR2EpAxEe6u8_TKo8ZMQA" fullAlias="LIGNE_3" name="LIGNE_3" ref="resource.md#_bdaEgHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_3?"/>
+    <field id="_3yR2E5AxEe6u8_TKo8ZMQA" fullAlias="LIGNE_2" name="LIGNE_2" ref="resource.md#_bdY2YHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_2?"/>
+    <field id="_3yR2FJAxEe6u8_TKo8ZMQA" fullAlias="LIGNE_5" name="LIGNE_5" ref="resource.md#_bdarlnozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_5?"/>
+    <field id="_3yR2FZAxEe6u8_TKo8ZMQA" fullAlias="CLE_CLIENT" name="CLE_CLIENT" ref="resource.md#_bdVzEHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CLIENT?"/>
+    <field id="_3yR2FpAxEe6u8_TKo8ZMQA" fullAlias="VILLE" name="VILLE" ref="resource.md#_bdbSoHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=VILLE?"/>
+    <field id="_3yR2F5AxEe6u8_TKo8ZMQA" fullAlias="CODE_POSTAL" name="CODE_POSTAL" ref="resource.md#_bdbSpnozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CODE_POSTAL?"/>
+    <field id="_3yR2GJAxEe6u8_TKo8ZMQA" fullAlias="QUALITE" name="QUALITE" ref="resource.md#_bdb5sHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=QUALITE?"/>
+    <field id="_3yR2GZAxEe6u8_TKo8ZMQA" fullAlias="ID_FICHIER" name="ID_FICHIER" ref="resource.md#_G0ItcH-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?"/>
+    <field id="_3yR2GpAxEe6u8_TKo8ZMQA" fullAlias="LIGNE_4" name="LIGNE_4" ref="resource.md#_bdarkHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_4?"/>
+    <field id="_3yR2G5AxEe6u8_TKo8ZMQA" fullAlias="STATUS" name="STATUS" ref="resource.md#_bdXBMHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS?"/>
+    <field id="_3yR2HJAxEe6u8_TKo8ZMQA" fullAlias="PAYS" name="PAYS" ref="resource.md#_bdbSrHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=PAYS?"/>
+    <field id="_3yR2HZAxEe6u8_TKo8ZMQA" fullAlias="DATE_CREATION" name="DATE_CREATION" ref="resource.md#_G0IGZn-kEe6JNIokCBopZg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION?"/>
+    <field id="_3yR2HpAxEe6u8_TKo8ZMQA" fullAlias="ACTION" name="ACTION" ref="resource.md#_bdVMAHozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ACTION?"/>
+  </datastore>
+  <template id="_3yR2H5AxEe6u8_TKo8ZMQA" name="I_SAS_ADRESSE" process="resource.proc#_8c1f9be7-1fdc-457b-bc08-d3db9d701af9?fileId=_8c1f9be7-1fdc-457b-bc08-d3db9d701af9$type=proc$name=INTEGRATION%20Oracle%2020130715?" targetId="_3yRPAJAxEe6u8_TKo8ZMQA">
+    <parameter id="_3yR2IJAxEe6u8_TKo8ZMQA" name="truncateTargetTable" value="true"/>
+    <parameter id="_3yR2IZAxEe6u8_TKo8ZMQA" name="integrationStrategy" value="auto"/>
+    <parameter id="_3yR2IpAxEe6u8_TKo8ZMQA" name="doUpdate" value="false"/>
+    <parameter id="_3yR2I5AxEe6u8_TKo8ZMQA" name="recycleRejects" value="true"/>
+    <parameter id="_3yR2JJAxEe6u8_TKo8ZMQA" name="appendMode" value="true"/>
+  </template>
+  <template id="_3yR2JZAxEe6u8_TKo8ZMQA" name="R_SAS_ADRESSE" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_3yRPAJAxEe6u8_TKo8ZMQA"/>
+  <dataSet id="_3yR2JpAxEe6u8_TKo8ZMQA">
+    <container>_3yRPAJAxEe6u8_TKo8ZMQA</container>
+  </dataSet>
+  <dataSet id="_3yR2J5AxEe6u8_TKo8ZMQA">
+    <container>_3yRPIpAxEe6u8_TKo8ZMQA</container>
+  </dataSet>
+  <hint>
+    <usedField>#_3yR2EJAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yR2EZAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yR2EpAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yR2E5AxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yR2FJAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yR2FZAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yR2FpAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yR2F5AxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yR2GJAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yR2GZAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yR2GpAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yR2G5AxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yR2HJAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yR2HZAxEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_3yR2HpAxEe6u8_TKo8ZMQA</usedField>
+  </hint>
+  <diagram><![CDATA[<?xml version="1.0" ?><notation:Diagram xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:version="2.0" type="Map" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="ed8db5fd-fadf-4a24-ac34-6d3a8601cdf6" measurementUnit="Pixel"><children fontName="Segoe UI" xmi:type="notation:Shape" type="2004" xmi:id="04b4dd3e-c407-44f2-a5e0-fce8badb99b5"><children xmi:type="notation:DecorationNode" type="5005" xmi:id="4527a53c-7c31-4e69-999f-011369a90007"></children><children xmi:type="notation:DecorationNode" type="5007" xmi:id="7313ad7c-a46c-493d-85ed-b3a80210ceae"></children><children xmi:type="notation:DecorationNode" type="7003" xmi:id="b774c85f-ca72-48f1-9bd0-9eacfb9e0670"></children><children xmi:type="notation:DecorationNode" type="7009" xmi:id="94542d89-a729-4e8e-80da-16103f0e8827"></children><children xmi:type="notation:BasicCompartment" type="7004" xmi:id="52ab25b2-dbd5-4b40-aa0f-acbc314d0dfa"><styles xmi:type="notation:SortingStyle" xmi:id="bd9b2ef8-e55f-4871-919b-3883368e06ea"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="d699ae96-3697-4bf9-9ab9-88bc4282eae6"></styles></children><children xmi:type="notation:DecorationNode" type="5009" xmi:id="b37573c4-633e-440c-bc1d-569384e1fb96"><styles xmi:type="notation:DrawerStyle" xmi:id="cf535c4f-93a6-4a93-92f3-af675d3ab2b0"></styles></children><children xmi:type="notation:DecorationNode" type="7005" xmi:id="f6408184-312f-41ed-92da-faefe193d2b0"><styles xmi:type="notation:SortingStyle" xmi:id="4743f5d8-7f7d-4fcb-9c48-c89c33974cd8"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="6d926298-ee1d-44f1-8ce4-063e6b6c4dbd"></styles></children><children xmi:type="notation:BasicCompartment" type="7007" xmi:id="8539d133-df81-415c-b3a0-69074fc824a4"></children><element xmi:type="map:Datastore" href="resource#_3yRPIpAxEe6u8_TKo8ZMQA?fileId=_3yQn8JAxEe6u8_TKo8ZMQA?"></element><layoutConstraint x="32" xmi:type="notation:Bounds" y="49" xmi:id="098c5405-b8ec-4fd2-b305-c53f11d1d15c"></layoutConstraint></children><children fontName="Segoe UI" xmi:type="notation:Shape" type="2004" xmi:id="0fe568fb-ca9c-4f45-8be2-800707bb0c0c"><children xmi:type="notation:DecorationNode" type="5005" xmi:id="ff8dcf88-1dd4-49f2-bf6b-b256ef478f34"></children><children xmi:type="notation:DecorationNode" type="5007" xmi:id="f33c18db-6740-464f-bfd7-5a42994b1b4a"></children><children xmi:type="notation:DecorationNode" type="7003" xmi:id="08ddd539-b5e0-435a-b296-bb93d610d676"></children><children xmi:type="notation:DecorationNode" type="7009" xmi:id="d30b1459-b103-4824-9169-73da0f9df811"></children><children xmi:type="notation:BasicCompartment" type="7004" xmi:id="0c708f09-242d-415b-85af-4d976a497414"><styles xmi:type="notation:SortingStyle" xmi:id="86b22248-ed4e-4265-8176-7cf159c7088b"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="bb0bd563-3e29-4ad6-81f4-f7cffe3a1d83"></styles></children><children xmi:type="notation:DecorationNode" type="5009" xmi:id="74592cfe-454f-48e9-9240-4374ec76144c"><styles xmi:type="notation:DrawerStyle" xmi:id="30432e55-89a3-4f7f-a47f-9995ccf13eca"></styles></children><children xmi:type="notation:DecorationNode" type="7005" xmi:id="dd1a5d41-8441-490c-99df-c77f94180761"><styles xmi:type="notation:SortingStyle" xmi:id="abd2c2c5-e82e-4a99-90d8-17d6a404c7c1"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="bb7546f3-9000-4321-9f06-3ac862f9ced1"></styles></children><children xmi:type="notation:BasicCompartment" type="7007" xmi:id="bd3053cf-d135-4b57-80bd-bd3f80d0d51b"></children><children xmi:type="notation:DecorationNode" type="5009" xmi:id="88ed4115-c5de-47e0-8fc4-1ca5b06a3505"><styles xmi:type="notation:DrawerStyle" xmi:id="2aa15b4c-0e38-4723-b9a7-bdd9f547532e"></styles></children><element xmi:type="map:Datastore" href="resource#_3yRPAJAxEe6u8_TKo8ZMQA?fileId=_3yQn8JAxEe6u8_TKo8ZMQA?"></element><layoutConstraint x="256" xmi:type="notation:Bounds" y="32" xmi:id="bf1f8e27-09f9-482c-b492-c660543fb60f"></layoutConstraint></children><styles xmi:type="notation:DiagramStyle" xmi:id="7ce65b10-95b8-4753-8cbf-90455f1b8a54"></styles><element xmi:type="map:Map" href="resource#_3yQn8JAxEe6u8_TKo8ZMQA?fileId=_3yQn8JAxEe6u8_TKo8ZMQA?"></element><edges xmi:type="notation:Edge" source="0fe568fb-ca9c-4f45-8be2-800707bb0c0c" type="targetLink" xmi:id="a1b90fec-1b2c-4a95-9bc7-9b66da3027ca" target="04b4dd3e-c407-44f2-a5e0-fce8badb99b5"><element xsi:nil="true"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="960469cb-ea72-49af-b4a2-b03862c015df" points="[-88, 3, 193, -8]$[-193, 8, 88, -3]"></bendpoints></edges><edges xmi:type="notation:Edge" source="0fe568fb-ca9c-4f45-8be2-800707bb0c0c" type="targetDataSetLink" xmi:id="cd89846b-262a-4456-b16f-1793578ea940" target="0fe568fb-ca9c-4f45-8be2-800707bb0c0c"><element xmi:type="map:DataSet" href="resource#_3yR2J5AxEe6u8_TKo8ZMQA?fileId=_3yQn8JAxEe6u8_TKo8ZMQA?"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="5f915b05-e5ed-4554-ab8f-910623db4e43" points="[0, 0, 0, 0]$[0, 0, 0, 0]"></bendpoints></edges><edges xmi:type="notation:Edge" source="0fe568fb-ca9c-4f45-8be2-800707bb0c0c" type="targetSetLink" xmi:id="f33233fa-88b9-4c13-9020-386128c93765" target="0fe568fb-ca9c-4f45-8be2-800707bb0c0c"><element xmi:type="map:SetDescriptor" href="resource#_3yRPIZAxEe6u8_TKo8ZMQA?fileId=_3yQn8JAxEe6u8_TKo8ZMQA?"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="b7073b82-d465-4eb8-a371-fcee5376e592" points="[0, 0, 0, 0]$[0, 0, 0, 0]"></bendpoints></edges></notation:Diagram>]]></diagram>
+</map:map>
