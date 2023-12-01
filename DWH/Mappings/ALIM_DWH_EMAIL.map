@@ -9,9 +9,9 @@
     <field id="_RFaFQ4qiEe6Bpuf23-D2iA" fullAlias="STATUS" name="STATUS" ref="resource.md#_HtyJ4H-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS?"/>
     <field id="_RFaFQIqiEe6Bpuf23-D2iA" name="ACTION" ref="resource.md#_HtvtoH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ACTION?"/>
     <constraint id="_RFasUYqiEe6Bpuf23-D2iA" name="SAS_EMAIL_PK" ref="resource.md#__C8nEH-5Ee6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SAS_EMAIL_PK?" reject="true"/>
-    <constraint id="_RFasUoqiEe6Bpuf23-D2iA" name="CTRL_EMAIL" ref="resource.md#_ahT7EYUoEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_EMAIL?" reject="true"/>
-    <constraint id="_RFasU4qiEe6Bpuf23-D2iA" name="CTRL_STATUS" ref="resource.md#_PPPJ4YUoEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
-    <constraint id="_RFasVIqiEe6Bpuf23-D2iA" name="CTRL_FK_CLIENT" ref="resource.md#_jFO8kYUrEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FK_CLIENT?" reject="true"/>
+    <constraint id="_RFasUoqiEe6Bpuf23-D2iA" name="CTRL_EMAIL" ref="resource.md#_NEAjAIq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_EMAIL?" reject="true"/>
+    <constraint id="_RFasU4qiEe6Bpuf23-D2iA" name="CTRL_STATUS" ref="resource.md#_NEAjCoq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
+    <constraint id="_RFasVIqiEe6Bpuf23-D2iA" name="CTRL_FK_CLIENT" ref="resource.md#_NEAjBYq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FK_CLIENT?" reject="true"/>
   </datastore>
   <datastore id="_SamWkIqiEe6Bpuf23-D2iA" alias="DWH_EMAIL" dataset="_SapZ4IqiEe6Bpuf23-D2iA" ref="resource.md#_QfSVYX-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DWH_EMAIL?" subExpression="[A]">
     <field id="_Sanks4qiEe6Bpuf23-D2iA" enable="true" insert="true" name="DATE_CREATION_EMAIL" ref="resource.md#_QkmTMH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_EMAIL?" update="true">
@@ -85,7 +85,7 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_RFm5noqiEe6Bpuf23-D2iA" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_RFYQEIqiEe6Bpuf23-D2iA?fileId=_P_F9cIqiEe6Bpuf23-D2iA$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RFm5kYqiEe6Bpuf23-D2iA" x="380" y="176"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_RFm5kYqiEe6Bpuf23-D2iA" x="32" y="32"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_SarPEIqiEe6Bpuf23-D2iA" type="2004" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="_SarPEoqiEe6Bpuf23-D2iA" type="5005"/>
@@ -105,13 +105,13 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_SarPHoqiEe6Bpuf23-D2iA" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_SamWkIqiEe6Bpuf23-D2iA?fileId=_P_F9cIqiEe6Bpuf23-D2iA$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SarPEYqiEe6Bpuf23-D2iA" x="755" y="169"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_SarPEYqiEe6Bpuf23-D2iA" x="256" y="32"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_QDvz8YqiEe6Bpuf23-D2iA"/>
   <element xmi:type="map:Map" href="resource.map#_P_F9cIqiEe6Bpuf23-D2iA?fileId=_P_F9cIqiEe6Bpuf23-D2iA$type=map$name=ALIM_DWH_EMAIL?"/>
   <edges xmi:type="notation:Edge" xmi:id="_VcjEoIqiEe6Bpuf23-D2iA" type="targetLink" source="_SarPEIqiEe6Bpuf23-D2iA" target="_RFm5kIqiEe6Bpuf23-D2iA">
     <element xsi:nil="true"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VcjEoYqiEe6Bpuf23-D2iA" points="[-120, 7, 287, 0]$[-319, 0, 88, -7]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_VcjEoYqiEe6Bpuf23-D2iA" points="[0, 0, 60, 0]$[-60, 0, 0, 0]"/>
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_VcjrsIqiEe6Bpuf23-D2iA" type="targetDataSetLink" source="_SarPEIqiEe6Bpuf23-D2iA" target="_SarPEIqiEe6Bpuf23-D2iA">
     <element xmi:type="map:DataSet" href="resource.map#_RFbTYoqiEe6Bpuf23-D2iA?fileId=_P_F9cIqiEe6Bpuf23-D2iA$type=map?"/>
