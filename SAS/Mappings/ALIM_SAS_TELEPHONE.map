@@ -52,7 +52,6 @@
     <constraint id="_ojU1kYUuEe6kybSjKPTayw" name="CTRL_FK_CLIENT" ref="resource.md#_RHlGJYq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FK_CLIENT?" reject="true"/>
     <constraint id="_ojU1koUuEe6kybSjKPTayw" name="CTRL_STATUS" ref="resource.md#_RHlGL4q7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
     <constraint id="_ojU1k4UuEe6kybSjKPTayw" name="CTRL_TYPE" ref="resource.md#_RHlGNIq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_TYPE?" reject="true"/>
-    <constraint id="_RiQ78JAqEe6u8_TKo8ZMQA" ref="resource.md#_3VnB0ZApEe6u8_TKo8ZMQA?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md?" reject="true"/>
     <setDescriptor id="_7_8tsIUrEe6kybSjKPTayw" label="A"/>
   </datastore>
   <datastore id="_7mrSEIUrEe6kybSjKPTayw" alias="ODS_TELEPHONE" dataset="_7muVYIUrEe6kybSjKPTayw" ref="resource.md#_bkye4XozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ODS_TELEPHONE?">
