@@ -74,6 +74,7 @@
   <template id="_vueSFn-mEe6IE6AcCtnNjw" name="I_ODS_TELEPHONE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_vVMPYH-mEe6IE6AcCtnNjw">
     <parameter id="_CmdEsH-nEe6IE6AcCtnNjw" name="doUpdate" value="false"/>
     <parameter id="_DruDoH-nEe6IE6AcCtnNjw" name="integrationStrategy" value="append"/>
+    <parameter id="_oJ_90JAqEe6u8_TKo8ZMQA" name="truncateTargetTable" value="true"/>
   </template>
   <template id="_vuk_wH-mEe6IE6AcCtnNjw" name="L1_ODS_TELEPHONE" process="resource.proc#_a-mEoaIhEd68f8w2ej5O-w?fileId=_a-mEoaIhEd68f8w2ej5O-w$type=proc$name=LOAD%20File%20to%20Rdbms?" sourceId="_uvorQH-mEe6IE6AcCtnNjw" targetId="_vVMPYH-mEe6IE6AcCtnNjw"/>
   <dataSet id="_uvqgdH-mEe6IE6AcCtnNjw">
