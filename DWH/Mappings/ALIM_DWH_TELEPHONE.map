@@ -55,7 +55,7 @@
     </field>
     <field id="_rOI48IqzEe6695OEz_3GqA" enable="true" insert="true" name="DATE_CREATION_TEL" ref="resource.md#_QwQJln-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_TEL?" update="true">
       <expression id="_OoyzsYq0Ee6Ix8t99bGfXA" setDescriptorRef="_OowXcIq0Ee6Ix8t99bGfXA">
-        <expression>SAS_TELEPHONE.DATE_CREATION</expression>
+        <expression>to_date(SAS_TELEPHONE.DATE_CREATION,'YYYY-MM-DD HH24:MI:SS')</expression>
       </expression>
     </field>
     <field id="_rOHq0IqzEe6695OEz_3GqA" enable="true" insert="true" name="STATUS_TEL" ref="resource.md#_QwL4IH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS_TEL?" update="true">

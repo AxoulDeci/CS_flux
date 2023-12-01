@@ -16,7 +16,7 @@
   <datastore id="_SamWkIqiEe6Bpuf23-D2iA" alias="DWH_EMAIL" dataset="_SapZ4IqiEe6Bpuf23-D2iA" ref="resource.md#_QfSVYX-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DWH_EMAIL?" subExpression="[A]">
     <field id="_Sanks4qiEe6Bpuf23-D2iA" enable="true" insert="true" name="DATE_CREATION_EMAIL" ref="resource.md#_QkmTMH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_EMAIL?" update="true">
       <expression id="_Vcc-AIqiEe6Bpuf23-D2iA" setDescriptorRef="_VccW8IqiEe6Bpuf23-D2iA">
-        <expression>SAS_EMAIL.DATE_CREATION</expression>
+        <expression>to_date(SAS_EMAIL.DATE_CREATION,'YYYY-MM-DD HH24:MI:SS')</expression>
       </expression>
     </field>
     <field id="_Sam9oIqiEe6Bpuf23-D2iA" name="SID_CLI" ref="resource.md#_QkgMkH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SID_CLI?" updateKey="true">

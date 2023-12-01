@@ -42,7 +42,7 @@
     </field>
     <field id="_tDhyc4qhEe6Bpuf23-D2iA" enable="true" insert="true" name="DATE_CREATION_CPT" ref="resource.md#_QZqOhn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_CPT?" update="true">
       <expression id="_ySZrEoqhEe6Bpuf23-D2iA" setDescriptorRef="_ySWAsIqhEe6Bpuf23-D2iA">
-        <expression>SAS_COMPTE.DATE_CREATION</expression>
+        <expression>to_date(SAS_COMPTE.DATE_CREATION,'YYYY-MM-DD HH24:MI:SS')</expression>
       </expression>
     </field>
     <field id="_tDhycIqhEe6Bpuf23-D2iA" enable="true" insert="true" name="CABINET_RATTACHEMENT" ref="resource.md#_QZpnfH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CABINET_RATTACHEMENT?" update="true">

@@ -48,7 +48,7 @@
     </field>
     <field id="_CcD2Q4qiEe6Bpuf23-D2iA" enable="true" insert="true" name="DATE_ANNV_CLI" ref="resource.md#_QqxMoH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_ANNV_CLI?" update="true">
       <expression id="_D_vPgYqiEe6Bpuf23-D2iA" setDescriptorRef="_D_uBYIqiEe6Bpuf23-D2iA">
-        <expression>SAS_CLIENT.DATE_ANNIVERSAIRE</expression>
+        <expression>TO_CHAR(TO_DATE('01/01/1900', 'MM/DD/YYYY') + TO_NUMBER(SAS_CLIENT.DATE_ANNIVERSAIRE), 'YYYY-MM-DD') </expression>
       </expression>
     </field>
     <field id="_CcEdUYqiEe6Bpuf23-D2iA" enable="true" insert="true" name="MUTUELLE_CLI" ref="resource.md#_QqxzsH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=MUTUELLE_CLI?" update="true">
@@ -58,7 +58,8 @@
     </field>
     <field id="_CcFEY4qiEe6Bpuf23-D2iA" enable="true" insert="true" name="DATE_CREATION_CLI" ref="resource.md#_Qqzo7H-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_CLI?" update="true">
       <expression id="_D_v2kIqiEe6Bpuf23-D2iA" setDescriptorRef="_D_uBYIqiEe6Bpuf23-D2iA">
-        <expression>SAS_CLIENT.DATE_CREATION</expression>
+        <expression><![CDATA[to_date(SAS_CLIENT.DATE_CREATION,'YYYY-MM-DD HH24:MI:SS')
+]]></expression>
       </expression>
     </field>
     <field id="_CcCoIIqiEe6Bpuf23-D2iA" name="SID_CLI" ref="resource.md#_Qqs7MH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SID_CLI?" updateKey="true">
@@ -285,7 +286,7 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_CcJ87IqiEe6Bpuf23-D2iA" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_CcCBEIqiEe6Bpuf23-D2iA?fileId=_A6U9wIqiEe6Bpuf23-D2iA$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CcJV0YqiEe6Bpuf23-D2iA" x="580" y="32"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_CcJV0YqiEe6Bpuf23-D2iA" x="693" y="32"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_A8lAgYqiEe6Bpuf23-D2iA"/>
   <element xmi:type="map:Map" href="resource.map#_A6U9wIqiEe6Bpuf23-D2iA?fileId=_A6U9wIqiEe6Bpuf23-D2iA$type=map$name=ALIM_DWH_CLIENT?"/>
