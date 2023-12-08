@@ -6,9 +6,9 @@
         <expression>SAS_ADRESSE.LIGNE_1</expression>
       </expression>
     </field>
-    <field id="_8z78o5AyEe6u8_TKo8ZMQA" name="RECORD_VERSION" ref="resource.md#_bRd7hoqgEe6Bpuf23-D2iA?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=RECORD_VERSION?">
+    <field id="_8z78o5AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="RECORD_VERSION" ref="resource.md#_bRd7hoqgEe6Bpuf23-D2iA?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=RECORD_VERSION?" update="true">
       <expression id="_8z78pJAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z78wpAyEe6u8_TKo8ZMQA">
-        <expression></expression>
+        <expression>cast('1' as NUMBER(1))</expression>
       </expression>
     </field>
     <field id="_8z78pZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="LIB_PAYS_ADR" ref="resource.md#_QfJygH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_PAYS_ADR?" update="true">
@@ -18,7 +18,7 @@
     </field>
     <field id="_8z78p5AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="ID_FICHIER" ref="resource.md#_QfLAoH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?" update="true">
       <expression id="_8z78qJAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z78wpAyEe6u8_TKo8ZMQA">
-        <expression>SAS_ADRESSE.ID_FICHIER</expression>
+        <expression>cast(SAS_ADRESSE.ID_FICHIER as NUMBER(10))</expression>
       </expression>
     </field>
     <field id="_8z78qZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="CPM_ADR_2" ref="resource.md#_QfH9UH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CPM_ADR_2?" update="true">
@@ -28,7 +28,7 @@
     </field>
     <field id="_8z78q5AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="QUALITE_ADR" ref="resource.md#_QfJyhn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=QUALITE_ADR?" update="true">
       <expression id="_8z78rJAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z78wpAyEe6u8_TKo8ZMQA">
-        <expression>SAS_ADRESSE.QUALITE</expression>
+        <expression>cast(substr(SAS_ADRESSE.QUALITE,1,length(SAS_ADRESSE.QUALITE)-1) as NUMBER(10))</expression>
       </expression>
     </field>
     <field id="_8z78rZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="CODE_POSTAL_ADR" ref="resource.md#_QfIkZn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CODE_POSTAL_ADR?" update="true">
@@ -46,9 +46,9 @@
         <expression>SAS_ADRESSE.LIGNE_3</expression>
       </expression>
     </field>
-    <field id="_8z78s5AyEe6u8_TKo8ZMQA" enable="true" name="DATE_DERNIERE_MAJ_ADR" ref="resource.md#_QfLApn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_DERNIERE_MAJ_ADR?">
+    <field id="_8z78s5AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="DATE_DERNIERE_MAJ_ADR" ref="resource.md#_QfLApn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_DERNIERE_MAJ_ADR?" update="true">
       <expression id="_8z78tJAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z78wpAyEe6u8_TKo8ZMQA">
-        <expression></expression>
+        <expression>sysdate</expression>
       </expression>
     </field>
     <field id="_8z78tZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="CPM_ADR_3" ref="resource.md#_QfH9Vn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CPM_ADR_3?" update="true">
@@ -58,7 +58,7 @@
     </field>
     <field id="_8z78t5AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="PAYS_ADR" ref="resource.md#_QfJLcH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=PAYS_ADR?" update="true">
       <expression id="_8z78uJAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z78wpAyEe6u8_TKo8ZMQA">
-        <expression>SAS_ADRESSE.PAYS</expression>
+        <expression>cast(SAS_ADRESSE.PAYS as NUMBER(10))</expression>
       </expression>
     </field>
     <field id="_8z78uZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="RUE_ADR" ref="resource.md#_QfGvNn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=RUE_ADR?" update="true">
@@ -71,14 +71,14 @@
         <expression>SAS_ADRESSE.VILLE</expression>
       </expression>
     </field>
-    <field id="_8z78vZAyEe6u8_TKo8ZMQA" name="SID_CLIENT" ref="resource.md#_QfFhEH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SID_CLIENT?" updateKey="true">
+    <field id="_8z78vZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="SID_CLIENT" ref="resource.md#_QfFhEH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SID_CLIENT?" update="true" updateKey="true">
       <expression id="_8z78vpAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z78wpAyEe6u8_TKo8ZMQA">
-        <expression></expression>
+        <expression>DWH_CLIENT.SID_CLI</expression>
       </expression>
     </field>
     <field id="_8z78v5AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="STATUS_ADR" ref="resource.md#_QfGIIH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS_ADR?" update="true">
       <expression id="_8z78wJAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z78wpAyEe6u8_TKo8ZMQA">
-        <expression>SAS_ADRESSE.STATUS</expression>
+        <expression>cast(SAS_ADRESSE.STATUS as NUMBER(10))</expression>
       </expression>
     </field>
     <constraint id="_8z78wZAyEe6u8_TKo8ZMQA" name="DWH_ADRESSE_PK" ref="resource.md#_QfPSEH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DWH_ADRESSE_PK?" reject="true"/>
@@ -95,7 +95,7 @@
     <field id="_8z78y5AyEe6u8_TKo8ZMQA" fullAlias="LIGNE_5" name="LIGNE_5" ref="resource.md#_HmfPEH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIGNE_5?"/>
     <field id="_8z78zJAyEe6u8_TKo8ZMQA" name="TYPE_LIGNE" ref="resource.md#_Hma9oH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_LIGNE?"/>
     <field id="_8z78zZAyEe6u8_TKo8ZMQA" fullAlias="QUALITE" name="QUALITE" ref="resource.md#_HmgdNn-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=QUALITE?"/>
-    <field id="_8z78zpAyEe6u8_TKo8ZMQA" name="CLE_CLIENT" ref="resource.md#_HmcLxH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CLIENT?" updateKey="true"/>
+    <field id="_8z78zpAyEe6u8_TKo8ZMQA" fullAlias="CLE_CLIENT" name="CLE_CLIENT" ref="resource.md#_HmcLxH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CLIENT?" updateKey="true"/>
     <field id="_8z78z5AyEe6u8_TKo8ZMQA" fullAlias="CODE_POSTAL" name="CODE_POSTAL" ref="resource.md#_Hmf2Jn-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CODE_POSTAL?"/>
     <field id="_8z780JAyEe6u8_TKo8ZMQA" fullAlias="ID_FICHIER" name="ID_FICHIER" ref="resource.md#_HmhERn-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?"/>
     <field id="_8z780ZAyEe6u8_TKo8ZMQA" fullAlias="VILLE" name="VILLE" ref="resource.md#_Hmf2IH-yEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=VILLE?"/>
@@ -107,16 +107,43 @@
     <field id="_8z781pAyEe6u8_TKo8ZMQA" fullAlias="PAYS_ADRESSE" name="PAYS_ADRESSE" ref="resource.md#_XmdSgIUzEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=PAYS_ADRESSE?"/>
     <field id="_8z7815AyEe6u8_TKo8ZMQA" fullAlias="LIB_PAYS" name="LIB_PAYS" ref="resource.md#_XmdShoUzEe6lN4vpMDZjAg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_PAYS?"/>
   </datastore>
+  <datastore id="_7LO2AJWvEe6cdJ4S6IgG4Q" alias="DWH_CLIENT" dataset="_8z8jsJAyEe6u8_TKo8ZMQA" ref="resource.md#_QksZ0X-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DWH_CLIENT?">
+    <field id="_7LTHc5WvEe6cdJ4S6IgG4Q" name="TYPE_CLI" ref="resource.md#_QqvXcH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_CLI?"/>
+    <field id="_7LTugpWvEe6cdJ4S6IgG4Q" name="NOM_CLI" ref="resource.md#_QqwlkH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=NOM_CLI?"/>
+    <field id="_7LTHcpWvEe6cdJ4S6IgG4Q" name="STATUS_CLI" ref="resource.md#_QquwYH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS_CLI?"/>
+    <field id="_7LUVlJWvEe6cdJ4S6IgG4Q" name="ID_FICHIER" ref="resource.md#_Qqzo4H-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?"/>
+    <field id="_7LSgYZWvEe6cdJ4S6IgG4Q" fullAlias="SID_CLI" name="SID_CLI" ref="resource.md#_Qqs7MH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SID_CLI?" updateKey="true"/>
+    <field id="_7LUVkJWvEe6cdJ4S6IgG4Q" name="MUTUELLE_CLI" ref="resource.md#_QqxzsH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=MUTUELLE_CLI?"/>
+    <field id="_7LTHcJWvEe6cdJ4S6IgG4Q" fullAlias="CLE_CLI" name="CLE_CLI" ref="resource.md#_QquJUH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CLI?"/>
+    <field id="_7LTugZWvEe6cdJ4S6IgG4Q" name="PRENOM_CLI" ref="resource.md#_Qqv-gH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=PRENOM_CLI?"/>
+    <field id="_7LUVkpWvEe6cdJ4S6IgG4Q" name="LIB_TYPE_CLI" ref="resource.md#_QqzB0H-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_TYPE_CLI?"/>
+    <field id="_7LTuhJWvEe6cdJ4S6IgG4Q" name="SEXE_CLI" ref="resource.md#_QqxMpn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SEXE_CLI?"/>
+    <field id="_7LU8oZWvEe6cdJ4S6IgG4Q" name="DATE_CREATION_CLI" ref="resource.md#_Qqzo7H-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_CLI?"/>
+    <field id="_7LTHcZWvEe6cdJ4S6IgG4Q" name="SID_CPT" ref="resource.md#_QquJVn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SID_CPT?" updateKey="true"/>
+    <field id="_7LUVkZWvEe6cdJ4S6IgG4Q" name="LIB_SEXE_CLI" ref="resource.md#_Qqyaxn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_SEXE_CLI?"/>
+    <field id="_7LTugJWvEe6cdJ4S6IgG4Q" name="CIVILITE_CLI" ref="resource.md#_QqvXdn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CIVILITE_CLI?"/>
+    <field id="_7LTug5WvEe6cdJ4S6IgG4Q" name="DATE_ANNV_CLI" ref="resource.md#_QqxMoH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_ANNV_CLI?"/>
+    <field id="_7LU8opWvEe6cdJ4S6IgG4Q" name="RECORD_VERSION" ref="resource.md#_bc8yxoqgEe6Bpuf23-D2iA?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=RECORD_VERSION?"/>
+    <field id="_7LUVk5WvEe6cdJ4S6IgG4Q" name="LIB_CIVILITE_CLI" ref="resource.md#_QqzB1n-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_CIVILITE_CLI?"/>
+    <field id="_7LU8oJWvEe6cdJ4S6IgG4Q" name="DERNIERE_DATE_MAJ_CLI" ref="resource.md#_Qqzo5n-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DERNIERE_DATE_MAJ_CLI?"/>
+    <constraint id="_7LU8o5WvEe6cdJ4S6IgG4Q" name="DWH_CLIENT_PK" ref="resource.md#_Qq2sMH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DWH_CLIENT_PK?" reject="true"/>
+  </datastore>
   <join id="_8z782JAyEe6u8_TKo8ZMQA" location="SRC" left="_8z78w5AyEe6u8_TKo8ZMQA" order="10" right="_8z781ZAyEe6u8_TKo8ZMQA">
     <expression>SAS_ADRESSE.PAYS = TRANSCO_PAYS.PAYS_ADRESSE</expression>
   </join>
-  <template id="_8z782ZAyEe6u8_TKo8ZMQA" name="I_DWH_ADRESSE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_8z78oJAyEe6u8_TKo8ZMQA"/>
+  <join id="_AwVdUJWwEe6cdJ4S6IgG4Q" location="SRC" joinType="Inner_Join" left="_8z78w5AyEe6u8_TKo8ZMQA" order="30" right="_7LO2AJWvEe6cdJ4S6IgG4Q">
+    <expression>SAS_ADRESSE.CLE_CLIENT = DWH_CLIENT.CLE_CLI</expression>
+  </join>
+  <template id="_8z782ZAyEe6u8_TKo8ZMQA" name="I_DWH_ADRESSE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_8z78oJAyEe6u8_TKo8ZMQA">
+    <parameter id="_obBmsJWsEe6cdJ4S6IgG4Q" name="integrationStrategy" value="auto"/>
+  </template>
   <dataSet id="_8z782pAyEe6u8_TKo8ZMQA">
     <container>_8z78oJAyEe6u8_TKo8ZMQA</container>
   </dataSet>
   <dataSet id="_8z8jsJAyEe6u8_TKo8ZMQA">
     <container>_8z781ZAyEe6u8_TKo8ZMQA</container>
     <container>_8z78w5AyEe6u8_TKo8ZMQA</container>
+    <container>_7LO2AJWvEe6cdJ4S6IgG4Q</container>
   </dataSet>
   <hint>
     <usedField>#_8z78xJAyEe6u8_TKo8ZMQA</usedField>
@@ -127,12 +154,159 @@
     <usedField>#_8z78ypAyEe6u8_TKo8ZMQA</usedField>
     <usedField>#_8z78y5AyEe6u8_TKo8ZMQA</usedField>
     <usedField>#_8z78zZAyEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_8z78zpAyEe6u8_TKo8ZMQA</usedField>
     <usedField>#_8z78z5AyEe6u8_TKo8ZMQA</usedField>
     <usedField>#_8z780JAyEe6u8_TKo8ZMQA</usedField>
     <usedField>#_8z780ZAyEe6u8_TKo8ZMQA</usedField>
     <usedField>#_8z780pAyEe6u8_TKo8ZMQA</usedField>
     <usedField>#_8z781pAyEe6u8_TKo8ZMQA</usedField>
     <usedField>#_8z7815AyEe6u8_TKo8ZMQA</usedField>
+    <usedField>#_7LSgYZWvEe6cdJ4S6IgG4Q</usedField>
+    <usedField>#_7LTHcJWvEe6cdJ4S6IgG4Q</usedField>
   </hint>
-  <diagram><![CDATA[<?xml version="1.0" ?><notation:Diagram xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:version="2.0" type="Map" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="731cadad-c5da-4e23-8436-9c0b90a9ca7c" measurementUnit="Pixel"><children xmi:type="notation:Node" type="2005" xmi:id="4866e765-9819-4ec0-9014-5f2cdfa38bec"><styles xmi:type="notation:DescriptionStyle" xmi:id="32a21fea-65fa-4f05-900a-6063fd64d267"></styles><styles fontName="Segoe UI" xmi:type="notation:FontStyle" xmi:id="41fe1471-2b02-40c5-a3c3-898e92ae0a0f"></styles><styles xmi:type="notation:FillStyle" xmi:id="9920a866-1cd2-49a9-bd6b-032953e16545"></styles><element xmi:type="map:Join" href="resource#_8z782JAyEe6u8_TKo8ZMQA?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA?"></element><layoutConstraint x="240" xmi:type="notation:Bounds" y="167" xmi:id="8b09fecf-3839-4200-b4a4-93a57eda2b3a"></layoutConstraint></children><children fontName="Segoe UI" xmi:type="notation:Shape" type="2004" xmi:id="773efff0-fe7f-4f32-934a-7c15907e0619"><children xmi:type="notation:DecorationNode" type="5005" xmi:id="529aeae8-8340-4606-b075-38d9ee5f1bdd"></children><children xmi:type="notation:DecorationNode" type="5007" xmi:id="fe2c61a3-33f5-4924-9837-02911bfa442a"></children><children xmi:type="notation:DecorationNode" type="7003" xmi:id="05dad487-e401-4519-9f0c-c37ec7ca6fd8"></children><children xmi:type="notation:DecorationNode" type="7009" xmi:id="7215e5ff-a396-4ddd-b48b-db1fd3e9611b"></children><children xmi:type="notation:BasicCompartment" type="7004" xmi:id="97674eab-74d8-4bb1-a5c2-1fc81f8e0703"><styles xmi:type="notation:SortingStyle" xmi:id="2eb079bb-e5ed-4a27-93e5-6537ef171c1d"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="d2ecac88-1a1a-483d-be07-4b340ea2dd46"></styles></children><children xmi:type="notation:DecorationNode" type="5009" xmi:id="09834f79-98d2-422d-abce-acddf2c372dc"><styles xmi:type="notation:DrawerStyle" xmi:id="a59268d8-9806-4a8b-8801-2c1b74063b27"></styles></children><children xmi:type="notation:DecorationNode" type="7005" xmi:id="1b70e2e6-2243-440b-a3b8-f5cf359aa8a7"><styles xmi:type="notation:SortingStyle" xmi:id="d91e664b-30c5-435e-9a4a-e963543b692b"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="f8be656e-5e14-4ea4-bcbf-dd638f656f2d"></styles></children><children xmi:type="notation:BasicCompartment" type="7007" xmi:id="845a2fcf-6c8b-4abd-93a9-3813b4210f5b"></children><element xmi:type="map:Datastore" href="resource#_8z781ZAyEe6u8_TKo8ZMQA?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA?"></element><layoutConstraint x="306" xmi:type="notation:Bounds" y="144" xmi:id="8a716d55-e1df-4e42-a47e-d0cfae8a3e2b"></layoutConstraint></children><children fontName="Segoe UI" xmi:type="notation:Shape" type="2004" xmi:id="63b5a357-cf21-4fbe-81da-4a2977235fad"><children xmi:type="notation:DecorationNode" type="5005" xmi:id="429a5d33-f45d-4d02-ae11-b69f59345e11"></children><children xmi:type="notation:DecorationNode" type="5007" xmi:id="ba6c7e79-1051-438c-917b-c6c33fd7bb37"></children><children xmi:type="notation:DecorationNode" type="7003" xmi:id="ef6d1f96-279e-4de0-868f-3cf41ab6cfa0"></children><children xmi:type="notation:DecorationNode" type="7009" xmi:id="ad20905b-0d58-43b1-9edd-ff914e7acfec"></children><children xmi:type="notation:BasicCompartment" type="7004" xmi:id="15282982-c08b-4dbc-9bd5-6c36a4682a27"><styles xmi:type="notation:SortingStyle" xmi:id="01b284be-9993-4398-a681-98bb5986b226"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="8a49a1f1-825b-4023-b537-4155302abe8e"></styles></children><children xmi:type="notation:DecorationNode" type="5009" xmi:id="1f068880-9c12-4276-b18c-9d56cfe112bc"><styles xmi:type="notation:DrawerStyle" xmi:id="9862b8bb-9e21-4c26-b235-ebf6635c763a"></styles></children><children xmi:type="notation:DecorationNode" type="7005" xmi:id="0134d940-e0c7-4402-b694-a2478c633e11"><styles xmi:type="notation:SortingStyle" xmi:id="4ac6a267-071c-4282-aaef-05a0546ea50d"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="27b52bf5-5311-44dd-abff-14a092cc2606"></styles></children><children xmi:type="notation:BasicCompartment" type="7007" xmi:id="9f974aa7-aa88-4809-9f11-4e24c56bb8e7"></children><element xmi:type="map:Datastore" href="resource#_8z78w5AyEe6u8_TKo8ZMQA?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA?"></element><layoutConstraint x="32" xmi:type="notation:Bounds" y="40" xmi:id="921131e3-1e2d-431e-a904-0fd0553b1b26"></layoutConstraint></children><children fontName="Segoe UI" xmi:type="notation:Shape" type="2004" xmi:id="6e7dac9d-8a9b-49d9-a2f2-cd20a709796b"><children xmi:type="notation:DecorationNode" type="5005" xmi:id="97033ad9-1614-4ab8-8380-81816371a27d"></children><children xmi:type="notation:DecorationNode" type="5007" xmi:id="a9cace16-698c-4ea8-afb1-fc5c06558bdc"></children><children xmi:type="notation:DecorationNode" type="7003" xmi:id="2e8ef897-9449-47a0-9f31-f55efcd845e1"></children><children xmi:type="notation:DecorationNode" type="7009" xmi:id="a68acba0-bfb9-4edc-ab14-3bd58fbe5282"></children><children xmi:type="notation:BasicCompartment" type="7004" xmi:id="5a09016e-c76a-4381-8401-1cb095eeec7f"><styles xmi:type="notation:SortingStyle" xmi:id="7c94fd61-7119-4e8a-a389-e26893a26e04"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="aa087268-3095-4dff-b490-792f2d681994"></styles></children><children xmi:type="notation:DecorationNode" type="5009" xmi:id="387d8cdf-dbb9-4bdd-a1dd-42c210852208"><styles xmi:type="notation:DrawerStyle" xmi:id="935c2c75-23fb-4920-96ae-bdbd4aeeea39"></styles></children><children xmi:type="notation:DecorationNode" type="7005" xmi:id="6368c1e0-1a67-434f-b859-3dd7464988de"><styles xmi:type="notation:SortingStyle" xmi:id="429ac773-9f3c-4a0c-8cbe-6c5a24ef184b"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="d0fbdd64-ed6c-4140-a5e6-475e0e3acdee"></styles></children><children xmi:type="notation:BasicCompartment" type="7007" xmi:id="e2a62270-7207-4e39-a4ef-d3bbd4af7708"></children><element xmi:type="map:Datastore" href="resource#_8z78oJAyEe6u8_TKo8ZMQA?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA?"></element><layoutConstraint x="522" xmi:type="notation:Bounds" y="32" xmi:id="8e712357-4b92-4f68-98c4-7f1e82c30baa"></layoutConstraint></children><styles xmi:type="notation:DiagramStyle" xmi:id="33ee854c-d89a-4b2b-a3b1-b47dfb58a4dc"></styles><element xmi:type="map:Map" href="resource#_8z7Vw5AyEe6u8_TKo8ZMQA?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA?"></element><edges xmi:type="notation:Edge" source="6e7dac9d-8a9b-49d9-a2f2-cd20a709796b" type="targetLink" xmi:id="5c728dcf-1fed-4106-9657-6f949247ea45" target="63b5a357-cf21-4fbe-81da-4a2977235fad"><element xsi:nil="true"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="22f71886-3c36-4793-a9e1-e72bd3112903" points="[0, 0, 154, 0]$[-154, 0, 0, 0]"></bendpoints></edges><edges xmi:type="notation:Edge" source="6e7dac9d-8a9b-49d9-a2f2-cd20a709796b" type="targetSetLink" xmi:id="b5ecf4f4-2a99-4d76-b1d2-3dbecc5e7f10" target="6e7dac9d-8a9b-49d9-a2f2-cd20a709796b"><element xmi:type="map:SetDescriptor" href="resource#_8z78wpAyEe6u8_TKo8ZMQA?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA?"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="3f7378ec-d6b7-4524-b4ff-05aab1b2ceb7" points="[0, 0, 0, 0]$[0, 0, 0, 0]"></bendpoints></edges><edges xmi:type="notation:Edge" source="6e7dac9d-8a9b-49d9-a2f2-cd20a709796b" type="targetLink" xmi:id="a044451c-ff11-4fb4-8e24-1f2837e1da62" target="773efff0-fe7f-4f32-934a-7c15907e0619"><element xsi:nil="true"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="a2dafd76-8c9c-455c-a4a3-bfdfc1481689" points="[0, 0, 162, 0]$[-162, 0, 0, 0]"></bendpoints></edges><edges xmi:type="notation:Edge" source="6e7dac9d-8a9b-49d9-a2f2-cd20a709796b" type="targetDataSetLink" xmi:id="778c8b83-8884-487c-819c-8fa8f03a39cf" target="6e7dac9d-8a9b-49d9-a2f2-cd20a709796b"><element xmi:type="map:DataSet" href="resource#_8z8jsJAyEe6u8_TKo8ZMQA?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA?"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="1be36d4b-37a0-47d4-9c3e-77f1fc6fc2f3" points="[0, 0, 0, 0]$[0, 0, 0, 0]"></bendpoints></edges><edges xmi:type="notation:Edge" source="4866e765-9819-4ec0-9014-5f2cdfa38bec" type="joinLink" xmi:id="72c5a962-7fb4-4b83-8cd3-65c545846b2e" target="773efff0-fe7f-4f32-934a-7c15907e0619"><element xsi:nil="true"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="0f61f15c-46aa-46b5-a398-3317d8479621" points="[17, 0, 72, 0]$[77, 0, 132, 0]"></bendpoints></edges><edges xmi:type="notation:Edge" source="4866e765-9819-4ec0-9014-5f2cdfa38bec" type="joinLink" xmi:id="59b5343b-8ba4-4f63-b605-f5096b557467" target="63b5a357-cf21-4fbe-81da-4a2977235fad"><element xsi:nil="true"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="83252b06-c7e6-4810-ab5c-30980fcad5c3" points="[17, 0, 342, 0]$[77, 0, 402, 0]"></bendpoints></edges></notation:Diagram>]]></diagram>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="731cadad-c5da-4e23-8436-9c0b90a9ca7c" type="Map" measurementUnit="Pixel">
+  <children xmi:type="notation:Node" xmi:id="4866e765-9819-4ec0-9014-5f2cdfa38bec" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="32a21fea-65fa-4f05-900a-6063fd64d267"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="41fe1471-2b02-40c5-a3c3-898e92ae0a0f" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="9920a866-1cd2-49a9-bd6b-032953e16545"/>
+    <element xmi:type="map:Join" href="resource.map#_8z782JAyEe6u8_TKo8ZMQA?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="8b09fecf-3839-4200-b4a4-93a57eda2b3a" x="240" y="138"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="773efff0-fe7f-4f32-934a-7c15907e0619" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="529aeae8-8340-4606-b075-38d9ee5f1bdd" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="fe2c61a3-33f5-4924-9837-02911bfa442a" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="05dad487-e401-4519-9f0c-c37ec7ca6fd8" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="7215e5ff-a396-4ddd-b48b-db1fd3e9611b" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="97674eab-74d8-4bb1-a5c2-1fc81f8e0703" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="2eb079bb-e5ed-4a27-93e5-6537ef171c1d"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="d2ecac88-1a1a-483d-be07-4b340ea2dd46"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="09834f79-98d2-422d-abce-acddf2c372dc" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="a59268d8-9806-4a8b-8801-2c1b74063b27"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="1b70e2e6-2243-440b-a3b8-f5cf359aa8a7" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="d91e664b-30c5-435e-9a4a-e963543b692b"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="f8be656e-5e14-4ea4-bcbf-dd638f656f2d"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="845a2fcf-6c8b-4abd-93a9-3813b4210f5b" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_8z781ZAyEe6u8_TKo8ZMQA?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="8a716d55-e1df-4e42-a47e-d0cfae8a3e2b" x="306" y="92"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="63b5a357-cf21-4fbe-81da-4a2977235fad" type="2004" fontName="Segoe UI">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_UGBYQJWzEe6cdJ4S6IgG4Q" source="com.indy.gmf.map.diagram.sort">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_UGEbkJWzEe6cdJ4S6IgG4Q" key="filterMode" value="com.indy.gmf.map.diagram.filter.unused"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="429a5d33-f45d-4d02-ae11-b69f59345e11" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="ba6c7e79-1051-438c-917b-c6c33fd7bb37" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="ef6d1f96-279e-4de0-868f-3cf41ab6cfa0" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="ad20905b-0d58-43b1-9edd-ff914e7acfec" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="15282982-c08b-4dbc-9bd5-6c36a4682a27" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="01b284be-9993-4398-a681-98bb5986b226"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="8a49a1f1-825b-4023-b537-4155302abe8e"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="1f068880-9c12-4276-b18c-9d56cfe112bc" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="9862b8bb-9e21-4c26-b235-ebf6635c763a"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="0134d940-e0c7-4402-b694-a2478c633e11" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="4ac6a267-071c-4282-aaef-05a0546ea50d"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="27b52bf5-5311-44dd-abff-14a092cc2606"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="9f974aa7-aa88-4809-9f11-4e24c56bb8e7" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_8z78w5AyEe6u8_TKo8ZMQA?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="921131e3-1e2d-431e-a904-0fd0553b1b26" x="32" y="56"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="6e7dac9d-8a9b-49d9-a2f2-cd20a709796b" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="97033ad9-1614-4ab8-8380-81816371a27d" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="a9cace16-698c-4ea8-afb1-fc5c06558bdc" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="2e8ef897-9449-47a0-9f31-f55efcd845e1" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="a68acba0-bfb9-4edc-ab14-3bd58fbe5282" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="5a09016e-c76a-4381-8401-1cb095eeec7f" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="7c94fd61-7119-4e8a-a389-e26893a26e04"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="aa087268-3095-4dff-b490-792f2d681994"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="387d8cdf-dbb9-4bdd-a1dd-42c210852208" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="935c2c75-23fb-4920-96ae-bdbd4aeeea39"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="6368c1e0-1a67-434f-b859-3dd7464988de" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="429ac773-9f3c-4a0c-8cbe-6c5a24ef184b"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="d0fbdd64-ed6c-4140-a5e6-475e0e3acdee"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="e2a62270-7207-4e39-a4ef-d3bbd4af7708" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_8z78oJAyEe6u8_TKo8ZMQA?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="8e712357-4b92-4f68-98c4-7f1e82c30baa" x="522" y="32"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="_7LmCYJWvEe6cdJ4S6IgG4Q" type="2004" fontName="Segoe UI">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S07j0JWzEe6cdJ4S6IgG4Q" source="com.indy.gmf.map.diagram.sort">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_S0_1QJWzEe6cdJ4S6IgG4Q" key="filterMode" value="com.indy.gmf.map.diagram.filter.unused"/>
+    </eAnnotations>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7LmCYpWvEe6cdJ4S6IgG4Q" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7LmpcJWvEe6cdJ4S6IgG4Q" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7LmpcZWvEe6cdJ4S6IgG4Q" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7LmpcpWvEe6cdJ4S6IgG4Q" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_7Lmpc5WvEe6cdJ4S6IgG4Q" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_7LmpdJWvEe6cdJ4S6IgG4Q"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_7LmpdZWvEe6cdJ4S6IgG4Q"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7LmpdpWvEe6cdJ4S6IgG4Q" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_7Lmpd5WvEe6cdJ4S6IgG4Q"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7LmpeJWvEe6cdJ4S6IgG4Q" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_7LmpeZWvEe6cdJ4S6IgG4Q"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_7LmpepWvEe6cdJ4S6IgG4Q"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_7LoeoJWvEe6cdJ4S6IgG4Q" type="7007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="_7LoeoZWvEe6cdJ4S6IgG4Q" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_7LoeopWvEe6cdJ4S6IgG4Q"/>
+    </children>
+    <element xmi:type="map:Datastore" href="resource.map#_7LO2AJWvEe6cdJ4S6IgG4Q?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_7LmCYZWvEe6cdJ4S6IgG4Q" x="306" y="195"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_AycWIJWwEe6cdJ4S6IgG4Q" type="2005">
+    <styles xmi:type="notation:DescriptionStyle" xmi:id="_AycWIZWwEe6cdJ4S6IgG4Q"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_AycWIpWwEe6cdJ4S6IgG4Q" fontName="Segoe UI"/>
+    <styles xmi:type="notation:FillStyle" xmi:id="_AycWI5WwEe6cdJ4S6IgG4Q"/>
+    <element xmi:type="map:Join" href="resource.map#_AwVdUJWwEe6cdJ4S6IgG4Q?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_AycWJJWwEe6cdJ4S6IgG4Q" x="240" y="195"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="33ee854c-d89a-4b2b-a3b1-b47dfb58a4dc"/>
+  <element xmi:type="map:Map" href="resource.map#_8z7Vw5AyEe6u8_TKo8ZMQA?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA$type=map$name=ALIM_DWH_ADRESSE?"/>
+  <edges xmi:type="notation:Edge" xmi:id="5c728dcf-1fed-4106-9657-6f949247ea45" type="targetLink" source="6e7dac9d-8a9b-49d9-a2f2-cd20a709796b" target="63b5a357-cf21-4fbe-81da-4a2977235fad">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="22f71886-3c36-4793-a9e1-e72bd3112903" points="[0, 0, 154, 0]$[-154, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="b5ecf4f4-2a99-4d76-b1d2-3dbecc5e7f10" type="targetSetLink" source="6e7dac9d-8a9b-49d9-a2f2-cd20a709796b" target="6e7dac9d-8a9b-49d9-a2f2-cd20a709796b">
+    <element xmi:type="map:SetDescriptor" href="resource.map#_8z78wpAyEe6u8_TKo8ZMQA?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="3f7378ec-d6b7-4524-b4ff-05aab1b2ceb7" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="a044451c-ff11-4fb4-8e24-1f2837e1da62" type="targetLink" source="6e7dac9d-8a9b-49d9-a2f2-cd20a709796b" target="773efff0-fe7f-4f32-934a-7c15907e0619">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="a2dafd76-8c9c-455c-a4a3-bfdfc1481689" points="[0, 0, 162, 0]$[-162, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="778c8b83-8884-487c-819c-8fa8f03a39cf" type="targetDataSetLink" source="6e7dac9d-8a9b-49d9-a2f2-cd20a709796b" target="6e7dac9d-8a9b-49d9-a2f2-cd20a709796b">
+    <element xmi:type="map:DataSet" href="resource.map#_8z8jsJAyEe6u8_TKo8ZMQA?fileId=_8z7Vw5AyEe6u8_TKo8ZMQA$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="1be36d4b-37a0-47d4-9c3e-77f1fc6fc2f3" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="72c5a962-7fb4-4b83-8cd3-65c545846b2e" type="joinLink" source="4866e765-9819-4ec0-9014-5f2cdfa38bec" target="773efff0-fe7f-4f32-934a-7c15907e0619">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="0f61f15c-46aa-46b5-a398-3317d8479621" points="[17, 0, 72, 0]$[77, 0, 132, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="59b5343b-8ba4-4f63-b605-f5096b557467" type="joinLink" source="4866e765-9819-4ec0-9014-5f2cdfa38bec" target="63b5a357-cf21-4fbe-81da-4a2977235fad">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="83252b06-c7e6-4810-ab5c-30980fcad5c3" points="[17, 0, 342, 0]$[77, 0, 402, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_75-yYJWvEe6cdJ4S6IgG4Q" type="targetLink" source="6e7dac9d-8a9b-49d9-a2f2-cd20a709796b" target="_7LmCYJWvEe6cdJ4S6IgG4Q">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_75-yYZWvEe6cdJ4S6IgG4Q" points="[-192, 148, 278, -214]$[-357, 275, 113, -87]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AydkQJWwEe6cdJ4S6IgG4Q" type="joinLink" source="_AycWIJWwEe6cdJ4S6IgG4Q" target="63b5a357-cf21-4fbe-81da-4a2977235fad">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AydkQZWwEe6cdJ4S6IgG4Q" points="[-1, -1, -121, -180]$[32, 47, -88, -132]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_AyeLUJWwEe6cdJ4S6IgG4Q" type="joinLink" source="_AycWIJWwEe6cdJ4S6IgG4Q" target="_7LmCYJWvEe6cdJ4S6IgG4Q">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_AyeLUZWwEe6cdJ4S6IgG4Q" points="[-1, -1, -352, -402]$[239, 272, -112, -129]"/>
+  </edges>
+</notation:Diagram>
+]]></diagram>
 </map:map>

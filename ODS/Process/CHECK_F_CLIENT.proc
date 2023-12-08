@@ -9,7 +9,7 @@
   <actionCode id="_ndVwmYqiEe6wS8JTT7vucg" isBeginAction="false" name="WriteTxtFile_Init" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.WriteTxtFileActionCodeI">
     <link id="_ndVwmoqiEe6wS8JTT7vucg" generationCondition="" executionCondition="${~/file_nb_header}$ != 1" executionType="OK" generationType="OK_KO" mandatory="1" targetId="_ndVwnYqiEe6wS8JTT7vucg"/>
     <link id="_ndVwm4qiEe6wS8JTT7vucg" executionCondition="${~/file_nb_header}$ == 1" executionType="OK" generationType="OK_KO" mandatory="1" targetId="_ndVwq4qiEe6wS8JTT7vucg"/>
-    <parameter id="_ndVwnIqiEe6wS8JTT7vucg" name="TXT_WRITE_FILENAME" type="String" value="C:\temp\log\log_integration_file_${~/file_name}$"/>
+    <parameter id="_ndVwnIqiEe6wS8JTT7vucg" name="TXT_WRITE_FILENAME" type="String" value="C:\source\temp\log\log_integration_file_${~/file_name}$"/>
     <code>****************************************************************************************************&#xD;
 ************                Log d'integration du fichier ${~/file_name}$                ************&#xD;
 ************                     Started at : ${/CORE_BEGIN_DATE}$                      ************&#xD;
@@ -18,17 +18,18 @@
 </code>
   </actionCode>
   <actionCode id="_ndVwnYqiEe6wS8JTT7vucg" generationCondition="" isBeginAction="false" name="WriteTxtFile_Error_Header" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.WriteTxtFileActionCodeI">
-    <parameter id="_ndVwnoqiEe6wS8JTT7vucg" name="TXT_WRITE_FILENAME" type="Boolean" value="C:\temp\log\log_integration_file_${~/file_name}$.txt"/>
+    <parameter id="_ndVwnoqiEe6wS8JTT7vucg" name="TXT_WRITE_FILENAME" type="Boolean" value="C:\source\temp\log\log_integration_file_${~/file_name}$.txt"/>
     <parameter id="_ndVwn4qiEe6wS8JTT7vucg" name="TXT_WRITE_APPEND" type="String" value="after"/>
     <code>Le fichier source ${~/file_name}$ ne comporte pas de ligne de header (première colonne '000') : le fichier est rejeté et ne sera pas intégré dans le DWH.</code>
   </actionCode>
   <actionCode id="_ndVwoIqiEe6wS8JTT7vucg" generationCondition="" enable="true" isBeginAction="false" name="WriteTxtFile_Error_Footer" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.WriteTxtFileActionCodeI">
-    <parameter id="_ndVwoYqiEe6wS8JTT7vucg" name="TXT_WRITE_FILENAME" type="String" value="C:\temp\log\log_integration_file_${~/file_name}$"/>
+    <parameter id="_ndVwoYqiEe6wS8JTT7vucg" name="TXT_WRITE_FILENAME" type="String" value="C:\source\temp\log\log_integration_file_${~/file_name}$"/>
     <parameter id="_ndVwooqiEe6wS8JTT7vucg" name="TXT_WRITE_APPEND" type="String" value="after"/>
     <code>Le fichier source ${~/file_name}$ ne comporte pas de ligne de footer (première colonne '999') : le fichier est rejeté et ne sera pas intégré dans le DWH.</code>
   </actionCode>
   <actionCode id="_ndVwo4qiEe6wS8JTT7vucg" generationCondition="" enable="true" isBeginAction="false" name="WriteTxtFile_Error_Footer_Nb_Line" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.WriteTxtFileActionCodeI">
-    <parameter id="_ndVwpIqiEe6wS8JTT7vucg" name="TXT_WRITE_FILENAME" type="String" value="C:\temp\log\log_integration_file_${~/file_name}$"/>
+    <link id="4fab43f5-e6ee-401a-a412-37659be504f7" executionType="OK" generationType="OK_KO" mandatory="1" targetId="05090d9b-c54c-4071-8815-56f6eecf1d59"/>
+    <parameter id="_ndVwpIqiEe6wS8JTT7vucg" name="TXT_WRITE_FILENAME" type="String" value="C:\source\temp\log\log_integration_file_${~/file_name}$"/>
     <parameter id="_ndVwpYqiEe6wS8JTT7vucg" name="TXT_WRITE_APPEND" type="String" value="after"/>
     <code>Le fichier source ${~/file_name}$ ne comporte pas le nombre de lignes indiqués dans le footer :&#xD;
 	${~/file_nb_line}$ dans le fichier intégré dans la table SAS_IN&#xD;
@@ -36,7 +37,7 @@
 le fichier est rejeté et ne sera pas intégré dans le DWH.</code>
   </actionCode>
   <actionCode id="_ndVwpoqiEe6wS8JTT7vucg" enable="true" isBeginAction="false" name="WriteTxtFile_OK_FILE" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.WriteTxtFileActionCodeI">
-    <parameter id="_ndVwp4qiEe6wS8JTT7vucg" name="TXT_WRITE_FILENAME" type="String" value="C:\temp\log\log_integration_file_${~/file_name}$"/>
+    <parameter id="_ndVwp4qiEe6wS8JTT7vucg" name="TXT_WRITE_FILENAME" type="String" value="C:\source\temp\log\log_integration_file_${~/file_name}$"/>
     <parameter id="_ndVwqIqiEe6wS8JTT7vucg" name="TXT_WRITE_APPEND" type="String" value="after"/>
     <code>Le fichier source ${~/file_name}$ ne comporte pas d'erreur de formattage : la suite de l'intégration des données dnas le DWH va poussuivre.</code>
   </actionCode>
@@ -73,6 +74,9 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
 	&lt;/parameter>&#xD;
 &lt;/sqlToParameters></code>
   </actionCode>
+  <actionCode id="05090d9b-c54c-4071-8815-56f6eecf1d59" isBeginAction="false" name="KO_File" nbCycles="-1" toleratedError="false" technology="com.indy.engine.actionCodes.RaiseErrorActionCodeI">
+    <parameter id="8f0af647-46c8-4755-883f-a6ef5603f0c3" name="MESSAGE" type="String" value="le fichier source ne respecte pas les conditions d'intégration"/>
+  </actionCode>
   <actionProcessRef id="_ndVwsYqiEe6wS8JTT7vucg" isBeginAction="false" name="LOAD_ALL_F_CLIENT" nbCycles="-1" toleratedError="false" processMap="true" targetName="resource.map#_5fvtcIqfEe6wS8JTT7vucg?fileId=_5fvtcIqfEe6wS8JTT7vucg$name=LOAD_ALL_F_CLIENT$type=map?">
     <link id="_ndVws4qiEe6wS8JTT7vucg" executionType="KO" generationType="OK_KO" mandatory="1" targetId="_ndVwl4qiEe6wS8JTT7vucg"/>
     <link id="fa4afcdc-f6ca-4862-99ac-0a08fd84a444" executionType="OK" generationType="OK_KO" mandatory="1" targetId="ef099ecf-c13d-4c2a-8f14-e16a1d86cdcd"/>
@@ -93,7 +97,7 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="548412af-27ca-4c79-84ce-e163a4301ab7" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="resource.proc#_ndVwkYqiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc$name=Start?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="2e95e0eb-0f8d-439e-aafa-1abdd4f7b3d9" x="135" y="30"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="2e95e0eb-0f8d-439e-aafa-1abdd4f7b3d9" x="135" y="-175"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="1d529aeb-82bb-421b-8770-cbdae43958f4" type="2001">
     <children xmi:type="notation:Node" xmi:id="2362c089-e259-44f5-a74d-ebdd53457182" type="5001"/>
@@ -109,7 +113,7 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="21c3c73f-4675-4a1c-a718-8f20996b9382" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="resource.proc#_ndVwl4qiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc$name=Raise%20Error?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="0f37d058-c588-4b29-8b99-cf1f99cfff4e" x="30" y="230"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="0f37d058-c588-4b29-8b99-cf1f99cfff4e" x="30" y="25"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="87b91e7b-56ba-4816-9aa2-e683ed83e2aa" type="2001">
     <children xmi:type="notation:Node" xmi:id="0f06b9ed-d9cc-42bf-8ec8-34e3b143a119" type="5001"/>
@@ -125,7 +129,7 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="90a40810-53c8-4bf6-8cfc-342b23146df1" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="resource.proc#_ndVwmYqiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc$name=WriteTxtFile_Init?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="3b2dde64-7609-4f58-a802-eb2577215372" x="200" y="330"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="3b2dde64-7609-4f58-a802-eb2577215372" x="200" y="125"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="6082ad50-669e-4ba8-9e43-4053f212d567" type="2001">
     <children xmi:type="notation:Node" xmi:id="be36fe94-45bc-4d25-96ba-be0d66977dd1" type="5001"/>
@@ -145,7 +149,7 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="85ec50ac-0b3f-417e-b1d4-9549b2164229" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="resource.proc#_ndVwnYqiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc$name=WriteTxtFile_Error_Header?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="5d1302eb-4eb4-473b-9284-95308a55ceb0" x="60" y="430"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="5d1302eb-4eb4-473b-9284-95308a55ceb0" x="60" y="225"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="545bb900-7c36-4e56-bbc7-5b93610f8fc2" type="2001">
     <children xmi:type="notation:Node" xmi:id="512bb5f6-8ec0-4ed2-b590-2bec08f41b9f" type="5001"/>
@@ -169,7 +173,7 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="46b89740-b01e-40e4-b946-4228263b0add" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="resource.proc#_ndVwoIqiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc$name=WriteTxtFile_Error_Footer?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="b2d5c254-0956-44bf-aa09-3e9e2a7fe95f" x="175" y="530"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="b2d5c254-0956-44bf-aa09-3e9e2a7fe95f" x="175" y="325"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="6e0997ac-1006-48ad-84ce-3aabda349e8d" type="2001">
     <children xmi:type="notation:Node" xmi:id="c773de72-7a7c-4f45-86f6-d8f0f8420685" type="5001"/>
@@ -193,7 +197,7 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="24bf260f-7a07-4399-a67c-b67b19eeca33" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="resource.proc#_ndVwo4qiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc$name=WriteTxtFile_Error_Footer_Nb_Line?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="7e5b6604-2c4a-4622-8d33-c162aa377d38" x="480" y="630"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="7e5b6604-2c4a-4622-8d33-c162aa377d38" x="240" y="425"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="e2fc4be1-038c-4e03-a619-d0bc3613ed1f" type="2001">
     <children xmi:type="notation:Node" xmi:id="d904f168-f0f0-43e2-acad-f5fbceed8cab" type="5001"/>
@@ -217,7 +221,7 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="6a95597d-70e2-47b2-a526-b08b6b2c3ed4" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="resource.proc#_ndVwpoqiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc$name=WriteTxtFile_OK_FILE?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="039ba558-c09b-4d41-993c-562c936fb8e9" x="275" y="730"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="039ba558-c09b-4d41-993c-562c936fb8e9" x="515" y="525"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="676a8cd3-b04a-472d-a9b5-0edff42176ec" type="2001">
     <children xmi:type="notation:Node" xmi:id="6450e548-7b57-4bb7-80a6-42ca2f2e1208" type="5001"/>
@@ -233,7 +237,7 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="6f82c56d-8d03-478e-8ff1-52e8681d516b" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="resource.proc#_ndVwqYqiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc$name=Everything%20OK%20?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="0d7ce054-48b4-4c20-b70c-ea873c15e5ee" x="295" y="630"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="0d7ce054-48b4-4c20-b70c-ea873c15e5ee" x="535" y="425"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="67957e72-9f2d-4ae0-be7c-adcd8d6d00c7" type="2001">
     <children xmi:type="notation:Node" xmi:id="dceef462-256f-45aa-84bb-fd1ea0d42582" type="5001"/>
@@ -249,7 +253,7 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="18440eab-a602-4538-943f-d32624449577" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="resource.proc#_ndVwq4qiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc$name=No%20Header%20error?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="d6ed2895-61e8-43e7-8f53-0023543905b1" x="305" y="430"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="d6ed2895-61e8-43e7-8f53-0023543905b1" x="305" y="225"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="2236f08b-c8a6-450b-b81e-fee4ce2f492a" type="2001">
     <children xmi:type="notation:Node" xmi:id="4c80111a-91e4-4fe5-b770-c565017ff89d" type="5001"/>
@@ -265,7 +269,7 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="13f83d5d-38f1-4033-ac60-8a9b3c935b04" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="resource.proc#_ndVwroqiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc$name=No%20footer%20error?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="c444b843-02e1-4793-bad6-ca7fd4de0894" x="415" y="530"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="c444b843-02e1-4793-bad6-ca7fd4de0894" x="415" y="325"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="c8e4c5e7-d0a2-450b-a384-3621f26b0746" type="2003">
     <children xmi:type="notation:Node" xmi:id="e4955c77-be0a-4d65-b735-2ea923119d6f" type="5003"/>
@@ -281,7 +285,7 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="5a669863-5c6c-46bb-9a21-fb3461ce728a" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionProcessRef" href="resource.proc#_ndVwsYqiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc$name=LOAD_ALL_F_CLIENT?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="e24db69e-7a6c-4dde-9211-f7712c5c202a" x="90" y="130"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="e24db69e-7a6c-4dde-9211-f7712c5c202a" x="90" y="-75"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_kZQpoIqkEe6wS8JTT7vucg" type="2001">
     <children xmi:type="notation:Node" xmi:id="_kZSe0IqkEe6wS8JTT7vucg" type="5001"/>
@@ -301,7 +305,23 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_kZQpoYqkEe6wS8JTT7vucg" fontName="Segoe UI"/>
     <element xmi:type="proc:ActionCode" href="resource.proc#ef099ecf-c13d-4c2a-8f14-e16a1d86cdcd?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc$name=Sql%20To%20Parameters?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kZQpooqkEe6wS8JTT7vucg" x="195" y="230"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_kZQpooqkEe6wS8JTT7vucg" x="195" y="25"/>
+  </children>
+  <children xmi:type="notation:Node" xmi:id="_MflioJXEEe6cdJ4S6IgG4Q" type="2001">
+    <children xmi:type="notation:Node" xmi:id="_MfmJsJXEEe6cdJ4S6IgG4Q" type="5001"/>
+    <children xmi:type="notation:Node" xmi:id="_MfmJsZXEEe6cdJ4S6IgG4Q" type="7001">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_MfmJspXEEe6cdJ4S6IgG4Q" collapsed="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_MfmJs5XEEe6cdJ4S6IgG4Q"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_MfmJtJXEEe6cdJ4S6IgG4Q"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_MfmJtZXEEe6cdJ4S6IgG4Q" type="7002">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="_MfmJtpXEEe6cdJ4S6IgG4Q" collapsed="true"/>
+      <styles xmi:type="notation:SortingStyle" xmi:id="_MfmJt5XEEe6cdJ4S6IgG4Q"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_MfmJuJXEEe6cdJ4S6IgG4Q"/>
+    </children>
+    <styles xmi:type="notation:ShapeStyle" xmi:id="_MflioZXEEe6cdJ4S6IgG4Q" fontName="Segoe UI"/>
+    <element xmi:type="proc:ActionCode" href="resource.proc#05090d9b-c54c-4071-8815-56f6eecf1d59?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc$name=KO_File?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MfliopXEEe6cdJ4S6IgG4Q" x="280" y="525"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="7588c5fd-78f7-458f-86ba-40ef2d5a88d9"/>
   <element xmi:type="proc:ActionProcess" href="resource.proc#_ndVwkIqiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc$name=CHECK_F_CLIENT?"/>
@@ -318,15 +338,15 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
     <styles xmi:type="notation:FontStyle" xmi:id="b16f1c70-f2df-4623-8faf-fbe096eb3cc0" fontName="Segoe UI"/>
     <element xmi:type="proc:Link" href="resource.proc#_ndVwr4qiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc?"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="36ff7014-0d40-4371-85d5-f9a5c0d345eb" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="c0bae31e-ad11-42ae-a412-9c40234a4993" id="(0.6666666666666666,1.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="40fce54d-4bc0-4d4f-be9f-75c5d3d62453" id="(0.07692307692307693,0.0)"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="c0bae31e-ad11-42ae-a412-9c40234a4993" id="(0.3333333333333333,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="40fce54d-4bc0-4d4f-be9f-75c5d3d62453" id="(0.9230769230769231,0.0)"/>
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="be272f20-5e9a-4adb-a947-104d2c607828" type="4001" source="2236f08b-c8a6-450b-b81e-fee4ce2f492a" target="676a8cd3-b04a-472d-a9b5-0edff42176ec">
     <styles xmi:type="notation:RoutingStyle" xmi:id="bc2ecfb1-e2ac-4732-91b6-185242e6d26d"/>
     <styles xmi:type="notation:FontStyle" xmi:id="49452b14-3865-44ce-a59e-dca4f1970f73" fontName="Segoe UI"/>
     <element xmi:type="proc:Link" href="resource.proc#_ndVwsIqiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc?"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="fc7165ee-e0ef-486a-8d55-df8b700866e1" points="[0, 0, 99, -60]$[-99, 60, 0, 0]"/>
-    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="e7aa071e-d51d-4083-9500-88f08cb0b723" id="(0.3333333333333333,1.0)"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="fc7165ee-e0ef-486a-8d55-df8b700866e1" points="[0, 0, -98, -60]$[98, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="e7aa071e-d51d-4083-9500-88f08cb0b723" id="(0.6666666666666666,1.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="d9c52a91-07de-441a-be58-6db9fe12776e" id="(0.49586776859504134,0.0)"/>
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="6759e4ba-709e-4e61-ac14-9902fd84840b" type="4001" source="676a8cd3-b04a-472d-a9b5-0edff42176ec" target="e2fc4be1-038c-4e03-a619-d0bc3613ed1f">
@@ -351,13 +371,13 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
     <element xmi:type="proc:Link" href="resource.proc#_ndVwrIqiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc?"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="f218b1de-fdd3-4c1a-ad65-6cded194db69" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="c75c0914-b57c-4f44-a689-8d37b0447ab1" id="(0.33076923076923076,1.0)"/>
-    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="65f42a19-2a5f-4a94-9f95-ae13058c34b2" id="(0.9666666666666667,0.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="65f42a19-2a5f-4a94-9f95-ae13058c34b2" id="(0.9722222222222222,0.0)"/>
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="b3b7f2de-804c-4ce8-83ec-aad8fcee06b7" type="4001" source="67957e72-9f2d-4ae0-be7c-adcd8d6d00c7" target="2236f08b-c8a6-450b-b81e-fee4ce2f492a">
     <styles xmi:type="notation:RoutingStyle" xmi:id="ce96066d-728b-444b-b9d5-99983b342973"/>
     <styles xmi:type="notation:FontStyle" xmi:id="1c5f83c7-9701-475f-9a46-b446c9832dc1" fontName="Segoe UI"/>
     <element xmi:type="proc:Link" href="resource.proc#_ndVwrYqiEe6wS8JTT7vucg?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc?"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="17bd45aa-83f9-436c-a9ed-b4bc5e158e96" points="[0, 0, -83, -60]$[83, 60, 0, 0]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="17bd45aa-83f9-436c-a9ed-b4bc5e158e96" points="[0, 0, -82, -60]$[82, 60, 0, 0]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="3a811039-c2b7-42a6-94f7-e7ef162abbd3" id="(0.6615384615384615,1.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="9ba4eb48-d820-411c-8c1e-65b4bf7f9e1c" id="(0.5,0.0)"/>
   </edges>
@@ -392,6 +412,14 @@ select FILE_NAME from F_CLIENT_CHECK&#xD;
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_k5Ags4qkEe6wS8JTT7vucg" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k5Bu0IqkEe6wS8JTT7vucg" id="(0.5,1.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_k5Bu0YqkEe6wS8JTT7vucg" id="(0.5,0.0)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_NKoDsJXEEe6cdJ4S6IgG4Q" type="4001" source="6e0997ac-1006-48ad-84ce-3aabda349e8d" target="_MflioJXEEe6cdJ4S6IgG4Q">
+    <styles xmi:type="notation:RoutingStyle" xmi:id="_NKoDsZXEEe6cdJ4S6IgG4Q"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_NKoDspXEEe6cdJ4S6IgG4Q" fontName="Segoe UI"/>
+    <element xmi:type="proc:Link" href="resource.proc#4fab43f5-e6ee-401a-a412-37659be504f7?fileId=_ndVwkIqiEe6wS8JTT7vucg$type=proc?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_NKoDs5XEEe6cdJ4S6IgG4Q" points="[0, 0, 0, -60]$[0, 60, 0, 0]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NKqf8JXEEe6cdJ4S6IgG4Q" id="(0.5,1.0)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_NwuaYJXEEe6cdJ4S6IgG4Q" id="(0.4967741935483871,0.0)"/>
   </edges>
 </notation:Diagram>
 ]]></diagram>

@@ -28,7 +28,7 @@
     </field>
     <field id="_8z9K15AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="RECORD_VERSION" ref="resource.md#_bc8yxoqgEe6Bpuf23-D2iA?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=RECORD_VERSION?" update="true">
       <expression id="_8z9K2JAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z9K-pAyEe6u8_TKo8ZMQA">
-        <expression>'O'</expression>
+        <expression>cast('1' as NUMBER(1))</expression>
       </expression>
     </field>
     <field id="_8z9K2ZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="NOM_CLI" ref="resource.md#_QqwlkH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=NOM_CLI?" update="true">
@@ -53,7 +53,7 @@
     </field>
     <field id="_8z9K4ZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="MUTUELLE_CLI" ref="resource.md#_QqxzsH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=MUTUELLE_CLI?" update="true">
       <expression id="_8z9K4pAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z9K-pAyEe6u8_TKo8ZMQA">
-        <expression>nvl(SAS_CLIENT.MUTUELLE,999)</expression>
+        <expression>CAST(nvl(case when ascii(SAS_CLIENT.MUTUELLE)=13 then null else substr(SAS_CLIENT.MUTUELLE,1,length(SAS_CLIENT.MUTUELLE)-1) end,999)as NUMBER(5,0))</expression>
       </expression>
     </field>
     <field id="_8z9K45AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="DATE_CREATION_CLI" ref="resource.md#_Qqzo7H-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_CLI?" update="true">
@@ -84,8 +84,7 @@
     </field>
     <field id="_8z9K7ZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="SEXE_CLI" ref="resource.md#_QqxMpn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SEXE_CLI?" update="true">
       <expression id="_8z9K7pAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z9K-pAyEe6u8_TKo8ZMQA">
-        <expression><![CDATA[nvl(SAS_CLIENT.SEXE,999)
-]]></expression>
+        <expression>CAST(nvl(case when SAS_CLIENT.SEXE='NR' then null else SAS_CLIENT.SEXE end,'999')as NUMBER(5,0))</expression>
       </expression>
     </field>
     <field id="_8z9K75AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="LIB_TYPE_CLI" ref="resource.md#_QqzB0H-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_TYPE_CLI?" update="true">
@@ -154,7 +153,9 @@
   <join id="_4Cy6IJA4Ee6u8_TKo8ZMQA" location="SRC" left="_8z9KwZAyEe6u8_TKo8ZMQA" order="70" right="_2sbkIJA4Ee6u8_TKo8ZMQA">
     <expression>SAS_CLIENT.CLE_COMPTE = DWH_COMPTE.CLE_CPT</expression>
   </join>
-  <template id="_8z9LB5AyEe6u8_TKo8ZMQA" name="I_DWH_CLIENT" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_8z9K1JAyEe6u8_TKo8ZMQA"/>
+  <template id="_8z9LB5AyEe6u8_TKo8ZMQA" name="I_DWH_CLIENT" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_8z9K1JAyEe6u8_TKo8ZMQA">
+    <parameter id="_gBocYJW4Ee6cdJ4S6IgG4Q" name="integrationStrategy" value="auto"/>
+  </template>
   <dataSet id="_8z9LCJAyEe6u8_TKo8ZMQA">
     <container>_8z9KwZAyEe6u8_TKo8ZMQA</container>
     <container>_8z9K-5AyEe6u8_TKo8ZMQA</container>
@@ -188,7 +189,7 @@
     <usedField>#_2scLMZA4Ee6u8_TKo8ZMQA</usedField>
   </hint>
   <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="ae79e48a-c9cf-4c16-acb9-c73a33414af3" type="Map" measurementUnit="Pixel">
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="ae79e48a-c9cf-4c16-acb9-c73a33414af3" type="Map" measurementUnit="Pixel">
   <children xmi:type="notation:Node" xmi:id="f8cfeb4f-b060-40ae-84e1-0191a7f764ef" type="2005">
     <styles xmi:type="notation:DescriptionStyle" xmi:id="668c7185-112d-4cc1-92ec-d5ba90870497"/>
     <styles xmi:type="notation:FontStyle" xmi:id="f025ec33-262e-4e48-8b98-0abe16f22448" fontName="Segoe UI"/>
@@ -271,6 +272,9 @@
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="2937d79c-a3e9-4eec-9822-956d90871716" x="32" y="263"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="a885429c-e9d6-4ef0-b5d4-260176bc61f5" type="2004" fontName="Segoe UI">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_ezToEJW4Ee6cdJ4S6IgG4Q" source="com.indy.gmf.map.diagram.sort">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_ezU2MJW4Ee6cdJ4S6IgG4Q" key="filterMode" value="com.indy.gmf.map.diagram.filter.unused"/>
+    </eAnnotations>
     <children xmi:type="notation:DecorationNode" xmi:id="770f3a3a-e1f8-47cf-b641-2351c91eaa95" type="5005"/>
     <children xmi:type="notation:DecorationNode" xmi:id="64c5e9aa-3d8a-432f-9e65-3e848eb83b73" type="5007"/>
     <children xmi:type="notation:DecorationNode" xmi:id="f58a059b-2ccb-474c-8f24-14e0d4e51970" type="7003"/>
@@ -288,7 +292,7 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="726e9caf-f11e-49ee-a660-fb8be72b5c4f" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_8z9KwZAyEe6u8_TKo8ZMQA?fileId=_8z9KwJAyEe6u8_TKo8ZMQA$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="0cb71113-c61d-46d2-8a90-6a3b10659efd" x="331" y="64"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="0cb71113-c61d-46d2-8a90-6a3b10659efd" x="331" y="80"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="2973f2f7-d0ca-4309-a6b8-1c8da6ac6984" type="2004" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="4d1b9869-a6ef-4e52-b116-f438de46e9e4" type="5005"/>
@@ -308,9 +312,12 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="95920c9b-33d6-48d1-94ec-6ae43c6675c6" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_8z9K1JAyEe6u8_TKo8ZMQA?fileId=_8z9KwJAyEe6u8_TKo8ZMQA$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="45f66baf-3243-48d1-8c96-9cdb0652ea71" x="908" y="32"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="45f66baf-3243-48d1-8c96-9cdb0652ea71" x="816" y="32"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="_2ssp4JA4Ee6u8_TKo8ZMQA" type="2004" fontName="Segoe UI">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_eT8ykJW4Ee6cdJ4S6IgG4Q" source="com.indy.gmf.map.diagram.sort">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_eUAc8JW4Ee6cdJ4S6IgG4Q" key="filterMode" value="com.indy.gmf.map.diagram.filter.unused"/>
+    </eAnnotations>
     <children xmi:type="notation:DecorationNode" xmi:id="_2ssp4pA4Ee6u8_TKo8ZMQA" type="5005"/>
     <children xmi:type="notation:DecorationNode" xmi:id="_2ssp45A4Ee6u8_TKo8ZMQA" type="5007"/>
     <children xmi:type="notation:DecorationNode" xmi:id="_2ssp5JA4Ee6u8_TKo8ZMQA" type="7003"/>
@@ -328,7 +335,7 @@
     </children>
     <children xmi:type="notation:BasicCompartment" xmi:id="_2ssp7pA4Ee6u8_TKo8ZMQA" type="7007"/>
     <element xmi:type="map:Datastore" href="resource.map#_2sbkIJA4Ee6u8_TKo8ZMQA?fileId=_8z9KwJAyEe6u8_TKo8ZMQA$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2ssp4ZA4Ee6u8_TKo8ZMQA" x="630" y="88"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_2ssp4ZA4Ee6u8_TKo8ZMQA" x="630" y="160"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_4DKtkJA4Ee6u8_TKo8ZMQA" type="2005">
     <styles xmi:type="notation:DescriptionStyle" xmi:id="_4DKtkZA4Ee6u8_TKo8ZMQA"/>

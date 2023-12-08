@@ -57,7 +57,7 @@
     <constraint id="_3yTrXpAxEe6u8_TKo8ZMQA" name="CTRL_CABINET_RATTACHEMENT" ref="resource.md#_E8wIAIq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_CABINET_RATTACHEMENT?" reject="true"/>
     <setDescriptor id="_3yTrX5AxEe6u8_TKo8ZMQA" label="A"/>
   </datastore>
-  <template id="_3yTrYJAxEe6u8_TKo8ZMQA" name="I_SAS_COMPTE" process="resource.proc#_8c1f9be7-1fdc-457b-bc08-d3db9d701af9?fileId=_8c1f9be7-1fdc-457b-bc08-d3db9d701af9$type=proc$name=INTEGRATION%20Oracle%2020130715?" targetId="_3yTrSpAxEe6u8_TKo8ZMQA">
+  <template id="_3yTrYJAxEe6u8_TKo8ZMQA" name="I_SAS_COMPTE" process="resource.proc#_946a4183-2772-439c-9dea-078288948f0e?fileId=_946a4183-2772-439c-9dea-078288948f0e$type=proc$name=INTEGRATION%20Rdbms?" targetId="_3yTrSpAxEe6u8_TKo8ZMQA">
     <parameter id="_3yTrYZAxEe6u8_TKo8ZMQA" name="truncateTargetTable" value="true"/>
     <parameter id="_3yTrYpAxEe6u8_TKo8ZMQA" name="integrationStrategy" value="append"/>
     <parameter id="_3yTrY5AxEe6u8_TKo8ZMQA" name="appendMode" value="true"/>
@@ -80,5 +80,62 @@
     <usedField>#_3yTrSJAxEe6u8_TKo8ZMQA</usedField>
     <usedField>#_3yTrSZAxEe6u8_TKo8ZMQA</usedField>
   </hint>
-  <diagram><![CDATA[<?xml version="1.0" ?><notation:Diagram xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:version="2.0" type="Map" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="ba85a069-202f-4cce-9050-a2ef9b3010c7" measurementUnit="Pixel"><children fontName="Segoe UI" xmi:type="notation:Shape" type="2004" xmi:id="2e75b857-2f9f-4498-a9a7-bb78b6b22645"><children xmi:type="notation:DecorationNode" type="5005" xmi:id="fa7ba6cc-5737-4ded-ab04-f826361e2a33"></children><children xmi:type="notation:DecorationNode" type="5007" xmi:id="c70e45d1-9c34-41db-bb77-a0371d85a0ef"></children><children xmi:type="notation:DecorationNode" type="7003" xmi:id="1e4b49b2-9c34-4f92-97db-ee69af99a9f0"></children><children xmi:type="notation:DecorationNode" type="7009" xmi:id="8ac3d8bc-025d-4ad3-a935-807556e2bc6c"></children><children xmi:type="notation:BasicCompartment" type="7004" xmi:id="9010fbdc-e03c-453d-9236-5806b5db97c7"><styles xmi:type="notation:SortingStyle" xmi:id="860331dd-e095-4234-8478-83d1eec7a117"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="756e0bbc-42f6-419b-acc0-958439ff99a2"></styles></children><children xmi:type="notation:DecorationNode" type="5009" xmi:id="43686bf6-39a6-40ce-91ee-63c162a877c4"><styles xmi:type="notation:DrawerStyle" xmi:id="08f96f8a-d18a-4a65-a102-8d4ffb25b676"></styles></children><children xmi:type="notation:DecorationNode" type="7005" xmi:id="66910036-ef79-46a4-89ed-7f8137e43d6e"><styles xmi:type="notation:SortingStyle" xmi:id="04da8e24-54b8-4247-887c-812cbaf823de"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="ef94e653-2326-4238-85ff-50ef097b6c6a"></styles></children><children xmi:type="notation:BasicCompartment" type="7007" xmi:id="4f854c5f-8947-40a7-8960-73ed3d8d2667"></children><element xmi:type="map:Datastore" href="resource#_3yTrQZAxEe6u8_TKo8ZMQA?fileId=_3yTrQJAxEe6u8_TKo8ZMQA?"></element><layoutConstraint x="32" xmi:type="notation:Bounds" y="32" xmi:id="c2607e11-8837-4b3c-9273-0fb642a7611c"></layoutConstraint></children><children fontName="Segoe UI" xmi:type="notation:Shape" type="2004" xmi:id="770bbf99-3705-4b48-9f0b-2e7624d23a40"><children xmi:type="notation:DecorationNode" type="5005" xmi:id="4d94af67-467e-4f7e-b92e-3e24ad4a0975"></children><children xmi:type="notation:DecorationNode" type="5007" xmi:id="0c1fd37f-b4e0-4069-b2e8-522e16c4c12c"></children><children xmi:type="notation:DecorationNode" type="7003" xmi:id="9a3c435d-ac0d-45d1-8e6d-cf9f90e12efd"></children><children xmi:type="notation:DecorationNode" type="7009" xmi:id="fe184824-f60a-4bee-a4c3-61f53b3bc6d5"></children><children xmi:type="notation:BasicCompartment" type="7004" xmi:id="d8b532c8-ab5e-4cbb-bd48-c69a2b0f6604"><styles xmi:type="notation:SortingStyle" xmi:id="30c024e7-5431-45e6-8413-198c4c5325b3"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="674a88a8-eacd-401f-a261-163ba426b21c"></styles></children><children xmi:type="notation:DecorationNode" type="5009" xmi:id="ce41e747-bf8c-4ecb-bda1-75130986ddc8"><styles xmi:type="notation:DrawerStyle" xmi:id="756c8b12-8994-404d-97e3-69f551cb3486"></styles></children><children xmi:type="notation:DecorationNode" type="7005" xmi:id="e4f47149-df7a-40cf-a59a-730c9cca3e28"><styles xmi:type="notation:SortingStyle" xmi:id="3006e431-5a0c-4f8f-a49e-a1d075f77e90"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="d68d1d7c-39ca-444e-8b85-2c602534420f"></styles></children><children xmi:type="notation:BasicCompartment" type="7007" xmi:id="5d9a2d04-ab75-4efc-b56a-b1eef3df3ff7"></children><element xmi:type="map:Datastore" href="resource#_3yTrSpAxEe6u8_TKo8ZMQA?fileId=_3yTrQJAxEe6u8_TKo8ZMQA?"></element><layoutConstraint x="310" xmi:type="notation:Bounds" y="32" xmi:id="5bb0870c-0fcd-4a27-bcf5-df5c0eb669b9"></layoutConstraint></children><styles xmi:type="notation:DiagramStyle" xmi:id="17d59433-7978-401d-bf3e-0f59b5a566ff"></styles><element xmi:type="map:Map" href="resource#_3yTrQJAxEe6u8_TKo8ZMQA?fileId=_3yTrQJAxEe6u8_TKo8ZMQA?"></element><edges xmi:type="notation:Edge" source="770bbf99-3705-4b48-9f0b-2e7624d23a40" type="targetLink" xmi:id="9567b7d2-c333-4927-a4a3-558178f60bfc" target="2e75b857-2f9f-4498-a9a7-bb78b6b22645"><element xsi:nil="true"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="9c76a810-e8a3-4a4e-9dd1-c09516558d5f" points="[-115, -23, 424, 84]$[-424, -84, 115, 23]"></bendpoints></edges><edges xmi:type="notation:Edge" source="770bbf99-3705-4b48-9f0b-2e7624d23a40" type="targetDataSetLink" xmi:id="4831544b-fe1d-4d2e-a3ac-9d34b8d622a3" target="770bbf99-3705-4b48-9f0b-2e7624d23a40"><element xmi:type="map:DataSet" href="resource#_3yTrZpAxEe6u8_TKo8ZMQA?fileId=_3yTrQJAxEe6u8_TKo8ZMQA?"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="899de2ca-1797-4602-ab4e-5679e962710e" points="[0, 0, 0, 0]$[0, 0, 0, 0]"></bendpoints></edges><edges xmi:type="notation:Edge" source="770bbf99-3705-4b48-9f0b-2e7624d23a40" type="targetSetLink" xmi:id="dec453da-846c-4c3f-957a-0324fce63cb5" target="770bbf99-3705-4b48-9f0b-2e7624d23a40"><element xmi:type="map:SetDescriptor" href="resource#_3yTrX5AxEe6u8_TKo8ZMQA?fileId=_3yTrQJAxEe6u8_TKo8ZMQA?"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="2b597bc0-354f-45ed-9061-9fac7b43ebd3" points="[0, 0, 0, 0]$[0, 0, 0, 0]"></bendpoints></edges></notation:Diagram>]]></diagram>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="ba85a069-202f-4cce-9050-a2ef9b3010c7" type="Map" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="2e75b857-2f9f-4498-a9a7-bb78b6b22645" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="fa7ba6cc-5737-4ded-ab04-f826361e2a33" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="c70e45d1-9c34-41db-bb77-a0371d85a0ef" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="1e4b49b2-9c34-4f92-97db-ee69af99a9f0" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="8ac3d8bc-025d-4ad3-a935-807556e2bc6c" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="9010fbdc-e03c-453d-9236-5806b5db97c7" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="860331dd-e095-4234-8478-83d1eec7a117"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="756e0bbc-42f6-419b-acc0-958439ff99a2"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="43686bf6-39a6-40ce-91ee-63c162a877c4" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="08f96f8a-d18a-4a65-a102-8d4ffb25b676"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="66910036-ef79-46a4-89ed-7f8137e43d6e" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="04da8e24-54b8-4247-887c-812cbaf823de"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="ef94e653-2326-4238-85ff-50ef097b6c6a"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="4f854c5f-8947-40a7-8960-73ed3d8d2667" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_3yTrQZAxEe6u8_TKo8ZMQA?fileId=_3yTrQJAxEe6u8_TKo8ZMQA$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="c2607e11-8837-4b3c-9273-0fb642a7611c" x="32" y="32"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="770bbf99-3705-4b48-9f0b-2e7624d23a40" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="4d94af67-467e-4f7e-b92e-3e24ad4a0975" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="0c1fd37f-b4e0-4069-b2e8-522e16c4c12c" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="9a3c435d-ac0d-45d1-8e6d-cf9f90e12efd" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="fe184824-f60a-4bee-a4c3-61f53b3bc6d5" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="d8b532c8-ab5e-4cbb-bd48-c69a2b0f6604" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="30c024e7-5431-45e6-8413-198c4c5325b3"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="674a88a8-eacd-401f-a261-163ba426b21c"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="ce41e747-bf8c-4ecb-bda1-75130986ddc8" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="756c8b12-8994-404d-97e3-69f551cb3486"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="e4f47149-df7a-40cf-a59a-730c9cca3e28" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="3006e431-5a0c-4f8f-a49e-a1d075f77e90"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="d68d1d7c-39ca-444e-8b85-2c602534420f"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="5d9a2d04-ab75-4efc-b56a-b1eef3df3ff7" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_3yTrSpAxEe6u8_TKo8ZMQA?fileId=_3yTrQJAxEe6u8_TKo8ZMQA$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="5bb0870c-0fcd-4a27-bcf5-df5c0eb669b9" x="310" y="32"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="17d59433-7978-401d-bf3e-0f59b5a566ff"/>
+  <element xmi:type="map:Map" href="resource.map#_3yTrQJAxEe6u8_TKo8ZMQA?fileId=_3yTrQJAxEe6u8_TKo8ZMQA$type=map$name=ALIM_SAS_COMPTE?"/>
+  <edges xmi:type="notation:Edge" xmi:id="9567b7d2-c333-4927-a4a3-558178f60bfc" type="targetLink" source="770bbf99-3705-4b48-9f0b-2e7624d23a40" target="2e75b857-2f9f-4498-a9a7-bb78b6b22645">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="9c76a810-e8a3-4a4e-9dd1-c09516558d5f" points="[-115, -23, 424, 84]$[-424, -84, 115, 23]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="4831544b-fe1d-4d2e-a3ac-9d34b8d622a3" type="targetDataSetLink" source="770bbf99-3705-4b48-9f0b-2e7624d23a40" target="770bbf99-3705-4b48-9f0b-2e7624d23a40">
+    <element xmi:type="map:DataSet" href="resource.map#_3yTrZpAxEe6u8_TKo8ZMQA?fileId=_3yTrQJAxEe6u8_TKo8ZMQA$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="899de2ca-1797-4602-ab4e-5679e962710e" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="dec453da-846c-4c3f-957a-0324fce63cb5" type="targetSetLink" source="770bbf99-3705-4b48-9f0b-2e7624d23a40" target="770bbf99-3705-4b48-9f0b-2e7624d23a40">
+    <element xmi:type="map:SetDescriptor" href="resource.map#_3yTrX5AxEe6u8_TKo8ZMQA?fileId=_3yTrQJAxEe6u8_TKo8ZMQA$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="2b597bc0-354f-45ed-9061-9fac7b43ebd3" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>
+]]></diagram>
 </map:map>

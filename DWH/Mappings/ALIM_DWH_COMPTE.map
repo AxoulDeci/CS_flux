@@ -15,19 +15,23 @@
     <constraint id="_8z-Y7ZAyEe6u8_TKo8ZMQA" name="CTRL_STATUS" ref="resource.md#_E8wIBYq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_STATUS?" reject="true"/>
   </datastore>
   <datastore id="_8z-Y7pAyEe6u8_TKo8ZMQA" alias="DWH_COMPTE" dataset="_4-tsoZA0Ee6u8_TKo8ZMQA" ref="resource.md#_QUCHoX-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DWH_COMPTE?" subExpression="[A]">
-    <field id="_8z-Y75AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="CLE_CPT" ref="resource.md#_QZpAYH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CPT?" update="true">
+    <field id="_8z-Y75AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="CLE_CPT" ref="resource.md#_QZpAYH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CPT?" update="true" updateKey="true">
       <expression id="_8z-Y8JAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z-ZBpAyEe6u8_TKo8ZMQA">
         <expression>SAS_COMPTE.CLE_COMPTE</expression>
       </expression>
     </field>
     <field id="_8z-Y8ZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="DERNIERE_DATE_MAJ_CPT" ref="resource.md#_QZqOgH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DERNIERE_DATE_MAJ_CPT?" update="true">
       <expression id="_8z-Y8pAyEe6u8_TKo8ZMQA" location="TRG" setDescriptorRef="_8z-ZBpAyEe6u8_TKo8ZMQA">
-        <expression>sysdate</expression>
+        <expression>to_date(sysdate,'YYYY-MM-DD HH24:MI:SS')</expression>
       </expression>
     </field>
     <field id="_8z-Y85AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="TYPE_CPT" ref="resource.md#_QZpAZn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_CPT?" update="true">
       <expression id="_8z-Y9JAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z-ZBpAyEe6u8_TKo8ZMQA">
-        <expression>CAST(SAS_COMPTE.TYPE as number(5))</expression>
+        <expression><![CDATA[CAST(case when SAS_COMPTE.TYPE not in 
+(SELECT TYPE_COMPTE FROM TRANSCO_COMPTE) 
+then '1' 
+ELSE SAS_COMPTE.TYPE 
+end  as number(5))]]></expression>
       </expression>
     </field>
     <field id="_8z-Y9ZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="LIB_CABINET_CPT" ref="resource.md#_QZqOjH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_CABINET_CPT?" update="true">
@@ -35,7 +39,7 @@
         <expression>TRANSCO_CABINET_RATTACHEMENT.LIB_CABINET</expression>
       </expression>
     </field>
-    <field id="_8z-Y95AyEe6u8_TKo8ZMQA" name="SID_CPT" ref="resource.md#_QZoZUH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SID_CPT?" updateKey="true">
+    <field id="_8z-Y95AyEe6u8_TKo8ZMQA" insert="false" name="SID_CPT" ref="resource.md#_QZoZUH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SID_CPT?" updateKey="true">
       <expression id="_8z-Y-JAyEe6u8_TKo8ZMQA" location="TRG" setDescriptorRef="_8z-ZBpAyEe6u8_TKo8ZMQA">
         <expression></expression>
       </expression>
@@ -52,7 +56,7 @@
     </field>
     <field id="_8z-Y_ZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="STATUS_CPT" ref="resource.md#_QZpncH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS_CPT?" update="true">
       <expression id="_8z-Y_pAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z-ZBpAyEe6u8_TKo8ZMQA">
-        <expression>CAST(SAS_COMPTE.STATUS as number(5))</expression>
+        <expression>CAST(case when SAS_COMPTE.status='1' then SAS_COMPTE.status else '999' end as number(5))</expression>
       </expression>
     </field>
     <field id="_8z-Y_5AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="LIB_TYPE_CPT" ref="resource.md#_QZpAbH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_TYPE_CPT?" update="true">
@@ -62,7 +66,7 @@
     </field>
     <field id="_8z-ZAZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="RECORD_VERSION" ref="resource.md#_a8bfpoqgEe6Bpuf23-D2iA?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=RECORD_VERSION?" update="true">
       <expression id="_8z-ZApAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z-ZBpAyEe6u8_TKo8ZMQA">
-        <expression>'O'</expression>
+        <expression>cast('1' as NUMBER(1))</expression>
       </expression>
     </field>
     <field id="_8z-ZA5AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="ID_FICHIER" ref="resource.md#_QZpngn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?" update="true">
@@ -82,13 +86,17 @@
     <field id="_3C2c4ZA0Ee6u8_TKo8ZMQA" fullAlias="LIB_TYPE_COMPTE" name="LIB_TYPE_COMPTE" ref="resource.md#_rOuulpA0Ee6u8_TKo8ZMQA?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_TYPE_COMPTE?"/>
   </datastore>
   <join id="_8z-ZDZAyEe6u8_TKo8ZMQA" location="SRC" left="_3CzZkJA0Ee6u8_TKo8ZMQA" order="10" right="_8z-Y4ZAyEe6u8_TKo8ZMQA">
-    <expression>TRANSCO_COMPTE.TYPE_COMPTE = SAS_COMPTE.TYPE</expression>
+    <expression><![CDATA[TRANSCO_COMPTE.TYPE_COMPTE = case when SAS_COMPTE.TYPE not in 
+(SELECT TYPE_COMPTE FROM TRANSCO_COMPTE) 
+then '1' 
+ELSE SAS_COMPTE.TYPE 
+end ]]></expression>
   </join>
   <join id="_8z-ZDpAyEe6u8_TKo8ZMQA" location="SRC" left="_8z-ZCpAyEe6u8_TKo8ZMQA" order="30" right="_8z-Y4ZAyEe6u8_TKo8ZMQA">
     <expression>CAST(TRANSCO_CABINET_RATTACHEMENT.CABINET_RATTACHEMENT as VARCHAR(4)) = CAST(SAS_COMPTE.CABINET_RATTACHEMENT as VARCHAR(4))</expression>
   </join>
   <template id="_8z-ZD5AyEe6u8_TKo8ZMQA" name="I_DWH_COMPTE" process="resource.proc#_jkWgEFEJEeO7Vo9WeM2sCg?fileId=_jkWgEFEJEeO7Vo9WeM2sCg$type=proc$name=INTEGRATION%20Oracle?" targetId="_8z-Y7pAyEe6u8_TKo8ZMQA">
-    <parameter id="_F-hyAJA1Ee6u8_TKo8ZMQA" name="integrationStrategy" value="append"/>
+    <parameter id="_F-hyAJA1Ee6u8_TKo8ZMQA" name="integrationStrategy" value="auto"/>
   </template>
   <dataSet id="_4-tsoJA0Ee6u8_TKo8ZMQA">
     <container>_8z-ZCpAyEe6u8_TKo8ZMQA</container>
@@ -111,7 +119,7 @@
     <usedField>#_3C2c4ZA0Ee6u8_TKo8ZMQA</usedField>
   </hint>
   <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
-<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="97cad583-5eb9-4efe-bd53-723f9e4a74a5" type="Map" measurementUnit="Pixel">
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="97cad583-5eb9-4efe-bd53-723f9e4a74a5" type="Map" measurementUnit="Pixel">
   <children xmi:type="notation:Node" xmi:id="41f05144-6338-4551-911e-ee1e9e577d42" type="2005">
     <styles xmi:type="notation:DescriptionStyle" xmi:id="3b40de0e-fa39-4f0f-acca-76e1d36b4032"/>
     <styles xmi:type="notation:FontStyle" xmi:id="0a75cf20-5997-4134-ad98-57d98ed5da30" fontName="Segoe UI"/>
@@ -147,6 +155,9 @@
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="d2774438-99e4-4ba0-9f72-d68a571e57df" x="32" y="52"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="de2ccd07-42b0-4438-919e-b832288582c2" type="2004" fontName="Segoe UI">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_roqUcJW5Ee6cdJ4S6IgG4Q" source="com.indy.gmf.map.diagram.sort">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_roswsJW5Ee6cdJ4S6IgG4Q" key="filterMode" value="com.indy.gmf.map.diagram.filter.unused"/>
+    </eAnnotations>
     <children xmi:type="notation:DecorationNode" xmi:id="e5501cbf-ca8c-4093-bf90-f08d73efecb0" type="5005"/>
     <children xmi:type="notation:DecorationNode" xmi:id="bd128a99-44ec-4947-a127-bfd6aac8ba14" type="5007"/>
     <children xmi:type="notation:DecorationNode" xmi:id="12b0aaa3-d171-49ca-ad69-90d0044ee78f" type="7003"/>
@@ -167,7 +178,7 @@
       <styles xmi:type="notation:DrawerStyle" xmi:id="441dfb80-5906-4a18-92ec-c82242bdb4e0"/>
     </children>
     <element xmi:type="map:Datastore" href="resource.map#_8z-Y4ZAyEe6u8_TKo8ZMQA?fileId=_8z-Y4JAyEe6u8_TKo8ZMQA$type=map?"/>
-    <layoutConstraint xmi:type="notation:Bounds" xmi:id="f9884709-a026-4d41-8d5e-7028d288289e" x="386" y="55"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="f9884709-a026-4d41-8d5e-7028d288289e" x="386" y="71"/>
   </children>
   <children xmi:type="notation:Shape" xmi:id="9bceee2a-f503-49ff-929b-9f2094621c1e" type="2004" fontName="Segoe UI">
     <children xmi:type="notation:DecorationNode" xmi:id="aa944be5-3e6c-49fe-ab31-d6181580a7f9" type="5005"/>

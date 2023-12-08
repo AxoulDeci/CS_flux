@@ -93,11 +93,11 @@
     <field id="_3yTEYJAxEe6u8_TKo8ZMQA" fullAlias="CLE_COMPTE" name="CLE_COMPTE" ref="resource.md#_bZzW5XozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_COMPTE?"/>
     <field id="_3yTEYZAxEe6u8_TKo8ZMQA" fullAlias="TYPE" name="TYPE" ref="resource.md#_bZzW8XozEe6i1bEIfNaCgQ?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE?"/>
   </datastore>
-  <template id="_3yTEYpAxEe6u8_TKo8ZMQA" name="I_SAS_CLIENT" process="resource.proc#_8c1f9be7-1fdc-457b-bc08-d3db9d701af9?fileId=_8c1f9be7-1fdc-457b-bc08-d3db9d701af9$type=proc$name=INTEGRATION%20Oracle%2020130715?" targetId="_3yTEMZAxEe6u8_TKo8ZMQA">
+  <template id="_3yTEYpAxEe6u8_TKo8ZMQA" name="I_SAS_CLIENT" process="resource.proc#_946a4183-2772-439c-9dea-078288948f0e?fileId=_946a4183-2772-439c-9dea-078288948f0e$type=proc$name=INTEGRATION%20Rdbms?" targetId="_3yTEMZAxEe6u8_TKo8ZMQA">
     <parameter id="_3yTEY5AxEe6u8_TKo8ZMQA" name="truncateTargetTable" value="true"/>
-    <parameter id="_3yTEZJAxEe6u8_TKo8ZMQA" name="integrationStrategy" value="incremental"/>
-    <parameter id="_3yTEZZAxEe6u8_TKo8ZMQA" name="appendMode" value="true"/>
+    <parameter id="_3yTEZJAxEe6u8_TKo8ZMQA" name="integrationStrategy" value="append"/>
     <parameter id="_3yTEZpAxEe6u8_TKo8ZMQA" name="recycleRejects" value="true"/>
+    <parameter id="_0EzRwJWiEe6cdJ4S6IgG4Q" name="appendMode" value="true"/>
   </template>
   <template id="_3yTEZ5AxEe6u8_TKo8ZMQA" name="R_SAS_CLIENT" process="resource.proc#_cvMAIERgEd22W6kpnG-bRg?fileId=_cvMAIERgEd22W6kpnG-bRg$type=proc$name=REJECT%20Oracle?" targetId="_3yTEMZAxEe6u8_TKo8ZMQA"/>
   <dataSet id="_3yTEaJAxEe6u8_TKo8ZMQA">
@@ -122,5 +122,62 @@
     <usedField>#_3yTEYJAxEe6u8_TKo8ZMQA</usedField>
     <usedField>#_3yTEYZAxEe6u8_TKo8ZMQA</usedField>
   </hint>
-  <diagram><![CDATA[<?xml version="1.0" ?><notation:Diagram xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xmi:version="2.0" type="Map" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="53dd7f13-b1ac-4d3e-896c-d39a22bc15a6" measurementUnit="Pixel"><children fontName="Segoe UI" xmi:type="notation:Shape" type="2004" xmi:id="7961c389-ab3e-4571-87c9-a7c70617a7cf"><children xmi:type="notation:DecorationNode" type="5005" xmi:id="dcc270dc-8944-474a-bd32-eac8aea356fb"></children><children xmi:type="notation:DecorationNode" type="5007" xmi:id="a77a87d4-e74a-4e62-9826-6925917d57df"></children><children xmi:type="notation:DecorationNode" type="7003" xmi:id="f06ee576-8b13-45f6-bdb8-32700a94e221"></children><children xmi:type="notation:DecorationNode" type="7009" xmi:id="1b61aa74-9f1f-47ee-8598-7a52312f86fe"></children><children xmi:type="notation:BasicCompartment" type="7004" xmi:id="2c8333cc-1f09-41ba-b5cd-4e63267a074c"><styles xmi:type="notation:SortingStyle" xmi:id="145bfa03-4405-4be6-b186-875aeeae83a6"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="59b999b6-2bc7-49d7-bb91-aa4f76ca4763"></styles></children><children xmi:type="notation:DecorationNode" type="5009" xmi:id="3fb9b9ef-4691-4ae1-835e-1eb02c09ba3b"><styles xmi:type="notation:DrawerStyle" xmi:id="8a276312-f272-4ad9-8dac-85a5370ffdc4"></styles></children><children xmi:type="notation:DecorationNode" type="7005" xmi:id="1443a638-287a-4031-b430-ec9cbbba8048"><styles xmi:type="notation:SortingStyle" xmi:id="82688caa-0b20-441e-aea9-c68f9149020c"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="78e5c44a-f11b-43ba-9714-a927518452d9"></styles></children><children xmi:type="notation:BasicCompartment" type="7007" xmi:id="3765342f-a75c-4754-8449-6667e136cd87"></children><element xmi:type="map:Datastore" href="resource#_3yTEU5AxEe6u8_TKo8ZMQA?fileId=_3yTEMJAxEe6u8_TKo8ZMQA?"></element><layoutConstraint x="32" xmi:type="notation:Bounds" y="32" xmi:id="f91f8763-dd8e-4ed0-a307-55598b0bb475"></layoutConstraint></children><children fontName="Segoe UI" xmi:type="notation:Shape" type="2004" xmi:id="a39f421d-8cfa-4197-8cce-f4af62a9422a"><children xmi:type="notation:DecorationNode" type="5005" xmi:id="1db9d310-ddc5-4430-b996-4e0d33d3959d"></children><children xmi:type="notation:DecorationNode" type="5007" xmi:id="9dfceefd-9875-4151-b88a-23762da7d84d"></children><children xmi:type="notation:DecorationNode" type="7003" xmi:id="62c42a24-a2bc-4cba-99f5-5489058d87d4"></children><children xmi:type="notation:DecorationNode" type="7009" xmi:id="4303e726-8e7c-4b92-8eb1-f68826ab8705"></children><children xmi:type="notation:BasicCompartment" type="7004" xmi:id="d2740221-8fb9-4208-bd95-156a695fbffe"><styles xmi:type="notation:SortingStyle" xmi:id="d9d583a1-4930-499d-aa58-72cf3e12f583"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="cdf1d924-69c7-44d2-bed5-1fc822b55196"></styles></children><children xmi:type="notation:DecorationNode" type="5009" xmi:id="30f21c5d-950d-4b93-8364-aa904cdb6465"><styles xmi:type="notation:DrawerStyle" xmi:id="dfcaea76-81cb-40db-aeaf-b96ec57d2b56"></styles></children><children xmi:type="notation:DecorationNode" type="7005" xmi:id="f0a583fb-42f8-4a19-90ba-dc8a9c4569d7"><styles xmi:type="notation:SortingStyle" xmi:id="acd3e158-751e-4d33-bd0a-445e9c87e979"></styles><styles xmi:type="notation:FilteringStyle" xmi:id="3629222b-87c7-4c65-8ee8-21b1ca5f7fe4"></styles></children><children xmi:type="notation:BasicCompartment" type="7007" xmi:id="a4253dcb-4a50-4b3c-8675-0c93cc4116e2"></children><element xmi:type="map:Datastore" href="resource#_3yTEMZAxEe6u8_TKo8ZMQA?fileId=_3yTEMJAxEe6u8_TKo8ZMQA?"></element><layoutConstraint x="281" xmi:type="notation:Bounds" y="32" xmi:id="82efd330-a8d5-4a20-8423-77683bb6ec6a"></layoutConstraint></children><styles xmi:type="notation:DiagramStyle" xmi:id="9dfcb790-4920-4791-90b0-9aab228404df"></styles><element xmi:type="map:Map" href="resource#_3yTEMJAxEe6u8_TKo8ZMQA?fileId=_3yTEMJAxEe6u8_TKo8ZMQA?"></element><edges xmi:type="notation:Edge" source="a39f421d-8cfa-4197-8cce-f4af62a9422a" type="targetLink" xmi:id="790a8133-f4a0-499e-b44c-c520d43d94b0" target="7961c389-ab3e-4571-87c9-a7c70617a7cf"><element xsi:nil="true"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="98a5b086-7a85-414f-b9ac-30d025c24788" points="[-100, -4, 200, 9]$[-199, -9, 101, 4]"></bendpoints></edges><edges xmi:type="notation:Edge" source="a39f421d-8cfa-4197-8cce-f4af62a9422a" type="targetDataSetLink" xmi:id="85c0c145-023c-4c99-96af-41d99393cfe7" target="a39f421d-8cfa-4197-8cce-f4af62a9422a"><element xmi:type="map:DataSet" href="resource#_3yTEaZAxEe6u8_TKo8ZMQA?fileId=_3yTEMJAxEe6u8_TKo8ZMQA?"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="53c8046e-99a2-42d8-a488-95ba1f8ac809" points="[0, 0, 0, 0]$[0, 0, 0, 0]"></bendpoints></edges><edges xmi:type="notation:Edge" source="a39f421d-8cfa-4197-8cce-f4af62a9422a" type="targetSetLink" xmi:id="b4334851-b4df-4d13-b70e-0ca86f2b8d36" target="a39f421d-8cfa-4197-8cce-f4af62a9422a"><element xmi:type="map:SetDescriptor" href="resource#_3yTEUpAxEe6u8_TKo8ZMQA?fileId=_3yTEMJAxEe6u8_TKo8ZMQA?"></element><bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="1240635e-d54e-4300-b40d-12fc163b4290" points="[0, 0, 0, 0]$[0, 0, 0, 0]"></bendpoints></edges></notation:Diagram>]]></diagram>
+  <diagram><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:map="http://www.indy.com/v2/map" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.1/notation" xsi:schemaLocation="http://www.eclipse.org/gmf/runtime/1.0.1/notation " xmi:id="53dd7f13-b1ac-4d3e-896c-d39a22bc15a6" type="Map" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="7961c389-ab3e-4571-87c9-a7c70617a7cf" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="dcc270dc-8944-474a-bd32-eac8aea356fb" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="a77a87d4-e74a-4e62-9826-6925917d57df" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="f06ee576-8b13-45f6-bdb8-32700a94e221" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="1b61aa74-9f1f-47ee-8598-7a52312f86fe" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="2c8333cc-1f09-41ba-b5cd-4e63267a074c" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="145bfa03-4405-4be6-b186-875aeeae83a6"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="59b999b6-2bc7-49d7-bb91-aa4f76ca4763"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="3fb9b9ef-4691-4ae1-835e-1eb02c09ba3b" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="8a276312-f272-4ad9-8dac-85a5370ffdc4"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="1443a638-287a-4031-b430-ec9cbbba8048" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="82688caa-0b20-441e-aea9-c68f9149020c"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="78e5c44a-f11b-43ba-9714-a927518452d9"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="3765342f-a75c-4754-8449-6667e136cd87" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_3yTEU5AxEe6u8_TKo8ZMQA?fileId=_3yTEMJAxEe6u8_TKo8ZMQA$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="f91f8763-dd8e-4ed0-a307-55598b0bb475" x="32" y="65"/>
+  </children>
+  <children xmi:type="notation:Shape" xmi:id="a39f421d-8cfa-4197-8cce-f4af62a9422a" type="2004" fontName="Segoe UI">
+    <children xmi:type="notation:DecorationNode" xmi:id="1db9d310-ddc5-4430-b996-4e0d33d3959d" type="5005"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="9dfceefd-9875-4151-b88a-23762da7d84d" type="5007"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="62c42a24-a2bc-4cba-99f5-5489058d87d4" type="7003"/>
+    <children xmi:type="notation:DecorationNode" xmi:id="4303e726-8e7c-4b92-8eb1-f68826ab8705" type="7009"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="d2740221-8fb9-4208-bd95-156a695fbffe" type="7004">
+      <styles xmi:type="notation:SortingStyle" xmi:id="d9d583a1-4930-499d-aa58-72cf3e12f583"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="cdf1d924-69c7-44d2-bed5-1fc822b55196"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="30f21c5d-950d-4b93-8364-aa904cdb6465" type="5009">
+      <styles xmi:type="notation:DrawerStyle" xmi:id="dfcaea76-81cb-40db-aeaf-b96ec57d2b56"/>
+    </children>
+    <children xmi:type="notation:DecorationNode" xmi:id="f0a583fb-42f8-4a19-90ba-dc8a9c4569d7" type="7005">
+      <styles xmi:type="notation:SortingStyle" xmi:id="acd3e158-751e-4d33-bd0a-445e9c87e979"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="3629222b-87c7-4c65-8ee8-21b1ca5f7fe4"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="a4253dcb-4a50-4b3c-8675-0c93cc4116e2" type="7007"/>
+    <element xmi:type="map:Datastore" href="resource.map#_3yTEMZAxEe6u8_TKo8ZMQA?fileId=_3yTEMJAxEe6u8_TKo8ZMQA$type=map?"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="82efd330-a8d5-4a20-8423-77683bb6ec6a" x="281" y="32"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="9dfcb790-4920-4791-90b0-9aab228404df"/>
+  <element xmi:type="map:Map" href="resource.map#_3yTEMJAxEe6u8_TKo8ZMQA?fileId=_3yTEMJAxEe6u8_TKo8ZMQA$type=map$name=ALIM_SAS_CLIENT?"/>
+  <edges xmi:type="notation:Edge" xmi:id="790a8133-f4a0-499e-b44c-c520d43d94b0" type="targetLink" source="a39f421d-8cfa-4197-8cce-f4af62a9422a" target="7961c389-ab3e-4571-87c9-a7c70617a7cf">
+    <element xsi:nil="true"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="98a5b086-7a85-414f-b9ac-30d025c24788" points="[-100, -4, 200, 9]$[-199, -9, 101, 4]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="85c0c145-023c-4c99-96af-41d99393cfe7" type="targetDataSetLink" source="a39f421d-8cfa-4197-8cce-f4af62a9422a" target="a39f421d-8cfa-4197-8cce-f4af62a9422a">
+    <element xmi:type="map:DataSet" href="resource.map#_3yTEaZAxEe6u8_TKo8ZMQA?fileId=_3yTEMJAxEe6u8_TKo8ZMQA$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="53c8046e-99a2-42d8-a488-95ba1f8ac809" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="b4334851-b4df-4d13-b70e-0ca86f2b8d36" type="targetSetLink" source="a39f421d-8cfa-4197-8cce-f4af62a9422a" target="a39f421d-8cfa-4197-8cce-f4af62a9422a">
+    <element xmi:type="map:SetDescriptor" href="resource.map#_3yTEUpAxEe6u8_TKo8ZMQA?fileId=_3yTEMJAxEe6u8_TKo8ZMQA$type=map?"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="1240635e-d54e-4300-b40d-12fc163b4290" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
+  </edges>
+</notation:Diagram>
+]]></diagram>
 </map:map>
