@@ -19,7 +19,7 @@
   </datastore>
   <datastore id="_80AOIZAyEe6u8_TKo8ZMQA" alias="DWH_TELEPHONE" dataset="_80AOPpAyEe6u8_TKo8ZMQA" ref="resource.md#_Qq5IcX-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DWH_TELEPHONE?" subExpression="[A]">
     <field id="_80AOIpAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="DERNIERE_DATE_MAJ_TEL" ref="resource.md#_QwQJkH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DERNIERE_DATE_MAJ_TEL?" update="true">
-      <expression id="_80AOI5AyEe6u8_TKo8ZMQA" setDescriptorRef="_80AON5AyEe6u8_TKo8ZMQA">
+      <expression id="_80AOI5AyEe6u8_TKo8ZMQA" location="TRG" setDescriptorRef="_80AON5AyEe6u8_TKo8ZMQA">
         <expression>sysdate</expression>
       </expression>
     </field>
@@ -35,7 +35,7 @@
     </field>
     <field id="_80AOKJAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="NUM_TEL" ref="resource.md#_QwLREH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=NUM_TEL?" update="true">
       <expression id="_80AOKZAyEe6u8_TKo8ZMQA" setDescriptorRef="_80AON5AyEe6u8_TKo8ZMQA">
-        <expression>replace(SAS_TELEPHONE.PHONE,'.','')</expression>
+        <expression>SAS_TELEPHONE.PHONE</expression>
       </expression>
     </field>
     <field id="_80AOKpAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="ID_FICHIER" ref="resource.md#_QwPigH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=ID_FICHIER?" update="true">
@@ -50,17 +50,23 @@
     </field>
     <field id="_80AOLpAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="FAVORI_TEL" ref="resource.md#_QwMfMH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=FAVORI_TEL?" update="true">
       <expression id="_80AOL5AyEe6u8_TKo8ZMQA" setDescriptorRef="_80AON5AyEe6u8_TKo8ZMQA">
-        <expression>CAST(SAS_TELEPHONE.FAVORI as number(5))</expression>
+        <expression><![CDATA[CAST(case when SAS_TELEPHONE.FAVORI='1' then SAS_TELEPHONE.FAVORI
+when SAS_TELEPHONE.FAVORI='0' then SAS_TELEPHONE.FAVORI
+else '999' end as number(5))]]></expression>
       </expression>
     </field>
-    <field id="_80AOMJAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="DATE_CREATION_TEL" ref="resource.md#_QwQJln-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_TEL?" update="true">
+    <field id="_80AOMJAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="DATE_CREATION_TEL" ref="resource.md#_QwQJln-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_TEL?" update="false">
       <expression id="_80AOMZAyEe6u8_TKo8ZMQA" setDescriptorRef="_80AON5AyEe6u8_TKo8ZMQA">
-        <expression>to_date(SAS_TELEPHONE.DATE_CREATION,'YYYY-MM-DD HH24:MI:SS')</expression>
+        <expression><![CDATA[to_timestamp(SAS_TELEPHONE.DATE_CREATION, 'YYYY-MM-DD')
+]]></expression>
       </expression>
     </field>
     <field id="_80AOMpAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="STATUS_TEL" ref="resource.md#_QwL4IH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS_TEL?" update="true">
       <expression id="_80AOM5AyEe6u8_TKo8ZMQA" setDescriptorRef="_80AON5AyEe6u8_TKo8ZMQA">
-        <expression>CAST(SAS_TELEPHONE.STATUS as number(5))</expression>
+        <expression><![CDATA[CAST(case when SAS_TELEPHONE.STATUS='1' then SAS_TELEPHONE.STATUS
+when SAS_TELEPHONE.STATUS='0' then SAS_TELEPHONE.STATUS
+when SAS_TELEPHONE.STATUS='2' then SAS_TELEPHONE.STATUS
+else '999' end as number(5))]]></expression>
       </expression>
     </field>
     <field id="_80AONJAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="RECORD_VERSION" ref="resource.md#_biidZoqgEe6Bpuf23-D2iA?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=RECORD_VERSION?" update="true">

@@ -38,7 +38,9 @@
     </field>
     <field id="_8z9K25AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="STATUS_CLI" ref="resource.md#_QquwYH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS_CLI?" update="true">
       <expression id="_8z9K3JAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z9K-pAyEe6u8_TKo8ZMQA">
-        <expression>CAST(SAS_CLIENT.STATUS as number(5))</expression>
+        <expression><![CDATA[CAST(case when SAS_CLIENT.status='1' then SAS_CLIENT.status
+when SAS_CLIENT.status='0' then SAS_CLIENT.status
+else '999' end as number(5))]]></expression>
       </expression>
     </field>
     <field id="_8z9K3ZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="LIB_SEXE_CLI" ref="resource.md#_Qqyaxn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=LIB_SEXE_CLI?" update="true">
@@ -56,9 +58,9 @@
         <expression>CAST(nvl(case when ascii(SAS_CLIENT.MUTUELLE)=13 then null else substr(SAS_CLIENT.MUTUELLE,1,length(SAS_CLIENT.MUTUELLE)-1) end,999)as NUMBER(5,0))</expression>
       </expression>
     </field>
-    <field id="_8z9K45AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="DATE_CREATION_CLI" ref="resource.md#_Qqzo7H-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_CLI?" update="true">
+    <field id="_8z9K45AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="DATE_CREATION_CLI" ref="resource.md#_Qqzo7H-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_CLI?" update="false">
       <expression id="_8z9K5JAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z9K-pAyEe6u8_TKo8ZMQA">
-        <expression><![CDATA[to_date(SAS_CLIENT.DATE_CREATION,'YYYY-MM-DD HH24:MI:SS')
+        <expression><![CDATA[to_timestamp(SAS_CLIENT.DATE_CREATION, 'YYYY-MM-DD')
 ]]></expression>
       </expression>
     </field>
@@ -69,7 +71,10 @@
     </field>
     <field id="_8z9K55AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="TYPE_CLI" ref="resource.md#_QqvXcH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=TYPE_CLI?" update="true">
       <expression id="_8z9K6JAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z9K-pAyEe6u8_TKo8ZMQA">
-        <expression>CAST(SAS_CLIENT.TYPE as number(5))</expression>
+        <expression><![CDATA[CAST(case when SAS_CLIENT.TYPE='1' then SAS_CLIENT.TYPE
+when SAS_CLIENT.TYPE='0' then SAS_CLIENT.TYPE
+when SAS_CLIENT.TYPE='99' then SAS_CLIENT.TYPE
+else '999' end as number(5))]]></expression>
       </expression>
     </field>
     <field id="_8z9K6ZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="CLE_CLI" ref="resource.md#_QquJUH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CLE_CLI?" update="true">
@@ -79,7 +84,11 @@
     </field>
     <field id="_8z9K65AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="CIVILITE_CLI" ref="resource.md#_QqvXdn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CIVILITE_CLI?" update="true">
       <expression id="_8z9K7JAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z9K-pAyEe6u8_TKo8ZMQA">
-        <expression>CAST(SAS_CLIENT.CIVILITE as number(5))</expression>
+        <expression><![CDATA[CAST(case when SAS_CLIENT.CIVILITE='1' then SAS_CLIENT.CIVILITE
+when SAS_CLIENT.CIVILITE='0' then SAS_CLIENT.CIVILITE
+when SAS_CLIENT.CIVILITE='2' then SAS_CLIENT.CIVILITE
+when SAS_CLIENT.CIVILITE='99' then SAS_CLIENT.CIVILITE
+else '999' end as number(5))]]></expression>
       </expression>
     </field>
     <field id="_8z9K7ZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="SEXE_CLI" ref="resource.md#_QqxMpn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SEXE_CLI?" update="true">
@@ -108,7 +117,7 @@
       </expression>
     </field>
     <field id="_8z9K95AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="DERNIERE_DATE_MAJ_CLI" ref="resource.md#_Qqzo5n-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DERNIERE_DATE_MAJ_CLI?" update="true">
-      <expression id="_8z9K-JAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z9K-pAyEe6u8_TKo8ZMQA">
+      <expression id="_8z9K-JAyEe6u8_TKo8ZMQA" location="TRG" setDescriptorRef="_8z9K-pAyEe6u8_TKo8ZMQA">
         <expression>sysdate</expression>
       </expression>
     </field>

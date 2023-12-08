@@ -28,7 +28,13 @@
     </field>
     <field id="_8z78q5AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="QUALITE_ADR" ref="resource.md#_QfJyhn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=QUALITE_ADR?" update="true">
       <expression id="_8z78rJAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z78wpAyEe6u8_TKo8ZMQA">
-        <expression>cast(substr(SAS_ADRESSE.QUALITE,1,length(SAS_ADRESSE.QUALITE)-1) as NUMBER(10))</expression>
+        <expression><![CDATA[CAST(SUBSTR(case when SUBSTR(SAS_ADRESSE.QUALITE,1,LENGTH(SAS_ADRESSE.QUALITE)-1)='1' then SUBSTR(SAS_ADRESSE.QUALITE,1,LENGTH(SAS_ADRESSE.QUALITE)-1)
+when SUBSTR(SAS_ADRESSE.QUALITE,1,LENGTH(SAS_ADRESSE.QUALITE)-1)='0' then SUBSTR(SAS_ADRESSE.QUALITE,1,LENGTH(SAS_ADRESSE.QUALITE)-1)
+when SUBSTR(SAS_ADRESSE.QUALITE,1,LENGTH(SAS_ADRESSE.QUALITE)-1)='2' then SUBSTR(SAS_ADRESSE.QUALITE,1,LENGTH(SAS_ADRESSE.QUALITE)-1)
+else '999' end,1,LENGTH(case when SAS_ADRESSE.QUALITE='1' then SAS_ADRESSE.QUALITE
+when SAS_ADRESSE.QUALITE='0' then SAS_ADRESSE.QUALITE
+when SAS_ADRESSE.QUALITE='2' then SAS_ADRESSE.QUALITE
+else '999' end)-1) as number(10))]]></expression>
       </expression>
     </field>
     <field id="_8z78rZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="CODE_POSTAL_ADR" ref="resource.md#_QfIkZn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CODE_POSTAL_ADR?" update="true">
@@ -36,9 +42,10 @@
         <expression>SAS_ADRESSE.CODE_POSTAL</expression>
       </expression>
     </field>
-    <field id="_8z78r5AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="DATE_CREATION_ADR" ref="resource.md#_QfLnsH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_ADR?" update="true">
+    <field id="_8z78r5AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="DATE_CREATION_ADR" ref="resource.md#_QfLnsH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_ADR?" update="false">
       <expression id="_8z78sJAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z78wpAyEe6u8_TKo8ZMQA">
-        <expression>to_date(SAS_ADRESSE.DATE_CREATION,'YYYY-MM-DD HH24:MI:SS')</expression>
+        <expression><![CDATA[to_timestamp(SAS_ADRESSE.DATE_CREATION, 'YYYY-MM-DD')
+]]></expression>
       </expression>
     </field>
     <field id="_8z78sZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="CPM_ADR_1" ref="resource.md#_QfHWQH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CPM_ADR_1?" update="true">
@@ -47,7 +54,7 @@
       </expression>
     </field>
     <field id="_8z78s5AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="DATE_DERNIERE_MAJ_ADR" ref="resource.md#_QfLApn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_DERNIERE_MAJ_ADR?" update="true">
-      <expression id="_8z78tJAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z78wpAyEe6u8_TKo8ZMQA">
+      <expression id="_8z78tJAyEe6u8_TKo8ZMQA" location="TRG" setDescriptorRef="_8z78wpAyEe6u8_TKo8ZMQA">
         <expression>sysdate</expression>
       </expression>
     </field>
@@ -58,7 +65,16 @@
     </field>
     <field id="_8z78t5AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="PAYS_ADR" ref="resource.md#_QfJLcH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=PAYS_ADR?" update="true">
       <expression id="_8z78uJAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z78wpAyEe6u8_TKo8ZMQA">
-        <expression>cast(SAS_ADRESSE.PAYS as NUMBER(10))</expression>
+        <expression><![CDATA[CAST(case when SAS_ADRESSE.PAYS='1' then SAS_ADRESSE.PAYS
+when SAS_ADRESSE.PAYS='0' then SAS_ADRESSE.PAYS
+when SAS_ADRESSE.PAYS='2' then SAS_ADRESSE.PAYS
+when SAS_ADRESSE.PAYS='3' then SAS_ADRESSE.PAYS
+when SAS_ADRESSE.PAYS='4' then SAS_ADRESSE.PAYS
+when SAS_ADRESSE.PAYS='5' then SAS_ADRESSE.PAYS
+when SAS_ADRESSE.PAYS='6' then SAS_ADRESSE.PAYS
+when SAS_ADRESSE.PAYS='7' then SAS_ADRESSE.PAYS
+when SAS_ADRESSE.PAYS='8' then SAS_ADRESSE.PAYS
+else '999' end as number(10))]]></expression>
       </expression>
     </field>
     <field id="_8z78uZAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="RUE_ADR" ref="resource.md#_QfGvNn-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=RUE_ADR?" update="true">
@@ -78,7 +94,10 @@
     </field>
     <field id="_8z78v5AyEe6u8_TKo8ZMQA" enable="true" insert="true" name="STATUS_ADR" ref="resource.md#_QfGIIH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS_ADR?" update="true">
       <expression id="_8z78wJAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z78wpAyEe6u8_TKo8ZMQA">
-        <expression>cast(SAS_ADRESSE.STATUS as NUMBER(10))</expression>
+        <expression><![CDATA[CAST(case when SAS_ADRESSE.STATUS='1' then SAS_ADRESSE.STATUS
+when SAS_ADRESSE.STATUS='0' then SAS_ADRESSE.STATUS
+when SAS_ADRESSE.STATUS='2' then SAS_ADRESSE.STATUS
+else '999' end as number(10))]]></expression>
       </expression>
     </field>
     <constraint id="_8z78wZAyEe6u8_TKo8ZMQA" name="DWH_ADRESSE_PK" ref="resource.md#_QfPSEH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DWH_ADRESSE_PK?" reject="true"/>

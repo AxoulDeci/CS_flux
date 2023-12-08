@@ -14,9 +14,9 @@
     <constraint id="_8z_nDJAyEe6u8_TKo8ZMQA" name="CTRL_FK_CLIENT" ref="resource.md#_NEAjBYq7Ee6UQ4O0GYlsJg?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=CTRL_FK_CLIENT?" reject="true"/>
   </datastore>
   <datastore id="_8z_nDZAyEe6u8_TKo8ZMQA" alias="DWH_EMAIL" dataset="_8z_nIJAyEe6u8_TKo8ZMQA" ref="resource.md#_QfSVYX-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DWH_EMAIL?" subExpression="[A]">
-    <field id="_8z_nDpAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="DATE_CREATION_EMAIL" ref="resource.md#_QkmTMH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_EMAIL?" update="true">
+    <field id="_8z_nDpAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="DATE_CREATION_EMAIL" ref="resource.md#_QkmTMH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DATE_CREATION_EMAIL?" update="false">
       <expression id="_8z_nD5AyEe6u8_TKo8ZMQA" setDescriptorRef="_8z_nHZAyEe6u8_TKo8ZMQA">
-        <expression>to_date(SAS_EMAIL.DATE_CREATION,'YYYY-MM-DD HH24:MI:SS')</expression>
+        <expression>to_timestamp(SAS_EMAIL.DATE_CREATION, 'YYYY-MM-DD')</expression>
       </expression>
     </field>
     <field id="_8z_nEJAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="SID_CLI" ref="resource.md#_QkgMkH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=SID_CLI?" update="true" updateKey="true">
@@ -31,7 +31,15 @@
     </field>
     <field id="_8z_nFJAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="STATUS_EMAIL" ref="resource.md#_QkiBwH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=STATUS_EMAIL?" update="true">
       <expression id="_8z_nFZAyEe6u8_TKo8ZMQA" setDescriptorRef="_8z_nHZAyEe6u8_TKo8ZMQA">
-        <expression>CAST(SUBSTR(SAS_EMAIL.STATUS,1,LENGTH(SAS_EMAIL.STATUS)-1) as number(5))</expression>
+        <expression><![CDATA[CAST(SUBSTR(case when SUBSTR(SAS_EMAIL.STATUS,1,LENGTH(SAS_EMAIL.STATUS)-1)='1' then SUBSTR(SAS_EMAIL.STATUS,1,LENGTH(SAS_EMAIL.STATUS)-1)
+when SUBSTR(SAS_EMAIL.STATUS,1,LENGTH(SAS_EMAIL.STATUS)-1)='0' then SUBSTR(SAS_EMAIL.STATUS,1,LENGTH(SAS_EMAIL.STATUS)-1)
+when SUBSTR(SAS_EMAIL.STATUS,1,LENGTH(SAS_EMAIL.STATUS)-1)='2' then SUBSTR(SAS_EMAIL.STATUS,1,LENGTH(SAS_EMAIL.STATUS)-1)
+when SUBSTR(SAS_EMAIL.STATUS,1,LENGTH(SAS_EMAIL.STATUS)-1)='99' then SUBSTR(SAS_EMAIL.STATUS,1,LENGTH(SAS_EMAIL.STATUS)-1)
+else '999' end,1,LENGTH(case when SAS_EMAIL.STATUS='1' then SAS_EMAIL.STATUS
+when SAS_EMAIL.STATUS='0' then SAS_EMAIL.STATUS
+when SAS_EMAIL.STATUS='2' then SAS_EMAIL.STATUS
+when SAS_EMAIL.STATUS='99' then SAS_EMAIL.STATUS
+else '999' end)-1) as number(5))]]></expression>
       </expression>
     </field>
     <field id="_8z_nFpAyEe6u8_TKo8ZMQA" enable="true" insert="true" name="DERNIERE_DATE_MAJ_EMAIL" ref="resource.md#_QklsIH-qEe6IE6AcCtnNjw?fileId=_TkY50HozEe6i1bEIfNaCgQ$type=md$name=DERNIERE_DATE_MAJ_EMAIL?" update="true">
